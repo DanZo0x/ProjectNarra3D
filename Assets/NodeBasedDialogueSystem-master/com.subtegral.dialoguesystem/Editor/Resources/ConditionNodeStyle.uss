@@ -1,0 +1,3 @@
+ConditionNode #title {
+    background-color: rgba(130, 30, 30, 0.91);
+}

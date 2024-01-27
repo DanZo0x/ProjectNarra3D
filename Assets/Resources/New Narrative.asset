@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: New Narrative
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: e64247f8-776b-426a-bf7b-326a767173c1
+    PortName: Next
+    TargetNodeGUID: 24e144c9-9c02-41ee-bc00-8b469ea25ae4
+  - BaseNodeGUID: 24e144c9-9c02-41ee-bc00-8b469ea25ae4
+    PortName: Option 1
+    TargetNodeGUID: 97a04b7f-2f15-45fc-9737-44b4fae212af
+  - BaseNodeGUID: 97a04b7f-2f15-45fc-9737-44b4fae212af
+    PortName: Next
+    TargetNodeGUID: bbb4024d-f728-4383-a04a-808a74905beb
+  - BaseNodeGUID: bbb4024d-f728-4383-a04a-808a74905beb
+    PortName: True
+    TargetNodeGUID: 27e30827-dc87-4a16-9457-71bea77cbdef
+  DialogueNodeData:
+  - NodeGUID: 24e144c9-9c02-41ee-bc00-8b469ea25ae4
+    KeySpeaker: 
+    NodeKeyText: EMILE
+    Position: {x: 366.4, y: 176}
+  - NodeGUID: 27e30827-dc87-4a16-9457-71bea77cbdef
+    KeySpeaker: 
+    NodeKeyText: POITOU
+    Position: {x: 1153.6, y: 227.2}
+  ConditionNodeData:
+  - NodeGUID: bbb4024d-f728-4383-a04a-808a74905beb
+    NodeProperty: 
+    PropertyValue: 0
+    Position: {x: 945.6, y: 179.2}
+  SetBoolNodeData:
+  - NodeGUID: 97a04b7f-2f15-45fc-9737-44b4fae212af
+    Property: AAAAAA
+    Value: 1
+    Position: {x: 685.6, y: 181.59999}
+  ExposedProperties: []
+  CommentBlockData: []

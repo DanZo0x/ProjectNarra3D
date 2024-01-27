@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: Emile
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: a1be9d46-ce8e-4e7f-8896-b9f10ba7e1d7
+    PortName: Next
+    TargetNodeGUID: e4ba7bc6-c450-4c51-b58d-e90b1f82304e
+  - BaseNodeGUID: e4ba7bc6-c450-4c51-b58d-e90b1f82304e
+    PortName: Option 1
+    TargetNodeGUID: a47ff7b2-f99b-4194-acad-45b6160c0e7a
+  DialogueNodeData:
+  - NodeGUID: e4ba7bc6-c450-4c51-b58d-e90b1f82304e
+    KeySpeaker: 
+    NodeKeyText: BJR
+    Position: {x: 468.8, y: 216.8}
+  - NodeGUID: a47ff7b2-f99b-4194-acad-45b6160c0e7a
+    KeySpeaker: 
+    NodeKeyText: ALLEZ_LE_SEL
+    Position: {x: 832.8, y: 217.59999}
+  ExposedProperties: []
+  CommentBlockData: []

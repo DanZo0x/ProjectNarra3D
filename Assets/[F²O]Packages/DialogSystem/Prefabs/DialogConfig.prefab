@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8117780019960452898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5470526034544706415}
+  - component: {fileID: 5186004199760422640}
+  m_Layer: 0
+  m_Name: DialogConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5470526034544706415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8117780019960452898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.12048267, y: -0.24096295, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5186004199760422640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8117780019960452898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c2079b594028a499277668bd7b4c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speakerDatabases:
+  - {fileID: 11400000, guid: 1ea6a000c64d8b14093b3b6e3cace0a8, type: 2}
+  speakers:
+  - position: 0
+    speakerDatabase: {fileID: 11400000, guid: 1ea6a000c64d8b14093b3b6e3cace0a8, type: 2}
+    speakerData:
+      id: CHAR_MAIN
+      label: You
+      statuses: []
+  - position: 1
+    speakerDatabase: {fileID: 11400000, guid: 1ea6a000c64d8b14093b3b6e3cace0a8, type: 2}
+    speakerData:
+      id: CHAR_Monster
+      label: Monster
+      statuses:
+      - emotion: 0
+        icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c, type: 3}
+        audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+      - emotion: 1
+        icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c, type: 3}
+        audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+  csvDialog: {fileID: 4900000, guid: c3508121a355b3e4d8e6b33396de656d, type: 3}
+  sentenceConfig:
+  - key: BJR
+    speakerData:
+      id: CHAR_Monster
+      label: Monster
+      statuses:
+      - emotion: 0
+        icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c, type: 3}
+        audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+      - emotion: 1
+        icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c, type: 3}
+        audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    audioClip: {fileID: 0}
+  - key: BJR
+    speakerData:
+      id: CHAR_MAIN
+      label: You
+      statuses: []
+    audioClip: {fileID: 0}
