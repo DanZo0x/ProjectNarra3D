@@ -10,5 +10,6 @@ namespace Subtegral.DialogueSystem.DataContainers
         public string TargetName;
         public int Value;
         public Vector2 Position;
+        
     }
 }

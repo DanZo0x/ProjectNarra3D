@@ -62,4 +62,6 @@ public class DialogConfig : MonoBehaviour
             table.Load(csvDialog);
         
     }
+
+    
 }

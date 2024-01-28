@@ -10,5 +10,6 @@ namespace Subtegral.DialogueSystem.DataContainers
         public string NodeProperty;
         public bool PropertyValue;
         public Vector2 Position;
+        
     }
 }

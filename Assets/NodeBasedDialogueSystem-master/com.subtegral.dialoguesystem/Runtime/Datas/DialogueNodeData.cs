@@ -10,5 +10,6 @@ namespace Subtegral.DialogueSystem.DataContainers
         public string KeySpeaker;
         public string NodeKeyText;
         public Vector2 Position;
+        
     }
 }

@@ -15,13 +15,53 @@ MonoBehaviour:
   speakerDatas:
   - id: CHAR_MAIN
     label: You
+    font: {fileID: 11400000, guid: 05d6425a970aaca4ca5d5a13529df5f6, type: 2}
     statuses: []
-  - id: CHAR_Monster
-    label: Monster
+  - id: CHAR_Bookseller
+    label: Hecat
+    font: {fileID: 0}
     statuses:
     - emotion: 0
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c, type: 3}
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 1
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c, type: 3}
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+  - id: CHAR_Florist
+    label: Muller
+    font: {fileID: 0}
+    statuses:
+    - emotion: 0
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 1
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+  - id: CHAR_Angel
+    label: Lilith
+    font: {fileID: 0}
+    statuses:
+    - emotion: 0
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 1
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+  - id: CHAR_Mummy
+    label: Noharnaak
+    font: {fileID: 0}
+    statuses:
+    - emotion: 0
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 1
+      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}

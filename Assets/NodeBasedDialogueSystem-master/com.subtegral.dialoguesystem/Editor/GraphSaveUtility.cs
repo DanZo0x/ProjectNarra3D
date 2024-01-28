@@ -52,6 +52,7 @@ namespace Subtegral.DialogueSystem.Editor
 			{
                 DialogueContainer container = loadedAsset as DialogueContainer;
                 container.NodeLinks = dialogueContainerObject.NodeLinks;
+                container.NodeData = dialogueContainerObject.NodeData;
                 container.DialogueNodeData = dialogueContainerObject.DialogueNodeData;
                 container.ConditionNodeData = dialogueContainerObject.ConditionNodeData;
                 container.SetBoolNodeData = dialogueContainerObject.SetBoolNodeData;
@@ -80,7 +81,7 @@ namespace Subtegral.DialogueSystem.Editor
                 });
             }
 
-
+            
             /*foreach (var node in Nodes.Where(node => !node.EntyPoint))
             {
                 dialogueContainerObject.DialogueNodeData.Add(new DialogueNodeData
@@ -93,7 +94,13 @@ namespace Subtegral.DialogueSystem.Editor
             foreach (var node in Nodes.Where(node => !node.EntyPoint))
             {
 
-
+                dialogueContainerObject.NodeData.Add(new NodeData
+                {
+                    
+                    nodeType = node.name,
+                    nodeGUID = node.GUID
+                });
+                
                 switch (node.name)
                 {
                     case "Dialogue":
@@ -103,7 +110,8 @@ namespace Subtegral.DialogueSystem.Editor
                             NodeGUID = node.GUID,
                             NodeKeyText = ((DialogueNode)node).KeyText,
                             KeySpeaker = ((DialogueNode)node).KeySpeaker,
-                            Position = node.GetPosition().position
+                            Position = node.GetPosition().position,
+                            
                         });
                         break;
                     case "Condition":
@@ -113,8 +121,8 @@ namespace Subtegral.DialogueSystem.Editor
                             NodeGUID = node.GUID,
                             NodeProperty = ((ConditionNode)node).Property,
                             PropertyValue = ((ConditionNode)node).PropertyValue,
-                            Position = node.GetPosition().position
-
+                            Position = node.GetPosition().position,
+                            
                         });
                         break;
                     case "SetBool":
@@ -124,8 +132,8 @@ namespace Subtegral.DialogueSystem.Editor
                             NodeGUID = node.GUID,
                             Property = ((SetBoolNode)node).Property,
                             Value = ((SetBoolNode)node).Value,
-                            Position = node.GetPosition().position
-
+                            Position = node.GetPosition().position,
+                            
                         });
                         break;
                     case "SetAffinity":
@@ -134,8 +142,8 @@ namespace Subtegral.DialogueSystem.Editor
                             NodeGUID = node.GUID,
                             TargetName = ((SetAffinityNode)node).TargetName,
                             Value = ((SetAffinityNode)node).Value,
-                            Position = node.GetPosition().position
-
+                            Position = node.GetPosition().position,
+                            
                         });
                         break;
                 }
@@ -276,11 +284,19 @@ namespace Subtegral.DialogueSystem.Editor
             {
                 var k = i; //Prevent access to modified closure
                 var connections = _dialogueContainer.NodeLinks.Where(x => x.BaseNodeGUID == Nodes[k].GUID).ToList();
+                if (!Nodes[i].EntyPoint)
+                {
+                    Debug.Log(_dialogueContainer.NodeData.Find(x => x.nodeGUID == Nodes[k].GUID).nodeType + " : " + connections.Count() + " output connections / " + Nodes[i].outputContainer.childCount + " elements dans outputContainer");
+                }
+                
                 for (var j = 0; j < connections.Count(); j++)
                 {
+                    
                     var targetNodeGUID = connections[j].TargetNodeGUID;
                     var targetNode = Nodes.First(x => x.GUID == targetNodeGUID);
-                    LinkNodesTogether(Nodes[i].outputContainer[j].Q<Port>(), (Port) targetNode.inputContainer[0]);
+                    
+                    
+                    LinkNodesTogether(Nodes[i].outputContainer[j].Q<Port>(), (Port)targetNode.inputContainer[0]);
                     switch (targetNode.name)
                     {
                         case "Dialogue":
@@ -307,6 +323,7 @@ namespace Subtegral.DialogueSystem.Editor
                     /*targetNode.SetPosition(new Rect(
                         _dialogueContainer.DialogueNodeData.First(x => x.NodeGUID == targetNodeGUID).Position,
                         _graphView.DefaultNodeSize));*/
+
                 }
             }
         }

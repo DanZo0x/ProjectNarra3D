@@ -13,20 +13,46 @@ MonoBehaviour:
   m_Name: Emile
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGUID: a1be9d46-ce8e-4e7f-8896-b9f10ba7e1d7
+  - BaseNodeGUID: eb07d6b2-4605-4849-aada-6ff56d6e43e6
     PortName: Next
-    TargetNodeGUID: e4ba7bc6-c450-4c51-b58d-e90b1f82304e
-  - BaseNodeGUID: e4ba7bc6-c450-4c51-b58d-e90b1f82304e
-    PortName: Option 1
-    TargetNodeGUID: a47ff7b2-f99b-4194-acad-45b6160c0e7a
+    TargetNodeGUID: 99cdf666-6a64-496b-ac92-43d626d58053
+  - BaseNodeGUID: 66b8bbee-0570-4db4-95e9-8d4ce0042fd6
+    PortName: True
+    TargetNodeGUID: 9181000d-7d93-4ea9-b018-5e9ab2c85645
+  - BaseNodeGUID: 66b8bbee-0570-4db4-95e9-8d4ce0042fd6
+    PortName: False
+    TargetNodeGUID: 74121620-b2fb-4e86-b486-5f71dc64938a
+  - BaseNodeGUID: 99cdf666-6a64-496b-ac92-43d626d58053
+    PortName: Next
+    TargetNodeGUID: 66b8bbee-0570-4db4-95e9-8d4ce0042fd6
+  NodeData:
+  - nodeType: Dialogue
+    nodeGUID: 9181000d-7d93-4ea9-b018-5e9ab2c85645
+  - nodeType: Dialogue
+    nodeGUID: 74121620-b2fb-4e86-b486-5f71dc64938a
+  - nodeType: Condition
+    nodeGUID: 66b8bbee-0570-4db4-95e9-8d4ce0042fd6
+  - nodeType: SetBool
+    nodeGUID: 99cdf666-6a64-496b-ac92-43d626d58053
   DialogueNodeData:
-  - NodeGUID: e4ba7bc6-c450-4c51-b58d-e90b1f82304e
-    KeySpeaker: 
+  - NodeGUID: 9181000d-7d93-4ea9-b018-5e9ab2c85645
+    KeySpeaker: CHAR_Mummy
     NodeKeyText: BJR
-    Position: {x: 468.8, y: 216.8}
-  - NodeGUID: a47ff7b2-f99b-4194-acad-45b6160c0e7a
-    KeySpeaker: 
+    Position: {x: 1126.4, y: 82.399994}
+  - NodeGUID: 74121620-b2fb-4e86-b486-5f71dc64938a
+    KeySpeaker: CHAR_Angel
     NodeKeyText: ALLEZ_LE_SEL
-    Position: {x: 832.8, y: 217.59999}
+    Position: {x: 1128.8, y: 301.6}
+  ConditionNodeData:
+  - NodeGUID: 66b8bbee-0570-4db4-95e9-8d4ce0042fd6
+    NodeProperty: hasFeather
+    PropertyValue: 0
+    Position: {x: 725.6, y: 256.80002}
+  SetBoolNodeData:
+  - NodeGUID: 99cdf666-6a64-496b-ac92-43d626d58053
+    Property: hasFeather
+    Value: 0
+    Position: {x: 420, y: 219.2}
+  SetAffinityNodeData: []
   ExposedProperties: []
   CommentBlockData: []

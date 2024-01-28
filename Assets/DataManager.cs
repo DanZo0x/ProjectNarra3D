@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    static public DataManager Instance;
 
-    // Update is called once per frame
-    void Update()
+    Dictionary<string, bool> boolPropertyDict = new Dictionary<string, bool>()
     {
-        
+        { "hasFeather", false },
+    };
+
+    public Dictionary<string, bool> BoolPropertyDict { get => boolPropertyDict; set => boolPropertyDict = value; }
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
     }
 }

@@ -286,7 +286,7 @@ namespace Subtegral.DialogueSystem.Editor
             tempSetNode.RefreshPorts();
             tempSetNode.SetPosition(new Rect(position,
                 DefaultNodeSize));
-            var targetName = new DropdownField("Target name: ", new List<string> { "Hécat", "Müller", "Lilith", "Noharnaak"}, 0);
+            var targetName = new DropdownField("Target name: ", new List<string> { "Hecat", "Muller", "Lilith", "Noharnaak"}, 0);
             targetName.RegisterValueChangedCallback(evt =>
             {
                 tempSetNode.TargetName = evt.newValue;
