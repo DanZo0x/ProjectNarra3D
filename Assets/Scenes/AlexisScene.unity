@@ -333,9 +333,177 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1531893042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].position
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.id
+      value: CHAR_Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.label
+      value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.id
+      value: CHAR_Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.label
+      value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.statuses.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.statuses.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.statuses.Array.data[0].icon
+      value: 
+      objectReference: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.statuses.Array.data[1].icon
+      value: 
+      objectReference: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.statuses.Array.data[1].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.statuses.Array.data[0].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: speakers.Array.data[0].speakerData.statuses.Array.data[1].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.statuses.Array.data[0].icon
+      value: 
+      objectReference: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.statuses.Array.data[1].icon
+      value: 
+      objectReference: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
+        type: 3}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.statuses.Array.data[1].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.statuses.Array.data[0].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: sentenceConfig.Array.data[1].speakerData.statuses.Array.data[1].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12048267
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.24096295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470526034544706415, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117780019960452898, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogConfigPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f19527b30e3923a47a2681ba2ae9d90d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 229500695}
   - {fileID: 1434708007}
+  - {fileID: 1531893042}

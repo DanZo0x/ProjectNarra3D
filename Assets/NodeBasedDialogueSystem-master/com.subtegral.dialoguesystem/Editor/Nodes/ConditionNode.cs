@@ -11,6 +11,7 @@ namespace Subtegral.DialogueSystem.Editor
     {
         public string Property;
         public bool PropertyValue;
+        
     }
 }
 

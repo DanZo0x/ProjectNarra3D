@@ -63,17 +63,17 @@ namespace Subtegral.DialogueSystem.Editor
             switch (SearchTreeEntry.userData)
             {
                 case DialogueNode dialogueNode:
-                    _graphView.CreateNewDialogueNode("Dialogue Node",graphMousePosition);
+                    _graphView.CreateNewDialogueNode("Key Text", "Key Speaker",graphMousePosition);
                     return true;
                 case ConditionNode conditionNode:
-                    _graphView.CreateNewConditionNode(graphMousePosition);
+                    _graphView.CreateNewConditionNode("Property", graphMousePosition);
                     return true;
                 case Group group:
                     var rect = new Rect(graphMousePosition, _graphView.DefaultCommentBlockSize);
                      _graphView.CreateCommentBlock(rect);
                     return true;
                 case SetBoolNode setBoolNode:
-                    _graphView.CreateNewSetBoolNode(graphMousePosition);
+                    _graphView.CreateNewSetBoolNode("Property", false, graphMousePosition);
                     return true;
             }
             return false;

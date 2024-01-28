@@ -19,16 +19,22 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void Start()
         {
+            NewDialogue();
             
+        }
+
+        public void NewDialogue()
+        {
             var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
+            Debug.Log(dialogue.NodeLinks.Last());
             ProceedToNarrative(narrativeData.TargetNodeGUID);
         }
 
         private void ProceedToNarrative(string narrativeDataGUID)
         {
-            Debug.Log(DialogConfig.Instance);
+            
             var text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).FR;
-            Debug.Log(text);
+            
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             dialogueText.text = ProcessProperties(text);
             var buttons = buttonContainer.GetComponentsInChildren<Button>();

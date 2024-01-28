@@ -101,6 +101,7 @@ namespace Subtegral.DialogueSystem.Editor
                         {
                             NodeGUID = node.GUID,
                             NodeKeyText = ((DialogueNode)node).KeyText,
+                            KeySpeaker = ((DialogueNode)node).KeySpeaker,
                             Position = node.GetPosition().position
                         });
                         break;
@@ -216,8 +217,10 @@ namespace Subtegral.DialogueSystem.Editor
         {
             foreach (var perNode in _dialogueContainer.DialogueNodeData)
             {
-                var tempNode = _graphView.CreateDialogueNode(perNode.NodeKeyText, Vector2.zero);
+                var tempNode = _graphView.CreateDialogueNode(perNode.NodeKeyText, perNode.KeySpeaker, Vector2.zero);
                 tempNode.GUID = perNode.NodeGUID;
+                
+                
                 _graphView.AddElement(tempNode);
 
                 var nodePorts = _dialogueContainer.NodeLinks.Where(x => x.BaseNodeGUID == perNode.NodeGUID).ToList();
@@ -225,8 +228,9 @@ namespace Subtegral.DialogueSystem.Editor
             }
             foreach (var perNode in _dialogueContainer.ConditionNodeData)
             {
-                var tempNode = _graphView.CreateConditionNode(Vector2.zero);
+                var tempNode = _graphView.CreateConditionNode(perNode.NodeProperty, Vector2.zero);
                 tempNode.GUID = perNode.NodeGUID;
+                tempNode.PropertyValue = perNode.PropertyValue;
                 _graphView.AddElement(tempNode);
 
                 var nodePorts = _dialogueContainer.NodeLinks.Where(x => x.BaseNodeGUID == perNode.NodeGUID).ToList();
@@ -234,7 +238,7 @@ namespace Subtegral.DialogueSystem.Editor
             }
             foreach (var perNode in _dialogueContainer.SetBoolNodeData)
             {
-                var tempNode = _graphView.CreateSetBoolNode(Vector2.zero);
+                var tempNode = _graphView.CreateSetBoolNode(perNode.Property, perNode.Value, Vector2.zero);
                 tempNode.GUID = perNode.NodeGUID;
                 _graphView.AddElement(tempNode);
 

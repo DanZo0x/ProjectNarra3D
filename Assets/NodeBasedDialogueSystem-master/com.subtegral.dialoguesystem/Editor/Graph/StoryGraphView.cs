@@ -123,27 +123,28 @@ namespace Subtegral.DialogueSystem.Editor
             return compatiblePorts;
         }
 
-        public void CreateNewDialogueNode(string nodeName, Vector2 position)
+        public void CreateNewDialogueNode(string keyText, string keySpeaker, Vector2 position)
         {
-            AddElement(CreateDialogueNode(nodeName, position));
+            AddElement(CreateDialogueNode(keyText, keySpeaker, position));
         }
 
-        public void CreateNewConditionNode(Vector2 position)
+        public void CreateNewConditionNode(string property, Vector2 position)
         {
-            AddElement(CreateConditionNode(position));
+            AddElement(CreateConditionNode(property, position));
         }
 
-        public void CreateNewSetBoolNode(Vector2 position)
+        public void CreateNewSetBoolNode(string property, bool value, Vector2 position)
         {
-            AddElement(CreateSetBoolNode(position));
+            AddElement(CreateSetBoolNode(property, value, position));
         }
 
-        public DialogueNode CreateDialogueNode(string nodeName, Vector2 position)
+        public DialogueNode CreateDialogueNode(string keyText, string keySpeaker, Vector2 position)
         {
             var tempDialogueNode = new DialogueNode()
             {
                 title = "Dialogue",
-                KeyText = nodeName,
+                KeyText = keyText,
+                KeySpeaker = keySpeaker,
                 GUID = Guid.NewGuid().ToString()
             };
             tempDialogueNode.name = "Dialogue";
@@ -159,7 +160,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             
 
-            var textField = new TextField("");
+            var textField = new TextField("Text Key: ");
             textField.RegisterValueChangedCallback(evt =>
             {
                 tempDialogueNode.KeyText = evt.newValue;
@@ -167,6 +168,15 @@ namespace Subtegral.DialogueSystem.Editor
             });
             textField.SetValueWithoutNotify(tempDialogueNode.KeyText);
             tempDialogueNode.mainContainer.Add(textField);
+
+            var speakerField = new TextField("Speaker Key:");
+            speakerField.RegisterValueChangedCallback(evt =>
+            {
+                tempDialogueNode.KeySpeaker = evt.newValue;
+
+            });
+            speakerField.SetValueWithoutNotify(tempDialogueNode.KeySpeaker);
+            tempDialogueNode.mainContainer.Add(speakerField);
 
             var button = new Button(() => { AddChoicePort(tempDialogueNode); })
             {
@@ -176,11 +186,12 @@ namespace Subtegral.DialogueSystem.Editor
             return tempDialogueNode;
         }
 
-        public ConditionNode CreateConditionNode(Vector2 position)
+        public ConditionNode CreateConditionNode(string property, Vector2 position)
         {
             var tempConditionNode = new ConditionNode()
             {
                 title = "Condition",
+                Property = property,
                 
                 GUID = Guid.NewGuid().ToString()
             };
@@ -193,9 +204,16 @@ namespace Subtegral.DialogueSystem.Editor
             tempConditionNode.RefreshPorts();
             tempConditionNode.SetPosition(new Rect(position,
                 DefaultNodeSize));
+            
 
+            var textField = new TextField("Bool");
+            textField.RegisterValueChangedCallback(evt =>
+            {
+                tempConditionNode.Property = evt.newValue;
 
-
+            });
+            textField.SetValueWithoutNotify(tempConditionNode.Property);
+            tempConditionNode.mainContainer.Add(textField);
 
             AddConditionPort(tempConditionNode, true);
             AddConditionPort(tempConditionNode, false);
@@ -204,12 +222,13 @@ namespace Subtegral.DialogueSystem.Editor
             return tempConditionNode;
         }
 
-        public SetBoolNode CreateSetBoolNode(Vector2 position)
+        public SetBoolNode CreateSetBoolNode(string property, bool propertyValue, Vector2 position)
         {
             var tempSetNode = new SetBoolNode()
             {
                 title = "Set Property",
-
+                Property = property,
+                Value = propertyValue,
                 GUID = Guid.NewGuid().ToString()
             };
             tempSetNode.name = "SetBool";
@@ -229,7 +248,7 @@ namespace Subtegral.DialogueSystem.Editor
                 tempSetNode.Property = evt.newValue;
                 tempSetNode.title = $"Set {textField.value}";
             });
-            textField.SetValueWithoutNotify("Property");
+            textField.SetValueWithoutNotify(tempSetNode.Property);
             tempSetNode.mainContainer.Add(textField);
 
             var toggle = new UnityEngine.UIElements.Toggle("Value: ");
@@ -237,6 +256,7 @@ namespace Subtegral.DialogueSystem.Editor
             {
                 tempSetNode.Value = evt.newValue;
             });
+            toggle.SetValueWithoutNotify(tempSetNode.Value);
             tempSetNode.mainContainer.Add(toggle);
             AddSetBoolPort(tempSetNode);
             return tempSetNode;

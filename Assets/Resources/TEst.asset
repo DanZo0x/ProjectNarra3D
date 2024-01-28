@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: TEst
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: 2340be11-9ba6-4ec1-aa2b-da3a22a0c851
+    PortName: Next
+    TargetNodeGUID: 01528cb0-f0fd-4f4a-a544-029f944dae55
+  - BaseNodeGUID: 01528cb0-f0fd-4f4a-a544-029f944dae55
+    PortName: Option 1
+    TargetNodeGUID: 179c9683-76ca-4ef1-af6a-0253410d87cf
+  - BaseNodeGUID: 179c9683-76ca-4ef1-af6a-0253410d87cf
+    PortName: True
+    TargetNodeGUID: ea5e5557-7b32-4172-a965-de45b2a0019f
+  DialogueNodeData:
+  - NodeGUID: 01528cb0-f0fd-4f4a-a544-029f944dae55
+    KeySpeaker: "T'as les prompt\xE9s?"
+    NodeKeyText: BJR
+    Position: {x: 601.6, y: 285.6}
+  ConditionNodeData:
+  - NodeGUID: 179c9683-76ca-4ef1-af6a-0253410d87cf
+    NodeProperty: Apagnan
+    PropertyValue: 0
+    Position: {x: 952.8, y: 323.2}
+  SetBoolNodeData:
+  - NodeGUID: ea5e5557-7b32-4172-a965-de45b2a0019f
+    Property: Quoicoubeh
+    Value: 1
+    Position: {x: 1241.6, y: 311.2}
+  ExposedProperties: []
+  CommentBlockData: []
