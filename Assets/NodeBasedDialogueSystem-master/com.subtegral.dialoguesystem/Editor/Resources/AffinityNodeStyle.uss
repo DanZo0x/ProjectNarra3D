@@ -1,0 +1,5 @@
+SetAffinityNode #title {
+    background-color: rgba(255, 33, 218, 0.91);
+    
+}
+

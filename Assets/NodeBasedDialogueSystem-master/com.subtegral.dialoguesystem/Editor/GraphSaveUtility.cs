@@ -55,6 +55,7 @@ namespace Subtegral.DialogueSystem.Editor
                 container.DialogueNodeData = dialogueContainerObject.DialogueNodeData;
                 container.ConditionNodeData = dialogueContainerObject.ConditionNodeData;
                 container.SetBoolNodeData = dialogueContainerObject.SetBoolNodeData;
+                container.SetAffinityNodeData = dialogueContainerObject.SetAffinityNodeData;
                 container.ExposedProperties = dialogueContainerObject.ExposedProperties;
                 container.CommentBlockData = dialogueContainerObject.CommentBlockData;
                 EditorUtility.SetDirty(container);
@@ -123,6 +124,16 @@ namespace Subtegral.DialogueSystem.Editor
                             NodeGUID = node.GUID,
                             Property = ((SetBoolNode)node).Property,
                             Value = ((SetBoolNode)node).Value,
+                            Position = node.GetPosition().position
+
+                        });
+                        break;
+                    case "SetAffinity":
+                        dialogueContainerObject.SetAffinityNodeData.Add(new SetAffinityData
+                        {
+                            NodeGUID = node.GUID,
+                            TargetName = ((SetAffinityNode)node).TargetName,
+                            Value = ((SetAffinityNode)node).Value,
                             Position = node.GetPosition().position
 
                         });
@@ -245,6 +256,16 @@ namespace Subtegral.DialogueSystem.Editor
                 var nodePorts = _dialogueContainer.NodeLinks.Where(x => x.BaseNodeGUID == perNode.NodeGUID).ToList();
                 
             }
+
+            foreach (var perNode in _dialogueContainer.SetAffinityNodeData)
+            {
+                var tempNode = _graphView.CreateSetAffinityNode(perNode.TargetName, perNode.Value, Vector2.zero);
+                tempNode.GUID = perNode.NodeGUID;
+                _graphView.AddElement(tempNode);
+
+                var nodePorts = _dialogueContainer.NodeLinks.Where(x => x.BaseNodeGUID == perNode.NodeGUID).ToList();
+
+            }
         }
 
 
@@ -275,6 +296,11 @@ namespace Subtegral.DialogueSystem.Editor
                         case "SetBool":
                             targetNode.SetPosition(new Rect(
                                 _dialogueContainer.SetBoolNodeData.First(x => x.NodeGUID == targetNodeGUID).Position,
+                                _graphView.DefaultNodeSize));
+                            break;
+                        case "SetAffinity":
+                            targetNode.SetPosition(new Rect(
+                                _dialogueContainer.SetAffinityNodeData.First(x => x.NodeGUID == targetNodeGUID).Position,
                                 _graphView.DefaultNodeSize));
                             break;
                     }

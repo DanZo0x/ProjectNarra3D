@@ -15,6 +15,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private Button choicePrefab;
         [SerializeField] private Transform buttonContainer;
+        [SerializeField] private Transform speakerText;
         List<ExposedProperty> propertyList = new List<ExposedProperty>();
 
         private void Start()
@@ -45,9 +46,10 @@ namespace Subtegral.DialogueSystem.Runtime
 
             foreach (var choice in choices)
             {
-                var button = Instantiate(choicePrefab, buttonContainer);
-                button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
-                button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+                AddButton(choice);
+                /*var button = Instantiate(choicePrefab, buttonContainer);
+                button.GetComponentInChildren<TextMeshProUGUI>().text = ProcessProperties(choice.PortName);
+                button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));*/
             }
         }
 
@@ -58,6 +60,18 @@ namespace Subtegral.DialogueSystem.Runtime
                 text = text.Replace($"[{exposedProperty.PropertyName}]", exposedProperty.PropertyValue.ToString());
             }
             return text;
+        }
+
+        private void AddButton(NodeLinkData choice)
+        {
+            var button = Instantiate(choicePrefab, buttonContainer);
+            button.GetComponentInChildren<TextMeshProUGUI>().text = ProcessProperties(choice.PortName);
+            button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+        }
+
+        private void CheckAndProceedNextNode()
+        {
+
         }
     }
 }

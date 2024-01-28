@@ -44,10 +44,14 @@ namespace Subtegral.DialogueSystem.Editor
                 {
                     level = 1, userData = new ConditionNode()
                 },
-                new SearchTreeGroupEntry(new GUIContent("Set Property"), 1),
+                new SearchTreeGroupEntry(new GUIContent("Set"), 1),
                 new SearchTreeEntry(new GUIContent("Bool", _indentationIcon))
                 {
                     level = 2, userData = new SetBoolNode()
+                },
+                new SearchTreeEntry(new GUIContent("Affinity", _indentationIcon))
+                {
+                    level = 2, userData = new SetAffinityNode()
                 }
             };
 
@@ -74,6 +78,9 @@ namespace Subtegral.DialogueSystem.Editor
                     return true;
                 case SetBoolNode setBoolNode:
                     _graphView.CreateNewSetBoolNode("Property", false, graphMousePosition);
+                    return true;
+                case SetAffinityNode setAffinityNode:
+                    _graphView.CreateNewSetAffinityNode("Target", 0, graphMousePosition);
                     return true;
             }
             return false;

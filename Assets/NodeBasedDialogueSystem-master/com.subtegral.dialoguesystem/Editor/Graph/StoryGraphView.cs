@@ -138,6 +138,11 @@ namespace Subtegral.DialogueSystem.Editor
             AddElement(CreateSetBoolNode(property, value, position));
         }
 
+        public void CreateNewSetAffinityNode(string target, int value, Vector2 position)
+        {
+            AddElement(CreateSetAffinityNode(target, value, position));
+        }
+
         public DialogueNode CreateDialogueNode(string keyText, string keySpeaker, Vector2 position)
         {
             var tempDialogueNode = new DialogueNode()
@@ -262,7 +267,43 @@ namespace Subtegral.DialogueSystem.Editor
             return tempSetNode;
         }
 
+        public SetAffinityNode CreateSetAffinityNode(string target, int value, Vector2 position)
+        {
+            var tempSetNode = new SetAffinityNode()
+            {
+                title = "Add Affinity",
+                TargetName = target,
+                Value = value,
+                GUID = Guid.NewGuid().ToString()
+            };
+            tempSetNode.name = "SetAffinity";
+            tempSetNode.styleSheets.Add(Resources.Load<StyleSheet>("AffinityNodeStyle"));
+            var inputPort = tempSetNode.InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(float));
+            var inputPortLabel = inputPort.contentContainer.Q<Label>("type");
+            inputPort.portName = "Previous";
+            tempSetNode.inputContainer.Add(inputPort);
+            tempSetNode.RefreshExpandedState();
+            tempSetNode.RefreshPorts();
+            tempSetNode.SetPosition(new Rect(position,
+                DefaultNodeSize));
+            var targetName = new DropdownField("Target name: ", new List<string> { "Hécat", "Müller", "Lilith", "Noharnaak"}, 0);
+            targetName.RegisterValueChangedCallback(evt =>
+            {
+                tempSetNode.TargetName = evt.newValue;
+            });
+            targetName.SetValueWithoutNotify(tempSetNode.TargetName);
+            tempSetNode.mainContainer.Add(targetName);
 
+            var valueField = new IntegerField("Value: ");
+            valueField.RegisterValueChangedCallback(evt =>
+            {
+                tempSetNode.Value = evt.newValue;
+            });
+            valueField.SetValueWithoutNotify(tempSetNode.Value);
+            tempSetNode.mainContainer.Add(valueField);
+            AddSetAffinityPort(tempSetNode);
+            return tempSetNode;
+        }
         public void AddConditionPort(ConditionNode nodeCache, bool value)
         {
             var generatedPort = nodeCache.InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Multi, typeof(float));
@@ -321,6 +362,16 @@ namespace Subtegral.DialogueSystem.Editor
         }
 
         public void AddSetBoolPort(SetBoolNode nodeCache)
+        {
+            var outputPort = nodeCache.InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(float));
+            var portLabel = outputPort.contentContainer.Q<Label>("type");
+            outputPort.portName = "Next";
+            nodeCache.outputContainer.Add(outputPort);
+            nodeCache.RefreshPorts();
+            nodeCache.RefreshExpandedState();
+        }
+
+        public void AddSetAffinityPort(SetAffinityNode nodeCache)
         {
             var outputPort = nodeCache.InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(float));
             var portLabel = outputPort.contentContainer.Q<Label>("type");
