@@ -1253,8 +1253,13 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 648fecccea6a52a488d26a06631104a3,
+      objectReference: {fileID: 11400000, guid: 252f260d7fffd9440b98c466ba94470c,
         type: 2}
+    - target: {fileID: 2711285191279255931, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: charaSprite
+      value: 
+      objectReference: {fileID: 587885419}
     - target: {fileID: 2711285191279255931, guid: f19527b30e3923a47a2681ba2ae9d90d,
         type: 3}
       propertyPath: speakerText

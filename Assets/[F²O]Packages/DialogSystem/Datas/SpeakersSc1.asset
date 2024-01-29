@@ -16,22 +16,32 @@ MonoBehaviour:
   - id: CHAR_MAIN
     label: You
     font: {fileID: 11400000, guid: 05d6425a970aaca4ca5d5a13529df5f6, type: 2}
+    affection: 0
     statuses: []
   - id: CHAR_Bookseller
     label: Hecat
     font: {fileID: 0}
+    affection: 0
     statuses:
     - emotion: 0
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
-        type: 3}
+      icon: {fileID: 21300000, guid: 447951969f033034fa84c6b44a8b4395, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 1
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
-        type: 3}
+      icon: {fileID: 21300000, guid: 383a22220326c474bb1a2264318297c7, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 2
+      icon: {fileID: 21300000, guid: a515def939ed3f74eb0ee61619c2dc77, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 3
+      icon: {fileID: 21300000, guid: 5cdc5f77aa815794a83ce7ff6885c696, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 4
+      icon: {fileID: 21300000, guid: 90f7a7bac090d3e4290a174e31386fdd, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
   - id: CHAR_Florist
     label: Muller
     font: {fileID: 0}
+    affection: 0
     statuses:
     - emotion: 0
       icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
@@ -44,6 +54,7 @@ MonoBehaviour:
   - id: CHAR_Angel
     label: Lilith
     font: {fileID: 0}
+    affection: 0
     statuses:
     - emotion: 0
       icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
@@ -56,6 +67,7 @@ MonoBehaviour:
   - id: CHAR_Mummy
     label: Noharnaak
     font: {fileID: 0}
+    affection: 0
     statuses:
     - emotion: 0
       icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,

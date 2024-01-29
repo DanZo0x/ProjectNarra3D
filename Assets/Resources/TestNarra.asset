@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: TestNarra
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: 9e63108a-86d6-4158-b7c4-521e6f2f750a
+    PortName: Next
+    TargetNodeGUID: 6fa206a3-08dd-466f-8f6f-6370d030bf0a
+  - BaseNodeGUID: 6fa206a3-08dd-466f-8f6f-6370d030bf0a
+    PortName: Option 1
+    TargetNodeGUID: 74f78eee-5f34-465a-8496-c65005f823d4
+  - BaseNodeGUID: 6fa206a3-08dd-466f-8f6f-6370d030bf0a
+    PortName: Option 2
+    TargetNodeGUID: 8b49b46a-6e2f-43c7-8e9f-f1320cf4f912
+  NodeData:
+  - nodeType: Dialogue
+    nodeGUID: 74f78eee-5f34-465a-8496-c65005f823d4
+  - nodeType: Dialogue
+    nodeGUID: 8b49b46a-6e2f-43c7-8e9f-f1320cf4f912
+  - nodeType: Dialogue
+    nodeGUID: 6fa206a3-08dd-466f-8f6f-6370d030bf0a
+  DialogueNodeData:
+  - NodeGUID: 74f78eee-5f34-465a-8496-c65005f823d4
+    KeySpeaker: CHAR_Bookseller
+    NodeKeyText: ALLEZ_LE_SEL
+    SpeakerEmotion: 1
+    Position: {x: 567.2, y: 100}
+  - NodeGUID: 8b49b46a-6e2f-43c7-8e9f-f1320cf4f912
+    KeySpeaker: CHAR_Bookseller
+    NodeKeyText: ALLEZ_LE_SEL
+    SpeakerEmotion: 2
+    Position: {x: 567.2, y: 289.6}
+  - NodeGUID: 6fa206a3-08dd-466f-8f6f-6370d030bf0a
+    KeySpeaker: CHAR_Bookseller
+    NodeKeyText: BJR
+    SpeakerEmotion: 0
+    Position: {x: 230.4, y: 200}
+  ConditionNodeData: []
+  SetBoolNodeData: []
+  SetAffinityNodeData: []
+  ExposedProperties: []
+  CommentBlockData: []

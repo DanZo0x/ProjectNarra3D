@@ -110,6 +110,7 @@ namespace Subtegral.DialogueSystem.Editor
                             NodeGUID = node.GUID,
                             NodeKeyText = ((DialogueNode)node).KeyText,
                             KeySpeaker = ((DialogueNode)node).KeySpeaker,
+                            SpeakerEmotion = ((DialogueNode)node).Emotion,
                             Position = node.GetPosition().position,
                             
                         });
@@ -236,7 +237,7 @@ namespace Subtegral.DialogueSystem.Editor
         {
             foreach (var perNode in _dialogueContainer.DialogueNodeData)
             {
-                var tempNode = _graphView.CreateDialogueNode(perNode.NodeKeyText, perNode.KeySpeaker, Vector2.zero);
+                var tempNode = _graphView.CreateDialogueNode(perNode.SpeakerEmotion, perNode.NodeKeyText, perNode.KeySpeaker, Vector2.zero);
                 tempNode.GUID = perNode.NodeGUID;
                 
                 

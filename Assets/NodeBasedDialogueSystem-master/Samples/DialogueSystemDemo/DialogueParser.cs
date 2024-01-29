@@ -16,6 +16,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private Button choicePrefab;
         [SerializeField] private Transform buttonContainer;
         [SerializeField] private TextMeshProUGUI speakerText;
+        [SerializeField] private Image charaSprite;
         List<ExposedProperty> propertyList = new List<ExposedProperty>();
 
         private void Start()
@@ -53,6 +54,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     {
                         ProceedToNarrative(nextNodeGUID);
                     }
+
                     break;
                 case "SetBool":
                     Debug.Log("Bool");
@@ -76,9 +78,12 @@ namespace Subtegral.DialogueSystem.Runtime
 
                     break;
                 case "Dialogue":
-                    Debug.Log("Dialogue");
+                    
+
                     var text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).FR;
                     var speaker = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(x => x.id == dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).KeySpeaker);
+                    
+                    charaSprite.sprite = speaker.statuses[dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion].icon;
                     if (speaker != null)
                     {
                         speakerText.text = speaker.label;

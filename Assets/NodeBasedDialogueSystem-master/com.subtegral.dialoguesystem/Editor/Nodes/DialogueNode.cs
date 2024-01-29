@@ -11,6 +11,7 @@ namespace Subtegral.DialogueSystem.Editor
     {
         public string KeySpeaker;
         public string KeyText;
+        public int Emotion;
     }
 }
 
