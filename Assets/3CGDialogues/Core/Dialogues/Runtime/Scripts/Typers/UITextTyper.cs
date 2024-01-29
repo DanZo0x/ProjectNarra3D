@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace TCG.Core.Dialogues
 {
-    public class UITextTyper_Exercise5 : MonoBehaviour, IUITextTyper
+    public class UITextTyper : MonoBehaviour, IUITextTyper
     {
         [SerializeField] private TextMeshProUGUI _textField;
         [SerializeField] private int _charactersPerSecond = 5;

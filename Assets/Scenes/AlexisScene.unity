@@ -587,6 +587,8 @@ GameObject:
   - component: {fileID: 731247434}
   - component: {fileID: 731247436}
   - component: {fileID: 731247435}
+  - component: {fileID: 731247438}
+  - component: {fileID: 731247437}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -710,6 +712,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731247433}
   m_CullTransparentMesh: 1
+--- !u!114 &731247437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731247433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bd3de9fb554da395c34e3a0901b229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textField: {fileID: 731247435}
+  _charactersPerSecond: 20
+  currentCharactersPerSeconds: 0
+--- !u!114 &731247438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731247433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f2058d75629bf43a2621b63afda7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtNameLeft: {fileID: 0}
+  imgSpriteLeft: {fileID: 0}
+  txtNameRight: {fileID: 0}
+  imgSpriteRight: {fileID: 0}
+  txtSentence: {fileID: 0}
 --- !u!1 &846706076
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Subtegral.DialogueSystem.DataContainers;
+using TCG.Core.Dialogues;
 
 namespace Subtegral.DialogueSystem.Runtime
 {
@@ -79,8 +80,9 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
                 case "Dialogue":
                     
-
+                    
                     var text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).FR;
+                    var typer = dialogueText.GetComponent<UITextTyper>();
                     var speaker = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(x => x.id == dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).KeySpeaker);
                     
                     charaSprite.sprite = speaker.statuses[dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion].icon;
@@ -90,7 +92,8 @@ namespace Subtegral.DialogueSystem.Runtime
                     }
 
                     var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
-                    dialogueText.text = ProcessProperties(text);
+                    typer.ReadText(text);
+                    //dialogueText.text = ProcessProperties(text);
                     foreach (var choice in choices)
                     {
                         AddButton(choice, nextNodeGUID);
