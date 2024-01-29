@@ -56,6 +56,7 @@ namespace TCG.Core.Dialogues
 
             foreach (TextCommand command in _commands) {
                 command.OnReadStart();
+
             }
 
             IsReadingText = true;
@@ -79,7 +80,6 @@ namespace TCG.Core.Dialogues
 
         private void _UpdateAlwaysUpdatedCommands()
         {
-            //TODO: Call OnUpdate for always updated commands
             foreach(TextCommand command in _commands)
             {
                 if (command.AlwaysUpdated)
@@ -89,32 +89,28 @@ namespace TCG.Core.Dialogues
 
         private void _UpdateReadText()
         {
-            if (!IsReadingText)
+            if (!IsReadingText) return;
+
+            if (IsWaitingForCommand)
             {
-                bool paused = false;
-                foreach (TextCommand command in _commands)
+                if (_pendingCommand != null && _pendingCommand.IsRunning)
                 {
-                    if (command.IsRunning)
-                    {
-                        command.OnUpdate();
-                        paused = true;
-                    }
-                }
-                if (!paused)
-                {
-                    IsReadingText = true;
+                    _pendingCommand.OnUpdate();
+                    return;
                 }
                 else
                 {
-                    return;
+                    IsWaitingForCommand = false;
                 }
             }
-            //TODO: Copy and Replace From Exercise 4
-            if (!IsReadingText) return;
-            
+
+
+
+
+
             float startOffset = _readCharacterOffset;
             float endOffset = startOffset + _charactersPerSecond * Time.deltaTime;
-            
+
             int startIndex = Mathf.FloorToInt(startOffset);
             int endIndex = Mathf.FloorToInt(endOffset);
 
@@ -122,16 +118,21 @@ namespace TCG.Core.Dialogues
             foreach (TextCommand command in commandsToEnter)
             {
                 command.OnEnter();
-                if (command.IsRunning)
+
+                if (command.IsBlocking && _pendingCommand != command)
                 {
-                    IsReadingText = false;
+                    _pendingCommand = command;
+                    IsWaitingForCommand = true;
                 }
+
+
             }
 
             TextCommand[] commandsToExit = TextCommandUtils.FindCommandsToExit(_commands, startIndex, endIndex);
             foreach (TextCommand command in commandsToExit)
             {
                 command.OnExit();
+
             }
 
             _GoToCharacter(endOffset);

@@ -12,6 +12,7 @@ namespace TCG.Core.Dialogues
                 case "textshake": return new TextCommandTextShake();
                 case "rdmpause": return new TextCommandRdmPause();
                 case "rdmp": return new TextCommandRdmPause();
+                case "squiggle": return new TextCommandSquiggle();
             }
 
             return null;

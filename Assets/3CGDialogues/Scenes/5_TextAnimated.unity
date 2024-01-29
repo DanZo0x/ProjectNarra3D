@@ -3011,9 +3011,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textsToRead:
-  - "Oulah !<pause=0.5> Je me<rdmp=0.1f|0.4f> sens<rdmp=0.1f|0.4f> un peu<rdmp=0.1f|0.4f>
-    ballonn\xE9.<pause=0.5>\nJ'ai PEUT-\xCATRE pris un peu trop de pauses sur la
-    sc\xE8ne d'avant."
+  - "Oulah !<pause=0.5> <squiggle=3>Je me<rdmp=0.1|0.4> sens<rdmp=0.1|0.4> un peu<rdmp=0.1|0.4>
+    ballonn\xE9.<pause=0.5></squiggle>\nJ'ai <textshake=0.2>PEUT-\xCATRE</textshake>
+    pris un peu trop de pauses sur la sc\xE8ne d'avant."
   - <textshake=2>Oooooooohhhh !</textshake>
   - "MAIS !<pause=0.2> <textshake=2>Qu'est-ce qui se passe ?<pause=0.5>\nPourquoi
     mes lettres tremblent comme \xE7aaaaaaa...</textshake>"
