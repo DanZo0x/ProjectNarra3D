@@ -21,6 +21,37 @@ Properties {
 	_BevelRoundness		("Bevel Roundness", Range(0,1)) = 0
 
 	_LightAngle			("Light Angle", Range(0.0, 6.2831853)) = 3.1416
+
+	[HDR]_OutlineColor("Outline Color", Color) = (0,0,0,1)
+	_OutlineTex("Outline Texture", 2D) = "white" {}
+	_OutlineUVSpeedX("Outline UV Speed X", Range(-5, 5)) = 0.0
+	_OutlineUVSpeedY("Outline UV Speed Y", Range(-5, 5)) = 0.0
+	_OutlineWidth("Outline Thickness", Range(0, 1)) = 0
+	_OutlineSoftness("Outline Softness", Range(0,1)) = 0
+
+	_Bevel("Bevel", Range(0,1)) = 0.5
+	_BevelOffset("Bevel Offset", Range(-0.5,0.5)) = 0
+	_BevelWidth("Bevel Width", Range(-.5,0.5)) = 0
+	_BevelClamp("Bevel Clamp", Range(0,1)) = 0
+	_BevelRoundness("Bevel Roundness", Range(0,1)) = 0
+
+	_LightAngle("Light Angle", Range(0.0, 6.2831853)) = 3.1416
+
+	[HDR]_OutlineColor("Outline Color", Color) = (0,0,0,1)
+	_OutlineTex("Outline Texture", 2D) = "white" {}
+	_OutlineUVSpeedX("Outline UV Speed X", Range(-5, 5)) = 0.0
+	_OutlineUVSpeedY("Outline UV Speed Y", Range(-5, 5)) = 0.0
+	_OutlineWidth("Outline Thickness", Range(0, 1)) = 0
+	_OutlineSoftness("Outline Softness", Range(0,1)) = 0
+
+	_Bevel("Bevel", Range(0,1)) = 0.5
+	_BevelOffset("Bevel Offset", Range(-0.5,0.5)) = 0
+	_BevelWidth("Bevel Width", Range(-.5,0.5)) = 0
+	_BevelClamp("Bevel Clamp", Range(0,1)) = 0
+	_BevelRoundness("Bevel Roundness", Range(0,1)) = 0
+
+	_LightAngle("Light Angle", Range(0.0, 6.2831853)) = 3.1416
+
 	[HDR]_SpecularColor	("Specular", Color) = (1,1,1,1)
 	_SpecularPower		("Specular", Range(0,4)) = 2.0
 	_Reflectivity		("Reflectivity", Range(5.0,15.0)) = 10
