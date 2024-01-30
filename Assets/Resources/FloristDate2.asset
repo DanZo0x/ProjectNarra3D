@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
-  m_Name: Rapou
+  m_Name: FloristDate2
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGUID: 69265c39-8e27-4b5b-ab55-bd7d434ecea7
+  - BaseNodeGUID: 9b9b181e-e28d-4ac3-a43c-bf9cc0996e5e
     PortName: Next
-    TargetNodeGUID: f60d9661-72f2-4316-b326-208a92853823
+    isValid: 0
+    TargetNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
   NodeData:
   - nodeType: Dialogue
-    nodeGUID: f60d9661-72f2-4316-b326-208a92853823
+    nodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
   DialogueNodeData:
-  - NodeGUID: f60d9661-72f2-4316-b326-208a92853823
-    KeySpeaker: Key Speaker
+  - NodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    KeySpeaker: CHAR_Florist
     NodeKeyText: Key Text
     SpeakerEmotion: 0
-    Position: {x: 474.4, y: 217.59999}
+    Position: {x: 227.2, y: 200}
   ConditionNodeData: []
   SetBoolNodeData: []
   SetAffinityNodeData: []

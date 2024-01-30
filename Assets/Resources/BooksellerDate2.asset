@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
-  m_Name: AAAAAAtrox
+  m_Name: BooksellerDate2
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGUID: 6b758831-85d0-46c8-b717-3b32c2ff5eed
+  - BaseNodeGUID: 9b9b181e-e28d-4ac3-a43c-bf9cc0996e5e
     PortName: Next
-    TargetNodeGUID: 3652d11d-9f28-4a4e-8b9e-f868e28aa02d
+    isValid: 0
+    TargetNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
   NodeData:
   - nodeType: Dialogue
-    nodeGUID: 3652d11d-9f28-4a4e-8b9e-f868e28aa02d
+    nodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
   DialogueNodeData:
-  - NodeGUID: 3652d11d-9f28-4a4e-8b9e-f868e28aa02d
-    KeySpeaker: Key Speaker
+  - NodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    KeySpeaker: CHAR_Bookseller
     NodeKeyText: Key Text
-    SpeakerEmotion: 3
-    Position: {x: 562.4, y: 228.8}
+    SpeakerEmotion: 0
+    Position: {x: 227.2, y: 200}
   ConditionNodeData: []
   SetBoolNodeData: []
   SetAffinityNodeData: []
