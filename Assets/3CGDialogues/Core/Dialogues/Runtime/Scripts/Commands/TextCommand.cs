@@ -128,6 +128,7 @@ namespace TCG.Core.Dialogues
         {
             _textInfo = Typer.TextField.textInfo;
             _cachedMeshInfo = _textInfo.CopyMeshInfoVertexData();
+            _text = _textInfo.textComponent;
         }
 
         private void _OnTMProChanged(Object obj)

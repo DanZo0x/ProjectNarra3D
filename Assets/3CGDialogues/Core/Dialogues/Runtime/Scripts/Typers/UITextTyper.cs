@@ -30,12 +30,13 @@ namespace TCG.Core.Dialogues
 
         private TextCommand[] _commands;
 
-        public TextMeshProUGUI TextField => TextField1;
+        public TextMeshProUGUI TextField => _textField;
 
-        public TextMeshProUGUI TextField1 { get => _textField; set => _textField = value; }
+        public TMP_Text _text;
 
         public void ReadText(string text)
         {
+    
             if (_commands != null) {
                 foreach (TextCommand command in _commands) {
                     command.Release();
