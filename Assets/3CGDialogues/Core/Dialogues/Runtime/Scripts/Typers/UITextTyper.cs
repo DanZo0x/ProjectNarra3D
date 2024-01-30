@@ -30,7 +30,9 @@ namespace TCG.Core.Dialogues
 
         private TextCommand[] _commands;
 
-        public TextMeshProUGUI TextField => _textField;
+        public TextMeshProUGUI TextField => TextField1;
+
+        public TextMeshProUGUI TextField1 { get => _textField; set => _textField = value; }
 
         public void ReadText(string text)
         {
@@ -48,11 +50,11 @@ namespace TCG.Core.Dialogues
             //TODO: Use TextCommandUtils.FindAlwaysUpdatedCommands to store always updated commands
 
             text = _RemoveCustomTags(text);
-            _textField.text = text;
-            _textField.ForceMeshUpdate();
+            TextField1.text = text;
+            TextField1.ForceMeshUpdate();
             _readCharacterOffset = 0f;
-            _readMaxCharacters = _textField.GetParsedText().Length;
-            _textField.maxVisibleCharacters = 0;
+            _readMaxCharacters = TextField1.GetParsedText().Length;
+            TextField1.maxVisibleCharacters = 0;
 
             foreach (TextCommand command in _commands) {
                 command.OnReadStart();
@@ -66,7 +68,7 @@ namespace TCG.Core.Dialogues
         {
             if (!IsReadingText) return;
             IsReadingText = false;
-            _textField.maxVisibleCharacters = _readMaxCharacters;
+            TextField1.maxVisibleCharacters = _readMaxCharacters;
             foreach (TextCommand command in _commands) {
                 command.OnReadEnd();
             }
@@ -145,7 +147,7 @@ namespace TCG.Core.Dialogues
         private void _GoToCharacter(float characterOffset)
         {
             _readCharacterOffset = characterOffset;
-            _textField.maxVisibleCharacters = Mathf.FloorToInt(_readCharacterOffset);
+            TextField1.maxVisibleCharacters = Mathf.FloorToInt(_readCharacterOffset);
         }
 
         private static TextCommand[] _GenerateCommands(string text)

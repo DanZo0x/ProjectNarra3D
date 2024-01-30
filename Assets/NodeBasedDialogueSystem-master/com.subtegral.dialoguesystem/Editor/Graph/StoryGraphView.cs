@@ -13,7 +13,7 @@ using UnityEngine.UI;
 using UnityEngine.UIElements;
 using static UnityEditor.Experimental.GraphView.Port;
 using Button = UnityEngine.UIElements.Button;
-
+ 
 namespace Subtegral.DialogueSystem.Editor
 {
     public class StoryGraphView : GraphView
@@ -391,7 +391,7 @@ namespace Subtegral.DialogueSystem.Editor
             {
                 name = string.Empty,
                 value = outputPortName,
-                style = {width = 100, height = 20}
+                style = {width = 50, height = 20}
             };
             textField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
 
@@ -404,7 +404,9 @@ namespace Subtegral.DialogueSystem.Editor
             };
             generatedPort.contentContainer.Add(deleteButton);
             generatedPort.portName = outputPortName;
-            
+
+           
+
             nodeCache.outputContainer.Add(generatedPort);
             nodeCache.RefreshPorts();
             nodeCache.RefreshExpandedState();

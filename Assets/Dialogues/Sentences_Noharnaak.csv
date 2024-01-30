@@ -1,0 +1,27 @@
+﻿ID;KEY;FR;EN;SP
+0;DEFAULT_KEY;0_DEFAULT_KEY_FR;0_DEFAULT_KEY_EN;0_DEFAULT_KEY_SP
+1;OTHER_KEY;0_OTHER_KEY_FR;0_OTHER_KEY_EN;0_OTHER_KEY_SP
+;NOHHA01_P0_INTRO;"Bienvenu dans la maison du seigneur mon enfant 
+Quelle est la raison de votre présence ici ? ";;Hola ! Qual es la keketa de hoy
+;NOHHA01_P2_DIALOGUE1;Vous êtes dans un lieu sacré très cher, tachez de vous comporter correctement, c'est une cathédrale ici, pas un salon de thé ! Mais la démarche est admirable, ce n'est pas tous les jours que des jeunes âmes comme vous viennent par ici, il n y a que la débauche qui vous intéresse de nos jours.;;
+;NOHHA01_P2_DIALOGUE2;Oh... pauvre créature... je suis là pour vous, ne vous en faites pas, le seigneur saura pardonner une âme aussi douce que la votre... De quoi êtes vous coupable ?;;
+;NOHHA01_P2_DIALOGUE3;Jeune délinquant, je pourrai avoir l'âge de votre mère, on ne vous a jamais appris a respecter vos ainés ?;;
+;NOHHA01_P4_DIALOGUE1;Oh ! Sombre pourriture, ne vous avisez plus jamais de me manquer de respect ! Quittez cette église sur le champs !;;
+;NOHHA01_P4_DIALOGUE2;Hmmm, une âme jeune et cultivée, comme c'est beau, vous apportez un vrai souffle de renouveau, c'est agréable. Vous savez ce que vous valez, intéressant...;;
+;NOHHA01_P4_DIALOGUE3;C'est bien les jeunes ça, toujours plein d'étoiles dans les yeux, Si vous gardez cette mentalité, vous allez vous faire écraser par la vie...;;
+;NOHHA01_P4_DIALOGUE4;Espèce de sombre porc décérébré, vous me dégoutez !;;
+;NOHHA01_P4_DIALOGUE5;Oh miséricorde, pas d'inquiétude mon enfant... Nous sommes tous consumés par des pulsions malsaines, regardez, moi même... Je suis régulièrement tourmentée par mes démons...;;
+;NOHHA01_P4_DIALOGUE6;Mais enfin mon bon, nous sommes tous des pécheurs dans l'âme. Mais par sa grandeur, nous sommes tous pardonnés.;;
+;NOHHA01_P4_DIALOGUE7;Âme souillée et impure, perdue et tourmentée, que le seigneur ai pitié de vous ! Je prierai pour vous, je ne vous abandonnerai pas aux ténèbres.;;
+;NOHHA01_P5_DIALOGUE1;Alors trésor, dites m'en plus sur vous... Qu'est ce qui vous guide dans la vie ?;;
+;NOHHA01_P5_DIALOGUE2;Enfin bon... Je suppose que certains trouvent ça admirable... Voir mignon. Alors, quel est le moteur de votre vie ?;;
+;NOHHA01_P5_DIALOGUE3;C'est pour éviter ce genre de situation que je ne me sépare jamais de ma broche. Cette petite merveille canalise mes pulsions impies, et je me porte comme un charme.;;
+;NOHHA01_P7_DIALOGUE1;Mon ange, vos paroles me comblent de joie. Avec une telle vertu, vous irez loin dans l'après vie, je vous le garantie.;;
+;NOHHA01_P7_DIALOGUE2;Trésor, vous me plaisez bien là, le bien paraitre est le cœur d'une vie réussie. Pourquoi briller si ce n'est pas pour éblouir les autres ?;;
+;NOHHA01_P7_DIALOGUE3;Hmmm... quelqu'un avec votre potentiel qui manque de vision sur le monde, c'est d'un gachis...;;
+;NOHHA01_P7_DIALOGUE4;Trésor, arrêtez de jouer l'ébahi devant tout ce que je dis. J'ai l'impression de parler à un débile.;;
+;NOHHA01_P7_DIALOGUE5;Mon ange... vous doutez vraiment de moi ? Evidemment que ça marche. Je ne suis pas du genre à propager des sornettes ! Mais vous avez la présence d'esprit de questionner ce qu'on vous raconte, c'est signe d'une grande richesse intellectuelle, vous me plaisez bien.;;
+;NOHHA01_P7_DIALOGUE6;Certainement pas avec ce genre de discours jeune effronté ! Vous êtes irrécupérable ! Sortez d'ici !;;
+;NOHHA01_P8_DIALOGUE1;J'adore papoter avec vous mon trésor, mais le devoir sacré m'appelle. Revenez me voir quand vous voudrez, j'ai adoré échanger avec vous.;;
+;NOHHA01_P8_DIALOGUE2;Tenez, mon ange. Prenez ma broche. Exhibez la, étincelez autour de vous. Elle vous protégera des ténèbres. Vous me la rendrez à notre prochaine rencontre.;;
+;NOHHA01_P8_DIALOGUE3;Ce que vous me racontez est palpitant mon ange, mais le devoir m'appelle. J'adorerai tragiverser des heures avec vous, mais j'ai mieux à faire actuellement.;;
