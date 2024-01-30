@@ -22,6 +22,14 @@ namespace Subtegral.DialogueSystem.Editor
         public readonly Vector2 DefaultCommentBlockSize = new Vector2(300, 200);
         public DialogueNode EntryPointNode;
         public Blackboard Blackboard = new Blackboard();
+        private List<string> Emotions = new List<string>()
+        {
+            "Neutral",
+            "Happy",
+            "Angry",
+            "Flustered",
+            "Flabbergasted"
+        };
         public List<ExposedProperty> ExposedProperties { get; private set; } = new List<ExposedProperty>();
         private NodeSearchWindow _searchWindow;
         
@@ -123,9 +131,9 @@ namespace Subtegral.DialogueSystem.Editor
             return compatiblePorts;
         }
 
-        public void CreateNewDialogueNode(string keyText, string keySpeaker, Vector2 position)
+        public void CreateNewDialogueNode(int emotionId, string keyText, string keySpeaker, Vector2 position)
         {
-            AddElement(CreateDialogueNode(keyText, keySpeaker, position));
+            AddElement(CreateDialogueNode(emotionId, keyText, keySpeaker, position));
         }
 
         public void CreateNewConditionNode(string property, Vector2 position)
@@ -143,13 +151,14 @@ namespace Subtegral.DialogueSystem.Editor
             AddElement(CreateSetAffinityNode(target, value, position));
         }
 
-        public DialogueNode CreateDialogueNode(string keyText, string keySpeaker, Vector2 position)
+        public DialogueNode CreateDialogueNode(int emotionId, string keyText, string keySpeaker, Vector2 position)
         {
             var tempDialogueNode = new DialogueNode()
             {
                 title = "Dialogue",
                 KeyText = keyText,
                 KeySpeaker = keySpeaker,
+                Emotion = emotionId,
                 GUID = Guid.NewGuid().ToString()
             };
             tempDialogueNode.name = "Dialogue";
@@ -180,14 +189,54 @@ namespace Subtegral.DialogueSystem.Editor
                 tempDialogueNode.KeySpeaker = evt.newValue;
 
             });
+
+            
             speakerField.SetValueWithoutNotify(tempDialogueNode.KeySpeaker);
             tempDialogueNode.mainContainer.Add(speakerField);
+
+            var speakerEmotion = new DropdownField("Speaker emotion: ", new List<string> { "Neutral", "Happy", "Angry", "Flustered", "Flabbergasted" }, 0);
+           
+            speakerEmotion.RegisterValueChangedCallback(evt =>
+            {
+                
+                tempDialogueNode.Emotion = Emotions.IndexOf(evt.newValue);
+            });
+
+            speakerEmotion.SetValueWithoutNotify(Emotions[tempDialogueNode.Emotion]);
+            tempDialogueNode.mainContainer.Add(speakerEmotion);
+
+            
 
             var button = new Button(() => { AddChoicePort(tempDialogueNode); })
             {
                 text = "Add Choice"
             };
             tempDialogueNode.titleButtonContainer.Add(button);
+
+            /*var generatedPort = GetPortInstanceDialogue(tempDialogueNode, Direction.Output);
+            var portLabel = generatedPort.contentContainer.Q<Label>("type");
+            generatedPort.contentContainer.Remove(portLabel);
+
+            var outputPortCount = tempDialogueNode.outputContainer.Query("connector").ToList().Count();
+            var outputPortName = "Next";
+
+
+            var outputBasePort = new TextField()
+            {
+                name = string.Empty,
+                value = outputPortName,
+                style = { width = 80, height = 20 }
+            };
+            outputBasePort.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
+
+
+            generatedPort.contentContainer.Add(new Label("  "));
+            generatedPort.contentContainer.Add(textField);
+            tempDialogueNode.outputContainer.Add(generatedPort);
+            generatedPort.portName = outputPortName;
+
+            tempDialogueNode.RefreshPorts();
+            tempDialogueNode.RefreshExpandedState();*/
             return tempDialogueNode;
         }
 
@@ -318,8 +367,8 @@ namespace Subtegral.DialogueSystem.Editor
             {
                 generatedPort.portName = "False";
             }
-            
 
+           
             nodeCache.outputContainer.Add(generatedPort);
             nodeCache.RefreshPorts();
             nodeCache.RefreshExpandedState();

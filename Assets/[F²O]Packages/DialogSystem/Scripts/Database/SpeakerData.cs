@@ -18,9 +18,10 @@ public class SpeakerData
         public enum EMOTION
         {
             NEUTRAL,
-            ANGRY,
             HAPPY,
-            SAD,
+            ANGRY,
+            FLUSTERED,
+            FLABBERGASTED
         }
         public EMOTION emotion;
         public Sprite icon;

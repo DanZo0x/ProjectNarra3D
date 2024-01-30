@@ -67,7 +67,7 @@ namespace Subtegral.DialogueSystem.Editor
             switch (SearchTreeEntry.userData)
             {
                 case DialogueNode dialogueNode:
-                    _graphView.CreateNewDialogueNode("Key Text", "Key Speaker",graphMousePosition);
+                    _graphView.CreateNewDialogueNode(0, "Key Text", "Key Speaker",graphMousePosition);
                     return true;
                 case ConditionNode conditionNode:
                     _graphView.CreateNewConditionNode("Property", graphMousePosition);

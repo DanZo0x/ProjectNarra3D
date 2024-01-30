@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Subtegral.DialogueSystem.DataContainers;
+using TCG.Core.Dialogues;
 
 namespace Subtegral.DialogueSystem.Runtime
 {
@@ -16,6 +17,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private Button choicePrefab;
         [SerializeField] private Transform buttonContainer;
         [SerializeField] private TextMeshProUGUI speakerText;
+        [SerializeField] private Image charaSprite;
         List<ExposedProperty> propertyList = new List<ExposedProperty>();
 
         private void Start()
@@ -53,6 +55,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     {
                         ProceedToNarrative(nextNodeGUID);
                     }
+
                     break;
                 case "SetBool":
                     Debug.Log("Bool");
@@ -76,19 +79,26 @@ namespace Subtegral.DialogueSystem.Runtime
 
                     break;
                 case "Dialogue":
-                    Debug.Log("Dialogue");
+                    
+                    
                     var text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).FR;
+                    
+                    var typer = dialogueText.GetComponent<UITextTyper>();
                     var speaker = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(x => x.id == dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).KeySpeaker);
+                    speakerText.font = speaker.font;
+                    typer.TextField1.font = speaker.font;
+                    charaSprite.sprite = speaker.statuses[dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion].icon;
                     if (speaker != null)
                     {
                         speakerText.text = speaker.label;
                     }
 
                     var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
-                    dialogueText.text = ProcessProperties(text);
+                    typer.ReadText(text);
+                    //dialogueText.text = ProcessProperties(text);
                     foreach (var choice in choices)
                     {
-                        AddButton(choice, nextNodeGUID);
+                        AddButton(choice, nextNodeGUID, speaker.font);
                     }
                     break;
 
@@ -119,11 +129,12 @@ namespace Subtegral.DialogueSystem.Runtime
 
 
 
-        private void AddButton(NodeLinkData choice, string nextNodeGUID)
+        private void AddButton(NodeLinkData choice, string nextNodeGUID, TMP_FontAsset font)
         {
             var button = Instantiate(choicePrefab, buttonContainer);
             button.GetComponentInChildren<TextMeshProUGUI>().text = ProcessProperties(choice.PortName);
-            if(nextNodeGUID != "")
+            button.GetComponentInChildren<TextMeshProUGUI>().font = font;
+            if (nextNodeGUID != "")
             {
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
             }

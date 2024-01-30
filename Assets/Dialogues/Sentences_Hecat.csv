@@ -1,0 +1,6 @@
+﻿ID;KEY;FR;EN;SP
+0;DEFAULT_KEY;0_DEFAULT_KEY_FR;0_DEFAULT_KEY_EN;0_DEFAULT_KEY_SP
+1;OTHER_KEY;0_OTHER_KEY_FR;0_OTHER_KEY_EN;0_OTHER_KEY_SP
+2;HECAT01_P0HECAT_INTRO;Bonjour, bienvenue dans mon humble libairie.;Hello, welcome to my humble bookshop.;Hola ! Qual es la keketa de hoy
+3;HECAT01_P1PLAYER_CHOIX1;Cool, j'adore les livres;Awesome, i love books.;
+4;HECAT01_P1PLAYER_CHOIX2;Ça sent le renfermé, ici.;It smells musty in here.;
