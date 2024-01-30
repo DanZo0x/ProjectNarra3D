@@ -1,4 +1,23 @@
 ﻿ID;KEY;FR;EN;SP
 0;DEFAULT_KEY;0_DEFAULT_KEY_FR;0_DEFAULT_KEY_EN;0_DEFAULT_KEY_SP
 1;OTHER_KEY;0_OTHER_KEY_FR;0_OTHER_KEY_EN;0_OTHER_KEY_SP
-;NOM#_P#_JSP;Prenez le temps d'y penser;;Hola ! Qual es la keketa de hoy
+;MULLER01_P0_INTRO;Bon... Bonjour... Bienvenu à la Fabrique à fleur de Müller ... Y a t il quelque chose pour vous que je puisse faire ?;;
+;MULLER01_P2_DIALOGUE1;Oui. C'est un magasin de fleurs.;;
+;MULLER01_P2_DIALOGUE2;Ou... Oui... Ca m'aide à ouvrir à ouvrir le contact avec les clients... Pour bri... briser la glace vous voyez... ;;
+;MULLER01_P2_DIALOGUE3;Oh je... je vois... Que vous faut t il ?;;
+;MULLER01_P4_DIALOGUE1;... Ne vous y essayer plus s'il vous plait...;;
+;MULLER01_P4_DIALOGUE2;Vous commencez à me mettre mal à l'aise, je ne demande qu'a vendre mes fleurs. Pitié comportez vous comme un être civilisé. Dites moi juste ce que vous voulez qu'on en finisse.;;
+;MULLER01_P4_DIALOGUE3;Oh... je... je...... Vous êtes la première personne a me dire ça. D'habitude les clients se prennent pour des comiques en herbe et éclatent un vase par terre. Mais revenons dans le vif du sujet... Que recherchez vous ?;;
+;MULLER01_P4_DIALOGUE4;Haaaaa, l'amitié... Y a t t il quelque chose de plus précieux que l'amitié dans ce bas monde ? Réconfortante et chaleureuse, l'amitié, douce comme une brise matinale de printemps, elle nous porte vers un avenir meilleur, que serions nous sans nos amis... Quel beau cadeau est l'amitié, célébrez la chaque jour, car même si elle n'a pas de prix, elle est la pus belle chose qui puisse nous arriver...;;
+;MULLER01_P6_DIALOGUE5;Oh... une belle preuve d'amour, si romantique... La passion et l'ardeur... la flamboyance de des moments passés ensembles. Eternel tourment, douce miséricorde... L'amour, émotion forte et brulante, qui fait battre nos cœurs, qui embelli chacun de nos jours passés sur cette terre. Douce mélodie d'amour, sérénade d'automne qui réchauffe mon âme, rouge comme la flamme, acérée comme l'amour, une rose fera parfaitement l'affaire...;;
+;MULLER01_P6_DIALOGUE1;MAIS VOUS ÊTES COMPLÊTEMENT CON OU QUOI ? BARREZ VOUS DE CHEZ MOI.. CONNARD !;;
+;MULLER01_P6_DIALOGUE2;Barrez vous immédiatement énorme malade !;;
+;MULLER01_P6_DIALOGUE3;Et vous avez bien raison, je chérie chacune de ces fleurs comme mon enfant. Tenez, regardez cette rose, parfaite pour déclarer votre flamme, bien que commune. Si votre cible est un véritable démon, optez pour le dahlia, sauvage et ardent... Quelqu'un de plus pure et innocent, prenez cette pensée... Chaque cible mérite sa propre fleur, qu'est ce qu'il vous faut ?;;
+;MULLER01_P6_DIALOGUE4;Les fleurs, c'est tout un art vous savez, ce ne sont pas que des pétales et des couleurs. Par exemple ce dahlia qui représente la séduction et la fougue. Ou cette pensée, noble et gracieuse... M'enfin... Qu'est ce que je vous mets ?;;
+;MULLER01_P6_DIALOGUE5;Vous voulez viser dans l'exceptionnel, comme c'est excitent ! Voyons voir... Une pensée, noble et gracieuse... Ou un dahlia, séducteur et fatal... Ou encore ma petite favorite, un lys... mystérieux et passionnel;;
+;MULLER01_P8_DIALOGUE1;Et voilà, une rose rouge, aussi belle qu'acérée, revenez quand vous voulez;;
+;MULLER01_P8_DIALOGUE2;Aussi belle et pure que les 7 enfers, vous allez combler quelqu'un de bonheur, soyez en sur. La boutique est ouverte tous les jours, n'hésitez pas a repasser !;;
+;MULLER01_P8_DIALOGUE3;Vous cherchez a séduire une âme ardente, j'espère que vous ferez son bonheur, et qu'elle fera le votre. Revenez quand vous voulez !;;
+;MULLER01_P8_DIALOGUE4;Oh miséricorde, vous me flattez, je vous emballe la plus belle fleur !;;
+;MULLER01_P10_DIALOGUE1;Oh saint seigneur... vous me rendez toute chose. Tenez, mon plus beau lys iridescent. Votre moitiée sera comblée je vous le garantie ! Je l'envirai presque… Prenez le temps de repasser quand vous voulez, ce sera un plaisir !;;
+;MULLER01_P10_DIALOGUE2;Misère, un peu de tenue je vous pris, nous ne somme pas à l'université ! Ne faites pas attendre votre bien aimé et filez donc !;;
