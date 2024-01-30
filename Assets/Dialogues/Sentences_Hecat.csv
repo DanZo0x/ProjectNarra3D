@@ -1,6 +1,22 @@
 ﻿ID;KEY;FR;EN;SP
 0;DEFAULT_KEY;0_DEFAULT_KEY_FR;0_DEFAULT_KEY_EN;0_DEFAULT_KEY_SP
 1;OTHER_KEY;0_OTHER_KEY_FR;0_OTHER_KEY_EN;0_OTHER_KEY_SP
-2;HECAT01_P0HECAT_INTRO;Bonjour, bienvenue dans mon humble libairie.;Hello, welcome to my humble bookshop.;Hola ! Qual es la keketa de hoy
-3;HECAT01_P1PLAYER_CHOIX1;Cool, j'adore les livres;Awesome, i love books.;
-4;HECAT01_P1PLAYER_CHOIX2;Ça sent le renfermé, ici.;It smells musty in here.;
+2;HECAT01_P0;Bonjour, bienvenue dans mon humble libairie.;Hello, welcome to my humble bookshop.;Hola ! Qual es la keketa de hoy
+3;HECAT01_P1_CHOIX1;Une jeune personne bien cultivé je vois.;A well educated young person I see.;
+4;HECAT01_P1_CHOIX2;Etre vous sur de ne pas avoir le nez trop prets des aisselles ?!;Are you sure your nose isn't too close to your armpits?!;
+;HECAT01_P1_CHOIX3;Les deux, très cher.;Both, dear.;
+;HECAT01_P2;Et donc, que venez vous faire ici ? Un livre vous interesse ? ;So, what are you doing here? Are you interested in a book? ;
+;HECAT01_P3_CHOIX1;Une personne hétéro cisgenre alpha muscu ? Je vois.;A straight cisgender alpha muscular person? I see.;
+;HECAT01_P3_CHOIX2;Bien sur ! Cela est rare de voir quelqu'un s'intéresser à ce genre de littérature. As tu une préférence ?;Of course you are! It's rare to see someone interested in this kind of literature. Do you have a preference?;
+;HECAT01_P3_CHOIX3;"Hum...ce n'est pas trop mon style j'avoue. Je suis plus dans la théorique, les livres
+qui te font te questionner sur le monde. Voudrais tu essayer un genre en particulier ?";"Um...it's not really my style, I admit. I'm more into the theoretical, books that
+that make you question the world. Is there a particular genre you'd like to try?";
+;HECAT01_P4_CHOIX1;Hum...des livres comme...Twilight ?;Um...books like...Twilight?;
+;HECAT01_P4_CHOIX2;Eh bien. Une aussi belle personne avec un esprit aussi curieux, tu surement quelqu'un de spécial, toi.;Well, well, well. Such a beautiful person with such an inquisitive mind, you must be something special.;
+;HECAT01_P4_CHOIX3;…CONNARD !;...BITCH!;
+;HECAT01_P4.5 ;Miséricorde. Dégage de ma boutique !;Oh, mercy. Get out of my store!;
+;HECAT01_P5_CHOIX1 ;heuuu...Merci beaucoup, c'est la première fois qu'on me dit ça...;heuuu...Thank you very much, it's the first time someone's said that to me...;
+;HECAT01_P5_CHOIX2;En effet, moi aussi je suis férus de lecture.;Indeed, I'm a big reader myself.;
+;HECAT01_P5_CHOIX3;Si tu le dit...;If you say so...;
+;HECAT01_P6_CHOIX1;Bien sur, passe quand tu veut, je t'accueillerai à n'importe quelle heure.;Of course, come by whenever you like, I'll welcome you at any time.;
+;HECAT01_P6_CHOIX2;Quand la boutique est ouverte, oui.;When the store's open, yes.;
