@@ -24,22 +24,23 @@ namespace Subtegral.DialogueSystem.Runtime
         private Image buttonSprite;
         private DialogConfig dialogConfig;
         List<ExposedProperty> propertyList = new List<ExposedProperty>();
-        DateData dateData;
+        [SerializeField] DateData dateData;
         private void Start()
         {
-            
+            NewDialogue();
         }
 
-        public void NewDialogue(string dateName)
+        public void NewDialogue(/*string dateName*/)
         {
 
             dialogConfig = GetComponent<DialogConfig>();
-            dateData = DataManager.Instance.FindFromName(dateName);
+            //dateData = DataManager.Instance.FindFromName(dateName);
             dialogConfig.csvDialog = dateData.table;
+            dialogConfig.CreateTable();
 
             dialogue = dateData.dialogue;
 
-            backGroundSprite.sprite = dateData.background;
+           //backGroundSprite.sprite = dateData.background;
             
 
             dialogueUI.SetActive(true);
@@ -49,8 +50,15 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void ProceedToNarrative(string narrativeDataGUID)
         {
-            var buttons = buttonContainer.GetComponentsInChildren<Button>();
-            for (int i = 0; i < buttons.Length; i++)
+            
+            dialogueText.text = "";
+            List<Transform> buttons = new List<Transform>();
+            Debug.Log(dialogue.NodeData.Find(x => x.nodeGUID == narrativeDataGUID).nodeType);
+            foreach (Transform button in buttonContainer)
+            {
+                buttons.Add(button);
+            }
+            for (int i = 0; i < buttons.Count; i++)
             {
                 Destroy(buttons[i].gameObject);
             }
@@ -91,7 +99,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     }
                     break;
                 case "Condition":
-                    Debug.Log("Condition");
+                    
                     var conditionNode = dialogue.ConditionNodeData.Find(x => x.NodeGUID == narrativeDataGUID);
 
                     nextNodeGUID = FindNextNode(narrativeDataGUID, DataManager.Instance.BoolPropertyDict[conditionNode.NodeProperty]);
@@ -99,7 +107,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     
                     break;
                 case "Dialogue":
-                    
+
                     
                     var text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).FR;
                     
@@ -160,49 +168,37 @@ namespace Subtegral.DialogueSystem.Runtime
             
             if (nextNodeGUID != "")
             {
-                var nextNode = dialogue.NodeData.Find(x => x.nodeGUID == choice.TargetNodeGUID);
+                var nextNode = dialogue.NodeData.Find(x => x.nodeGUID == choice.TargetNodeGUID);//Node de juste après
                 if (nextNode.nodeType == "Condition")
                 {
-                    var nextConditionNode = dialogue.ConditionNodeData.Find(x => x.NodeGUID == nextNode.nodeGUID);
+                    
+                    var nextConditionNode = dialogue.ConditionNodeData.Find(x => x.NodeGUID == nextNode.nodeGUID);// Node Condition de juste après
                     foreach (var link in dialogue.NodeLinks)
                     {
 
                         if (link.BaseNodeGUID == nextNode.nodeGUID)
                         {
                             bool value = DataManager.Instance.BoolPropertyDict[nextConditionNode.NodeProperty];
-                            if (link.PortName == "True")
+                            //Debug.Log("Condition " + nextConditionNode.NodeProperty + ": " + nextConditionNode.PropertyValue + " //// Player: "+ value);
+                            if ((value && link.PortName == "True") || (!value && link.PortName == "False"))
                             {
-                                if (value)
-                                {
-                                    nextNodeGUID = link.TargetNodeGUID;
-                                    newButton.transform.Find("Chains").gameObject.SetActive(true);
-                                }
-                                else
-                                {
-                                    buttonComponent.interactable = false;
-                                    newButton.transform.Find("Chains").gameObject.SetActive(true);
-                                }
-                                
+                                nextNodeGUID = link.TargetNodeGUID;
+                                newButton.transform.Find("Chains").gameObject.SetActive(false);
                             }
-
-                            else if (link.PortName == "False" )
+                            else
                             {
-                                if (!value)
-                                {
-                                    nextNodeGUID = link.TargetNodeGUID;
-                                }
-                                else
-                                {
-                                    buttonComponent.interactable = false;
-                                    newButton.transform.Find("Chains").gameObject.SetActive(true);
-                                }
-                                
+                                buttonComponent.interactable = false;
+                                newButton.transform.Find("Chains").gameObject.SetActive(true);
                             }
-
                         }
                     }
                 }
-                buttonComponent.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+                else
+                {
+                    nextNodeGUID= choice.TargetNodeGUID;
+                }
+                //buttonComponent.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+                buttonComponent.onClick.AddListener(() => ProceedToNarrative(nextNodeGUID));
             }
             else
             {
@@ -210,6 +206,8 @@ namespace Subtegral.DialogueSystem.Runtime
             }
 
         }
+
+        
 
         private string FindNextNode(string baseNodeGUID, bool valueFromCondition)
         {

@@ -16,18 +16,71 @@ MonoBehaviour:
   - BaseNodeGUID: 9b9b181e-e28d-4ac3-a43c-bf9cc0996e5e
     PortName: Next
     isValid: 0
+    TargetNodeGUID: 6f67daa6-4cf0-4ed2-bd2d-25025f170b52
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: Bloqued
+    isValid: 0
+    TargetNodeGUID: 0d7346de-8d50-4993-86c3-37942c460288
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: Pas bloqued
+    isValid: 0
+    TargetNodeGUID: 22285c0a-8360-4559-8b68-d2a868be89b1
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: Pas bloqued
+    isValid: 0
+    TargetNodeGUID: 92058579-393f-471b-918f-418c8b6cac35
+  - BaseNodeGUID: 6f67daa6-4cf0-4ed2-bd2d-25025f170b52
+    PortName: Next
+    isValid: 0
     TargetNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+  - BaseNodeGUID: 0d7346de-8d50-4993-86c3-37942c460288
+    PortName: False
+    isValid: 0
+    TargetNodeGUID: 02a116e1-b0f3-4acc-9854-395586042a14
   NodeData:
   - nodeType: Dialogue
     nodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+  - nodeType: Dialogue
+    nodeGUID: 22285c0a-8360-4559-8b68-d2a868be89b1
+  - nodeType: Dialogue
+    nodeGUID: 92058579-393f-471b-918f-418c8b6cac35
+  - nodeType: Condition
+    nodeGUID: 0d7346de-8d50-4993-86c3-37942c460288
+  - nodeType: SetBool
+    nodeGUID: 6f67daa6-4cf0-4ed2-bd2d-25025f170b52
+  - nodeType: Dialogue
+    nodeGUID: 02a116e1-b0f3-4acc-9854-395586042a14
   DialogueNodeData:
   - NodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
     KeySpeaker: CHAR_Mummy
-    NodeKeyText: Key Text
+    NodeKeyText: NOHHA01_P7_DIALOGUE5
     SpeakerEmotion: 0
-    Position: {x: 227.2, y: 200}
-  ConditionNodeData: []
-  SetBoolNodeData: []
+    Position: {x: 528, y: 200}
+  - NodeGUID: 22285c0a-8360-4559-8b68-d2a868be89b1
+    KeySpeaker: CHAR_Mummy
+    NodeKeyText: NOHHA01_P2_DIALOGUE1
+    SpeakerEmotion: 0
+    Position: {x: 832, y: 220.8}
+  - NodeGUID: 92058579-393f-471b-918f-418c8b6cac35
+    KeySpeaker: CHAR_Mummy
+    NodeKeyText: NOHHA01_P2_DIALOGUE1
+    SpeakerEmotion: 0
+    Position: {x: 832, y: 392.80002}
+  - NodeGUID: 02a116e1-b0f3-4acc-9854-395586042a14
+    KeySpeaker: CHAR_Mummy
+    NodeKeyText: NOHHA01_P2_DIALOGUE1
+    SpeakerEmotion: 0
+    Position: {x: 1163.2, y: 46.399998}
+  ConditionNodeData:
+  - NodeGUID: 0d7346de-8d50-4993-86c3-37942c460288
+    NodeProperty: hasFeather
+    PropertyValue: 0
+    Position: {x: 832, y: 81.600006}
+  SetBoolNodeData:
+  - NodeGUID: 6f67daa6-4cf0-4ed2-bd2d-25025f170b52
+    Property: hasFeather
+    Value: 1
+    Position: {x: 273.6, y: 200}
   SetAffinityNodeData: []
   ExposedProperties: []
   CommentBlockData: []
