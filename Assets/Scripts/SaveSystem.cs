@@ -19,7 +19,6 @@ public class SaveSystem : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -49,11 +48,11 @@ public class SaveSystem : MonoBehaviour
     {
         if (PlayerPrefs.GetString("Language") == "EN")
         {
-            _languageText.text = "ENGLISH";
+            _languageText.text = "LANGUAGE: ENGLISH";
         }
         else if (PlayerPrefs.GetString("Language") == "FR")
         {
-            _languageText.text = "FRENCH";
+            _languageText.text = "LANGAGE: FRANCAIS";
         }
     }
 
@@ -87,5 +86,11 @@ public class SaveSystem : MonoBehaviour
         _language = PlayerPrefs.GetString("Language");
 
         SetLanguageText();
+    }
+
+    public void DeleteData()
+    {
+        //KEYS DES SAVE DE PROGRESSION A METTRE
+        //PlayerPrefs.DeleteKey("");
     }
 }
