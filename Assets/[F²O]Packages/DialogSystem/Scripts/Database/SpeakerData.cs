@@ -9,7 +9,7 @@ public class SpeakerData
     public string id;
     public string label;
     public TMP_FontAsset font;
-    
+    public AudioClip typeSound;
     public int affection;
     public List<Status> statuses = new();
     

@@ -16,11 +16,13 @@ MonoBehaviour:
   - id: CHAR_MAIN
     label: You
     font: {fileID: 11400000, guid: 05d6425a970aaca4ca5d5a13529df5f6, type: 2}
+    typeSound: {fileID: 0}
     affection: 0
     statuses: []
   - id: CHAR_Bookseller
     label: Hecat
-    font: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+    font: {fileID: 11400000, guid: 22c69a7170edf2b4e906d8575ce2c52d, type: 2}
+    typeSound: {fileID: 0}
     affection: 0
     statuses:
     - emotion: 0
@@ -41,6 +43,7 @@ MonoBehaviour:
   - id: CHAR_Florist
     label: Muller
     font: {fileID: 11400000, guid: 00b35ca9d93e5ff419c007ceb265239c, type: 2}
+    typeSound: {fileID: 0}
     affection: 0
     statuses:
     - emotion: 0
@@ -54,6 +57,7 @@ MonoBehaviour:
   - id: CHAR_Angel
     label: Lilith
     font: {fileID: 11400000, guid: 6a5e888cbe7d50c44bea9205d20baa22, type: 2}
+    typeSound: {fileID: 0}
     affection: 0
     statuses:
     - emotion: 0
@@ -67,6 +71,7 @@ MonoBehaviour:
   - id: CHAR_Mummy
     label: Noharnaak
     font: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    typeSound: {fileID: 0}
     affection: 0
     statuses:
     - emotion: 0
