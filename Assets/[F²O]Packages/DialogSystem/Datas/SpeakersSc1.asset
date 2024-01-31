@@ -21,8 +21,12 @@ MonoBehaviour:
     statuses: []
   - id: CHAR_Bookseller
     label: Hecat
+<<<<<<< Updated upstream
     font: {fileID: 11400000, guid: 22c69a7170edf2b4e906d8575ce2c52d, type: 2}
     typeSound: {fileID: 0}
+=======
+    font: {fileID: 11400000, guid: 4cc42ca46c5db974db0c05e9cb45fead, type: 2}
+>>>>>>> Stashed changes
     affection: 0
     statuses:
     - emotion: 0
@@ -42,8 +46,12 @@ MonoBehaviour:
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
   - id: CHAR_Florist
     label: Muller
+<<<<<<< Updated upstream
     font: {fileID: 11400000, guid: 00b35ca9d93e5ff419c007ceb265239c, type: 2}
     typeSound: {fileID: 0}
+=======
+    font: {fileID: 11400000, guid: 08668449013f1754699086c6cee5743b, type: 2}
+>>>>>>> Stashed changes
     affection: 0
     statuses:
     - emotion: 0
@@ -56,8 +64,12 @@ MonoBehaviour:
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
   - id: CHAR_Angel
     label: Lilith
+<<<<<<< Updated upstream
     font: {fileID: 11400000, guid: 6a5e888cbe7d50c44bea9205d20baa22, type: 2}
     typeSound: {fileID: 0}
+=======
+    font: {fileID: 11400000, guid: 960a375e2b293be41842e60f72d25d68, type: 2}
+>>>>>>> Stashed changes
     affection: 0
     statuses:
     - emotion: 0
@@ -70,8 +82,12 @@ MonoBehaviour:
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
   - id: CHAR_Mummy
     label: Noharnaak
+<<<<<<< Updated upstream
     font: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
     typeSound: {fileID: 0}
+=======
+    font: {fileID: 11400000, guid: 3fbbe83336bcd404b81e6b837bea9dfd, type: 2}
+>>>>>>> Stashed changes
     affection: 0
     statuses:
     - emotion: 0

@@ -9,10 +9,16 @@ namespace TCG.Core.Dialogues
     {
         [SerializeField] private TextMeshProUGUI _textField;
         [SerializeField] private int _charactersPerSecond = 5;
+        [SerializeField] private AudioClip _clip;
+        private AudioSource _source;
         public int currentCharactersPerSeconds;
         private void Awake()
         {
             currentCharactersPerSeconds = _charactersPerSecond;
+        }
+        private void Start()
+        {
+            
         }
         public bool IsReadingText { get; private set; } = false;
 
@@ -34,7 +40,7 @@ namespace TCG.Core.Dialogues
 
         public TMP_Text _text;
 
-        public void ReadText(string text)
+        public void ReadText(string text , AudioClip clip)
         {
     
             if (_commands != null) {
@@ -116,7 +122,13 @@ namespace TCG.Core.Dialogues
 
             int startIndex = Mathf.FloorToInt(startOffset);
             int endIndex = Mathf.FloorToInt(endOffset);
-
+            if (endIndex > startIndex)
+            {
+                if (_clip != null)
+                {
+                    _source.PlayOneShot(_clip);
+                }
+            }
             TextCommand[] commandsToEnter = TextCommandUtils.FindCommandsToEnter(_commands, startIndex, endIndex);
             foreach (TextCommand command in commandsToEnter)
             {

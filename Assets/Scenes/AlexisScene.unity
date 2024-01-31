@@ -775,10 +775,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
+  m_fontSize: 72
   m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -840,6 +840,7 @@ MonoBehaviour:
   _textField: {fileID: 731247435}
   _charactersPerSecond: 40
   currentCharactersPerSeconds: 0
+  _text: {fileID: 0}
 --- !u!114 &731247438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,10 +1147,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
+  m_fontSize: 72
   m_fontSizeBase: 80
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1407,7 +1408,8 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 252f260d7fffd9440b98c466ba94470c,
+        type: 2}
     - target: {fileID: 2711285191279255931, guid: f19527b30e3923a47a2681ba2ae9d90d,
         type: 3}
       propertyPath: dialogueUI
