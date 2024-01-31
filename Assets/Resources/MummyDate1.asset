@@ -52,7 +52,7 @@ MonoBehaviour:
     nodeGUID: 6f67daa6-4cf0-4ed2-bd2d-25025f170b52
   DialogueNodeData:
   - NodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
-    KeySpeaker: CHAR_Florist
+    KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE5
     SpeakerEmotion: 0
     Position: {x: 528, y: 200}
