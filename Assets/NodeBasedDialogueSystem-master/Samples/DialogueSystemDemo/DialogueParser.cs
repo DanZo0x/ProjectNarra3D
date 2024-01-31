@@ -122,7 +122,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     }
                     
                     var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
-                    typer.ReadText(text);
+                    typer.ReadText(text,speaker.typeSound);
                     //dialogueText.text = ProcessProperties(text);
                     if(choices.ToList().Count > 0)
                     {

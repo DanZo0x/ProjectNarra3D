@@ -9,8 +9,8 @@ namespace TCG.Core.Dialogues
     {
         [SerializeField] private TextMeshProUGUI _textField;
         [SerializeField] private int _charactersPerSecond = 5;
-        [SerializeField] private AudioClip _clip;
-        private AudioSource _source;
+        private AudioClip _clip;
+        [SerializeField]private AudioSource _source;
         public int currentCharactersPerSeconds;
         private void Awake()
         {
@@ -42,7 +42,7 @@ namespace TCG.Core.Dialogues
 
         public void ReadText(string text , AudioClip clip)
         {
-    
+            _clip = clip;
             if (_commands != null) {
                 foreach (TextCommand command in _commands) {
                     command.Release();
