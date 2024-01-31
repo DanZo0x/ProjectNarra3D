@@ -9,10 +9,16 @@ namespace TCG.Core.Dialogues
     {
         [SerializeField] private TextMeshProUGUI _textField;
         [SerializeField] private int _charactersPerSecond = 5;
+        [SerializeField] private AudioClip _clip;
+        private AudioSource _source;
         public int currentCharactersPerSeconds;
         private void Awake()
         {
             currentCharactersPerSeconds = _charactersPerSecond;
+        }
+        private void Start()
+        {
+            
         }
         public bool IsReadingText { get; private set; } = false;
 
@@ -34,7 +40,7 @@ namespace TCG.Core.Dialogues
 
         public TMP_Text _text;
 
-        public void ReadText(string text)
+        public void ReadText(string text , AudioClip clip)
         {
     
             if (_commands != null) {
@@ -51,11 +57,11 @@ namespace TCG.Core.Dialogues
             //TODO: Use TextCommandUtils.FindAlwaysUpdatedCommands to store always updated commands
 
             text = _RemoveCustomTags(text);
-            TextField1.text = text;
-            TextField1.ForceMeshUpdate();
+            TextField.text = text;
+            TextField.ForceMeshUpdate();
             _readCharacterOffset = 0f;
-            _readMaxCharacters = TextField1.GetParsedText().Length;
-            TextField1.maxVisibleCharacters = 0;
+            _readMaxCharacters = TextField.GetParsedText().Length;
+            TextField.maxVisibleCharacters = 0;
 
             foreach (TextCommand command in _commands) {
                 command.OnReadStart();
@@ -69,7 +75,7 @@ namespace TCG.Core.Dialogues
         {
             if (!IsReadingText) return;
             IsReadingText = false;
-            TextField1.maxVisibleCharacters = _readMaxCharacters;
+            TextField.maxVisibleCharacters = _readMaxCharacters;
             foreach (TextCommand command in _commands) {
                 command.OnReadEnd();
             }
@@ -116,7 +122,13 @@ namespace TCG.Core.Dialogues
 
             int startIndex = Mathf.FloorToInt(startOffset);
             int endIndex = Mathf.FloorToInt(endOffset);
-
+            if (endIndex > startIndex)
+            {
+                if (_clip != null)
+                {
+                    _source.PlayOneShot(_clip);
+                }
+            }
             TextCommand[] commandsToEnter = TextCommandUtils.FindCommandsToEnter(_commands, startIndex, endIndex);
             foreach (TextCommand command in commandsToEnter)
             {
@@ -148,7 +160,7 @@ namespace TCG.Core.Dialogues
         private void _GoToCharacter(float characterOffset)
         {
             _readCharacterOffset = characterOffset;
-            TextField1.maxVisibleCharacters = Mathf.FloorToInt(_readCharacterOffset);
+            TextField.maxVisibleCharacters = Mathf.FloorToInt(_readCharacterOffset);
         }
 
         private static TextCommand[] _GenerateCommands(string text)

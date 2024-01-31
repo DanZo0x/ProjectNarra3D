@@ -114,7 +114,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     var typer = dialogueText.GetComponent<UITextTyper>();
                     var speaker = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(x => x.id == dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).KeySpeaker);
                     speakerText.font = speaker.font;
-                    typer.TextField1.font = speaker.font;
+                    typer.TextField.font = speaker.font;
                     charaSprite.sprite = speaker.statuses[dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion].icon;
                     if (speaker != null)
                     {
@@ -124,10 +124,18 @@ namespace Subtegral.DialogueSystem.Runtime
                     var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
                     typer.ReadText(text);
                     //dialogueText.text = ProcessProperties(text);
-                    foreach (var choice in choices)
+                    if(choices.ToList().Count > 0)
                     {
-                        AddButton(choice, nextNodeGUID, speaker.font);
+                        foreach (var choice in choices)
+                        {
+                            AddButton(choice, nextNodeGUID, speaker.font);
+                        }
                     }
+                    else
+                    {
+                        AddButtonEndDialogue(speaker.font);
+                    }
+                    
 
                     break;
 
@@ -207,7 +215,15 @@ namespace Subtegral.DialogueSystem.Runtime
 
         }
 
-        
+        public void AddButtonEndDialogue(TMP_FontAsset font)
+        {
+            var newButton = Instantiate(choicePrefab, buttonContainer);
+            Button buttonComponent = newButton.transform.Find("BG").GetComponent<Button>();
+            newButton.GetComponentInChildren<TextMeshProUGUI>().text = ProcessProperties("Finish");
+            newButton.GetComponentInChildren<TextMeshProUGUI>().font = font;
+            newButton.transform.Find("BG").GetComponent<Image>().sprite = dateData.buttonSprite;
+            buttonComponent.onClick.AddListener(() => dialogueUI.SetActive(false));
+        }
 
         private string FindNextNode(string baseNodeGUID, bool valueFromCondition)
         {
