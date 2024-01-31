@@ -29,14 +29,14 @@ MonoBehaviour:
     PortName: Pas bloqued
     isValid: 0
     TargetNodeGUID: 92058579-393f-471b-918f-418c8b6cac35
+  - BaseNodeGUID: 0d7346de-8d50-4993-86c3-37942c460288
+    PortName: True
+    isValid: 0
+    TargetNodeGUID: 02a116e1-b0f3-4acc-9854-395586042a14
   - BaseNodeGUID: 6f67daa6-4cf0-4ed2-bd2d-25025f170b52
     PortName: Next
     isValid: 0
     TargetNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
-  - BaseNodeGUID: 0d7346de-8d50-4993-86c3-37942c460288
-    PortName: False
-    isValid: 0
-    TargetNodeGUID: 02a116e1-b0f3-4acc-9854-395586042a14
   NodeData:
   - nodeType: Dialogue
     nodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
@@ -52,7 +52,7 @@ MonoBehaviour:
     nodeGUID: 6f67daa6-4cf0-4ed2-bd2d-25025f170b52
   DialogueNodeData:
   - NodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
-    KeySpeaker: CHAR_Mummy
+    KeySpeaker: CHAR_Florist
     NodeKeyText: NOHHA01_P7_DIALOGUE5
     SpeakerEmotion: 0
     Position: {x: 528, y: 200}
