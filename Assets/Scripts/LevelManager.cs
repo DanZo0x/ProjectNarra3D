@@ -7,8 +7,8 @@ using TMPro;
 public class LevelManager : MonoBehaviour
 {
     [Header("Transition References")]
-    private Animator _transitionAnim;
-    private GameObject _transitionCanvas;
+    [SerializeField] private Animator _transitionAnim;
+    [SerializeField] private GameObject _transitionCanvas;
 
     private void Start()
     {
@@ -25,7 +25,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator CoroutineLoadLevel(string _sceneToLoad)
     {
         Debug.Log("Loaded level: " + _sceneToLoad);
-        _transitionAnim?.SetTrigger("Start");
+        _transitionAnim?.SetTrigger("TransitionStart");
         yield return new WaitForSeconds(0.4f);
         SceneManager.LoadScene(_sceneToLoad);
     }
