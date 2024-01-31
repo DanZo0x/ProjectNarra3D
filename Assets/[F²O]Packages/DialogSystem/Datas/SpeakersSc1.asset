@@ -70,8 +70,7 @@ MonoBehaviour:
     affection: 0
     statuses:
     - emotion: 0
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
-        type: 3}
+      icon: {fileID: 21300000, guid: 52bce9e6f0cebd2409437f64d38f3607, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 1
       icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
