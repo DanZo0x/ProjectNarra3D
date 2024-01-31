@@ -11,6 +11,7 @@ namespace TCG.Core.Dialogues
         [SerializeField] private int _charactersPerSecond = 5;
         private AudioClip _clip;
         [SerializeField]private AudioSource _source;
+        private int _clipIndex = 0;
         public int currentCharactersPerSeconds;
         private void Awake()
         {
@@ -43,6 +44,7 @@ namespace TCG.Core.Dialogues
         public void ReadText(string text , AudioClip clip)
         {
             _clip = clip;
+            _clipIndex = 0;
             if (_commands != null) {
                 foreach (TextCommand command in _commands) {
                     command.Release();
@@ -122,12 +124,14 @@ namespace TCG.Core.Dialogues
 
             int startIndex = Mathf.FloorToInt(startOffset);
             int endIndex = Mathf.FloorToInt(endOffset);
-            if (endIndex > startIndex)
+            
+            if (endIndex > _clipIndex+1)
             {
                 if (_clip != null)
                 {
                     _source.PlayOneShot(_clip);
                 }
+                _clipIndex = endIndex;
             }
             TextCommand[] commandsToEnter = TextCommandUtils.FindCommandsToEnter(_commands, startIndex, endIndex);
             foreach (TextCommand command in commandsToEnter)

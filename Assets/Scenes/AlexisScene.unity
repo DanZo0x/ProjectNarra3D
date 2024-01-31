@@ -838,7 +838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textField: {fileID: 731247435}
-  _charactersPerSecond: 15
+  _charactersPerSecond: 30
   _source: {fileID: 1533966308}
   currentCharactersPerSeconds: 0
   _text: {fileID: 0}
