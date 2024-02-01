@@ -53,18 +53,12 @@ MonoBehaviour:
     speakerData:
       id: CHAR_MAIN
       label: You
-      font: {fileID: 0}
-      typeSound: {fileID: 0}
-      affection: 0
       statuses: []
   - position: 1
     speakerDatabase: {fileID: 11400000, guid: 1ea6a000c64d8b14093b3b6e3cace0a8, type: 2}
     speakerData:
       id: CHAR_Monster
       label: Monster
-      font: {fileID: 0}
-      typeSound: {fileID: 0}
-      affection: 0
       statuses:
       - emotion: 0
         icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
@@ -80,9 +74,6 @@ MonoBehaviour:
     speakerData:
       id: CHAR_Monster
       label: Monster
-      font: {fileID: 0}
-      typeSound: {fileID: 0}
-      affection: 0
       statuses:
       - emotion: 0
         icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
@@ -97,9 +88,6 @@ MonoBehaviour:
     speakerData:
       id: CHAR_MAIN
       label: You
-      font: {fileID: 0}
-      typeSound: {fileID: 0}
-      affection: 0
       statuses: []
     audioClip: {fileID: 0}
 --- !u!114 &2711285191279255931
@@ -115,10 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 0}
-  dialogueUI: {fileID: 0}
   dialogueText: {fileID: 0}
   choicePrefab: {fileID: 0}
   buttonContainer: {fileID: 0}
-  speakerText: {fileID: 0}
-  charaSprite: {fileID: 0}
-  dateData: {fileID: 0}

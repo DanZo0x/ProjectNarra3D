@@ -19,7 +19,6 @@ public class DataManager : MonoBehaviour
         { "BrocheOrnée", false },
         { "Marked", false },
 
-
         { "AffinityMummy > 1", false},
         { "AffinityMummy > -2", false},
         { "AffinityMummy < -1", false},
@@ -29,13 +28,20 @@ public class DataManager : MonoBehaviour
         { "SawMummy", false},
         { "SawMuller", false},
         { "SawHecat", false},
+
+        { "TalkAboutMummy", false},
+        { "TalkAboutAngel", false},
+        { "TalkAboutMuller", false},
     };
     int peopleMet = 0;
     public Dictionary<string, bool> BoolPropertyDict { get => boolPropertyDict; set => boolPropertyDict = value; }
 
     public List<DateData> dates = new List<DateData>();
 
-
+    private void Update()
+    {
+        SetVariables();
+    }
     private void SetVariables()
     {
         #region Mummy
@@ -88,9 +94,33 @@ public class DataManager : MonoBehaviour
                 {
                     peopleMet++;
                     boolPropertyDict["SawHecat"] = true;
-                    break;
+                    
                 }
                 
+                break;
+            case "Noharnaak":
+                if (boolPropertyDict["SawMummy"] == false)
+                {
+                    peopleMet++;
+                    boolPropertyDict["SawMummy"] = true;
+
+                }
+                break;
+            case "Lilith":
+                if (boolPropertyDict["SawAngel"] == false)
+                {
+                    peopleMet++;
+                    boolPropertyDict["SawAngel"] = true;
+
+                }
+                break;
+            case "Muller":
+                if (boolPropertyDict["SawMuller"] == false)
+                {
+                    peopleMet++;
+                    boolPropertyDict["SawMuller"] = true;
+
+                }
                 break;
         }
     }
