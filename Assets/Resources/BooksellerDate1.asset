@@ -257,92 +257,92 @@ MonoBehaviour:
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P0
     SpeakerEmotion: 0
-    Position: {x: 266, y: 172}
+    Position: {x: 266.4, y: 172}
   - NodeGUID: ba11eca9-63de-4701-b1c5-8f329512af4e
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P1_CHOIX3
     SpeakerEmotion: 0
-    Position: {x: 885, y: 406}
+    Position: {x: 884.8, y: 405.6}
   - NodeGUID: 93c441b6-07ec-4d4b-ace3-4b120b6201cb
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P1_CHOIX1
     SpeakerEmotion: 1
-    Position: {x: 886, y: -22}
+    Position: {x: 886.4, y: -21.599998}
   - NodeGUID: 05d04010-f991-42be-a3ef-d1720dac2e77
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P1_CHOIX2
     SpeakerEmotion: 2
-    Position: {x: 886, y: 185}
+    Position: {x: 886.4, y: 184.8}
   - NodeGUID: d66a66a0-31ea-492a-8bda-7ebc089bfe38
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P2
     SpeakerEmotion: 0
-    Position: {x: 1277, y: 186}
+    Position: {x: 1276.8, y: 186.4}
   - NodeGUID: bb53fedb-432e-4610-a1ac-1d5329188c52
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P4_CHOIX0.5
     SpeakerEmotion: 2
-    Position: {x: 2507, y: -578}
+    Position: {x: 2507.2, y: -578.39996}
   - NodeGUID: 0249d8ca-ee4b-4276-b195-221c31c28085
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P3_CHOIX1
     SpeakerEmotion: 0
-    Position: {x: 1958, y: -230}
+    Position: {x: 1958.4, y: -229.6}
   - NodeGUID: 3a7c09f5-dbff-4cfc-a83e-aa1aafc9b8d7
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: 'HECAT01_P4.5 '
     SpeakerEmotion: 4
-    Position: {x: 2832, y: -378}
+    Position: {x: 2832, y: -378.4}
   - NodeGUID: 2bf40fde-3217-4b37-9402-e2c77e6ef4dd
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P4_CHOIX1
     SpeakerEmotion: 0
-    Position: {x: 2335, y: -198}
+    Position: {x: 2335.2, y: -197.6}
   - NodeGUID: 6830d45e-ac0e-4bee-9574-c77a857bc498
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P3_CHOIX3
     SpeakerEmotion: 0
-    Position: {x: 1894, y: 436}
+    Position: {x: 1894.4, y: 436}
   - NodeGUID: 1157e3cf-af86-4be3-b674-bbc4d21b67b1
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P3_CHOIX2
     SpeakerEmotion: 1
-    Position: {x: 2206, y: 211}
+    Position: {x: 2205.6, y: 211.2}
   - NodeGUID: cc72dff5-139e-4774-b6ae-b4b74733d5ec
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P4_CHOIX3
     SpeakerEmotion: 2
-    Position: {x: 2870, y: 454}
+    Position: {x: 2870.4, y: 453.6}
   - NodeGUID: 80259fbd-cef8-4fc5-840d-d2562bc49bc8
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: 'HECAT01_P5_CHOIX1 '
     SpeakerEmotion: 1
-    Position: {x: 3533, y: -76}
+    Position: {x: 3532.8, y: -76}
   - NodeGUID: 0e1d1d0a-7bfa-4731-87d9-1dc4ba5c4cbf
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P4_CHOIX2
     SpeakerEmotion: 1
-    Position: {x: 2926, y: 81}
+    Position: {x: 2925.6, y: 80.8}
   - NodeGUID: 1da0b8d1-8ca2-49b7-9619-43391d435ebc
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P5_CHOIX2
     SpeakerEmotion: 1
-    Position: {x: 3533, y: 105}
+    Position: {x: 3532.8, y: 104.8}
   - NodeGUID: 28bbe370-65e8-440b-a4e6-5c0c1ef114a8
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P6_CHOIX2
     SpeakerEmotion: 0
-    Position: {x: 4068, y: 310}
+    Position: {x: 4068, y: 310.40002}
   - NodeGUID: a92eb8a6-9d74-4c25-821c-684fd39e425d
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P5_CHOIX3
     SpeakerEmotion: 0
-    Position: {x: 3511, y: 310}
+    Position: {x: 3511.2, y: 310.40002}
   - NodeGUID: 770c74d4-2e9d-4f1a-a660-4e7d3cfd740a
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: HECAT01_P6_CHOIX1
     SpeakerEmotion: 1
-    Position: {x: 4309, y: 16}
+    Position: {x: 4308.8, y: 16}
   ConditionNodeData: []
   SetBoolNodeData:
   - NodeGUID: 28aace4e-c737-4f6d-ad2d-b4a20a0749ec
@@ -351,68 +351,68 @@ MonoBehaviour:
     Position: {x: 4068, y: 16}
   SetAffinityNodeData:
   - NodeGUID: df7f83f9-f3f2-4812-83f1-a8b3c0099b41
-    TargetName: Hecat
+    TargetName: Target
     Value: -1
-    Position: {x: 595, y: 185}
+    Position: {x: 595.2, y: 184.8}
   - NodeGUID: 21362a05-b868-48e4-8988-df69abc34a45
     TargetName: Hecat
     Value: 0
-    Position: {x: 595, y: 406}
+    Position: {x: 595.2, y: 405.6}
   - NodeGUID: aa37c1ee-bf57-4636-8fa8-f8532ce4c60f
     TargetName: Hecat
     Value: 2
-    Position: {x: 595, y: -22}
+    Position: {x: 595.2, y: -21.599998}
   - NodeGUID: a0082948-e260-42a0-ae83-8ed6bdff3e71
     TargetName: Hecat
     Value: -2
-    Position: {x: 1598, y: 6}
+    Position: {x: 1597.6, y: 5.6000004}
   - NodeGUID: 014639e1-f036-4d56-b569-c6a7e09979d0
     TargetName: Hecat
     Value: 2
-    Position: {x: 1598, y: 211}
+    Position: {x: 1597.6, y: 211.2}
   - NodeGUID: 4c6fe61f-00d5-489b-86c7-21102500db88
     TargetName: Hecat
     Value: -1
-    Position: {x: 1598, y: 436}
+    Position: {x: 1597.6, y: 436}
   - NodeGUID: 01d1efd6-ba27-422e-aa07-5b6f1151c036
     TargetName: Hecat
     Value: -3
-    Position: {x: 2272, y: -426}
+    Position: {x: 2272, y: -426.4}
   - NodeGUID: d4746a8a-fd2d-4d97-b818-008624857268
     TargetName: Hecat
     Value: -3
-    Position: {x: 2614, y: -286}
+    Position: {x: 2614.4, y: -285.59998}
   - NodeGUID: 9c314341-911e-440f-9566-c2618802a47d
     TargetName: Hecat
     Value: 2
-    Position: {x: 2614, y: -99}
+    Position: {x: 2614.4, y: -99.2}
   - NodeGUID: 5fc873d6-7416-4e46-8e5b-61d685b5e4e9
     TargetName: Hecat
     Value: 3
-    Position: {x: 2535, y: 81}
+    Position: {x: 2535.2, y: 80.8}
   - NodeGUID: cdfb55a9-57ac-4d3c-b37f-bc8562dda228
     TargetName: Hecat
     Value: 2
-    Position: {x: 2535, y: 230}
+    Position: {x: 2535.2, y: 230.4}
   - NodeGUID: 26f7a150-172f-4f1a-8148-2eecb78cc7db
-    TargetName: Hecat
+    TargetName: Target
     Value: -3
-    Position: {x: 2535, y: 454}
+    Position: {x: 2535.2, y: 453.6}
   - NodeGUID: 1734361c-f621-40af-a2eb-e595b18a59b2
     TargetName: Hecat
     Value: 2
-    Position: {x: 3238, y: -76}
+    Position: {x: 3237.6, y: -76}
   - NodeGUID: 87a532db-c350-4537-8d81-7da797e3cf38
     TargetName: Hecat
     Value: -2
-    Position: {x: 3238, y: 310}
+    Position: {x: 3237.6, y: 310.40002}
   - NodeGUID: 4bb05f78-81fb-4e14-bf4a-e2f8ddfe43eb
     TargetName: Hecat
     Value: 1
-    Position: {x: 3839, y: 105}
+    Position: {x: 3839.2, y: 104.8}
   - NodeGUID: 093626f3-c092-45a5-98b2-9fe0b587279a
-    TargetName: Hecat
+    TargetName: Target
     Value: 1
-    Position: {x: 3814, y: 310}
+    Position: {x: 3814.4, y: 310.40002}
   ExposedProperties: []
   CommentBlockData: []
