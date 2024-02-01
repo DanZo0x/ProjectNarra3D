@@ -21,6 +21,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private TextMeshProUGUI speakerText;
         [SerializeField] private Image charaSprite;
         [SerializeField] private Transform charaEmotionBubble;
+        [SerializeField] private Phone resetScript;
         private Image backGroundSprite;
         private Image buttonSprite;
         private DialogConfig dialogConfig;
@@ -96,19 +97,28 @@ namespace Subtegral.DialogueSystem.Runtime
                     }
                     else
                     {
+                        EndDialogue();
                         dialogueUI.SetActive(false);
                     }
                     break;
                 case "Condition":
-                    
+                    Debug.Log("Condition");
                     var conditionNode = dialogue.ConditionNodeData.Find(x => x.NodeGUID == narrativeDataGUID);
-
+                    
                     nextNodeGUID = FindNextNode(narrativeDataGUID, DataManager.Instance.BoolPropertyDict[conditionNode.NodeProperty]);
-                    
-                    
+                    if (nextNodeGUID != "")
+                    {
+                        ProceedToNarrative(nextNodeGUID);
+                    }
+                    else
+                    {
+                        EndDialogue();
+                        dialogueUI.SetActive(false);
+                    }
+
                     break;
                 case "Dialogue":
-
+                    Debug.Log("Dialogue");
                     
                     var text = "";
                     if(PlayerPrefs.GetString("Language") == "FR")
@@ -220,9 +230,10 @@ namespace Subtegral.DialogueSystem.Runtime
                         }
                     }
                 }
+                
                 else
                 {
-                    nextNodeGUID= choice.TargetNodeGUID;
+                    nextNodeGUID = choice.TargetNodeGUID;
                 }
                 //buttonComponent.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
                 buttonComponent.onClick.AddListener(() => ProceedToNarrative(nextNodeGUID));
@@ -252,12 +263,15 @@ namespace Subtegral.DialogueSystem.Runtime
 
                 if (dateData.name.Contains(dataNumber.dateName))
                 {
+
                     dataNumber.iterationDate += 1;
+                    resetScript.ResetPhone();
+                    
                 }
             }
-            Debug.Log(dateData.name);
             
-            //dateData.name = 
+            
+            
         }
 
         private string FindNextNode(string baseNodeGUID, bool valueFromCondition)
@@ -273,7 +287,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     {
                         if (link.PortName == "True")
                         {
-                            
+                            Debug.Log("True");
                             nextNodeGUID = link.TargetNodeGUID;
                         }
                     }
@@ -281,6 +295,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     {
                         if (link.PortName == "False")
                         {
+                            Debug.Log("False");
                             nextNodeGUID = link.TargetNodeGUID;
                         }
                     }

@@ -313,10 +313,6 @@ MonoBehaviour:
   - nodeType: SetAffinity
     nodeGUID: 5ae0a3ac-afd4-4c66-bd40-e68ec4b4e845
   - nodeType: SetAffinity
-    nodeGUID: bdd55179-01f5-4c58-bfee-90c294bf6098
-  - nodeType: SetAffinity
-    nodeGUID: 0f4a311f-43d7-4ec1-b847-e4a961425f22
-  - nodeType: SetAffinity
     nodeGUID: cda0aa80-2cd3-40ea-a4c6-a4b9c8ec3257
   - nodeType: SetAffinity
     nodeGUID: 154867fa-fabf-44f3-8545-33c3b2788070
@@ -328,6 +324,10 @@ MonoBehaviour:
     nodeGUID: c8b433c4-c7ac-4a59-a366-d703a86a26c3
   - nodeType: SetAffinity
     nodeGUID: 087abd87-ba7b-4a8b-8720-a6e38291e002
+  - nodeType: SetAffinity
+    nodeGUID: 0f4a311f-43d7-4ec1-b847-e4a961425f22
+  - nodeType: SetAffinity
+    nodeGUID: bdd55179-01f5-4c58-bfee-90c294bf6098
   DialogueNodeData:
   - NodeGUID: 98f1a6f0-db51-46a3-8233-5a8f8fc660d4
     KeySpeaker: CHAR_Mummy
@@ -376,7 +376,7 @@ MonoBehaviour:
     Position: {x: 3112.8, y: -284}
   - NodeGUID: 575c56ff-7f66-48df-965b-2021e0906dea
     KeySpeaker: CHAR_Mummy
-    NodeKeyText: Key Text
+    NodeKeyText: NOHHA01_P8_DIALOGUE2
     SpeakerEmotion: 1
     Position: {x: 3744, y: -284}
   - NodeGUID: b2451f43-4f5e-4747-acd5-8ed0ed6eef8e
@@ -505,14 +505,6 @@ MonoBehaviour:
     TargetName: Noharnaak
     Value: -1
     Position: {x: 2878.4, y: -18.4}
-  - NodeGUID: bdd55179-01f5-4c58-bfee-90c294bf6098
-    TargetName: Noharnaak
-    Value: 2
-    Position: {x: 2878.4, y: -216.8}
-  - NodeGUID: 0f4a311f-43d7-4ec1-b847-e4a961425f22
-    TargetName: Noharnaak
-    Value: 2
-    Position: {x: 2878.4, y: -356}
   - NodeGUID: cda0aa80-2cd3-40ea-a4c6-a4b9c8ec3257
     TargetName: Noharnaak
     Value: 0
@@ -537,5 +529,13 @@ MonoBehaviour:
     TargetName: Noharnaak
     Value: -1
     Position: {x: 260, y: -284.8}
+  - NodeGUID: 0f4a311f-43d7-4ec1-b847-e4a961425f22
+    TargetName: Noharnaak
+    Value: 2
+    Position: {x: 2784, y: -353.59998}
+  - NodeGUID: bdd55179-01f5-4c58-bfee-90c294bf6098
+    TargetName: Noharnaak
+    Value: 2
+    Position: {x: 2796.8, y: -224.8}
   ExposedProperties: []
   CommentBlockData: []

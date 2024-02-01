@@ -28,6 +28,10 @@ public class DataManager : MonoBehaviour
         { "SawMummy", false},
         { "SawMuller", false},
         { "SawHecat", false},
+
+        { "TalkAboutMummy", false},
+        { "TalkAboutAngel", false},
+        { "TalkAboutMuller", false},
     };
     int peopleMet = 0;
     public Dictionary<string, bool> BoolPropertyDict { get => boolPropertyDict; set => boolPropertyDict = value; }
