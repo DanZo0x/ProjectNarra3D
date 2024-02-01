@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Runtime.CompilerServices;
 
 public class SaveSystem : MonoBehaviour
 {
     public static SaveSystem instance;
 
     [Header("References")]
-    [SerializeField] private Slider _volumeSlider;
+    [SerializeField] public Slider _volumeSlider;
 
     [SerializeField] private TMP_Text _languageText;
     [SerializeField] private string _language;
+    [SerializeField] private GameObject _optionsMenu;
 
     private void Awake()
     {
@@ -30,6 +32,9 @@ public class SaveSystem : MonoBehaviour
     {
         Debug.Log(PlayerPrefs.GetString("Language"));
         Debug.Log(PlayerPrefs.GetFloat("Volume"));
+
+        LoadData();
+        _optionsMenu.SetActive(false);
     }
 
     public void SwitchLanguageData()
