@@ -129,7 +129,7 @@ namespace TCG.Core.Dialogues
             {
                 if (_clip != null)
                 {
-                    _source.PlayOneShot(_clip);
+                    AudioManager._instance.PlaySFX(_clip);
                 }
                 _clipIndex = endIndex;
             }

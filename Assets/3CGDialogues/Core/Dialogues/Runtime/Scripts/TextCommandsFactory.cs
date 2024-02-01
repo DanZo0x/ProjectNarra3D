@@ -10,6 +10,7 @@ namespace TCG.Core.Dialogues
                     return new TextCommandPause();
                 case "camshake": return new TextCommandCameraShake();
                 case "spriteshake": return new TextCommandSpriteShake();
+                case "bgshake": return new TextCommandSpriteShake();
                 case "textshake": return new TextCommandTextShake();
                 case "rdmpause": return new TextCommandRdmPause();
                 case "rdmp": return new TextCommandRdmPause();
