@@ -1,0 +1,27 @@
+﻿ID;KEY;FR;EN;SP
+0;DEFAULT_KEY;0_DEFAULT_KEY_FR;0_DEFAULT_KEY_EN;0_DEFAULT_KEY_SP
+1;OTHER_KEY;0_OTHER_KEY_FR;0_OTHER_KEY_EN;0_OTHER_KEY_SP
+;MULLER02_P0_INTRO1;<ptsd=1>Bon…<p=0.5> Bonjour...<p=0.5> Bienvenu à la Fabrique à fleur de Müller ...<p=0.5>  Y a t il quelque chose pour vous que je puisse faire ?</ptsd>;<ptsd=1>He...<p=0.5> Hello...<p=0.5> Welcome to the Müller Flower Factory ...<p=0.5> Is there anything I can do for you?</ptsd>;
+;MULLER02_P0_INTRO2;<ptsd=1>Oui.<p=0.5>  C'est un magasin de fleurs.</ptsd>;<ptsd=1>Yes.<p=0.5>It's a flower shop.</ptsd>;
+;MULLER02_P0_INTRO3;<ptsd=1>Ou...<p=0.5>  Oui...<p=0.5>  Ca m'aide à ouvrir à ouvrir le contact avec les clients...<p=0.5>  Pour bri...<p=0.5>  briser la glace vous voyez... </ptsd>;<ptsd=1>Y...<p=0.5> Yes...<p=0.5> It helps me to open up to open up contact with customers...<p=0.5> To bre...<p=0.5> break the ice you see.... </ptsd>;
+;MULLER02_P2_DIALOGUE1;<ptsd=1>Oh je...<p=0.5>  je vois...<p=0.5>  Que vous faut t il ?</ptsd>;<ptsd=1>Oh I...<p=0.5> I see...<p=0.5> What do you need?</ptsd>;
+;MULLER02_P2_DIALOGUE1;;;
+;MULLER02_P2_DIALOGUE2;<ptsd=1>...<p=0.5>  Ne vous y essayer plus s'il vous plait...</ptsd>;<ptsd=1>...<p=0.5> Please don't try it again...</ptsd>;
+;MULLER02_P2_DIALOGUE3;<ptsd=1>Vous commencez à me mettre mal à l'aise,<p=0.25> je ne demande qu'a vendre mes fleurs.<p=0.5>  Pitié comportez vous comme un être civilisé.<p=0.5>  Dites moi juste ce que vous voulez qu'on en finisse.</ptsd>;<ptsd=1>You're starting to make me feel uncomfortable,<p=0.25>I'm only asking to sell my flowers.<p=0.5>Please behave like a civilised being.<p=0.5>Just tell me what you want to get over with.</ptsd>;
+;MULLER02_P2_DIALOGUE4;<ptsd=1>Oh...<p=0.5>  je...<p=0.5>  je......<p=0.75>  Vous êtes la première personne a me dire ça.<p=0.5> D'habitude les clients se prennent pour des comiques en herbe et éclatent un vase par terre. Mais revenons dans le vif du sujet...<p=0.5>  Que recherchez vous ?</ptsd>;<ptsd=1>Oh...<p=0.5>I...<p=0.5>I......<p=0.75> You're the first person to say that to me.<p=0.5> Usually the customers think they're budding comedians and smash a vase on the floor. But back to the heart of the matter...<p=0.5> What are you looking for?</ptsd>;
+;MULLER02_P2_DIALOGUE5;;;
+;MULLER02_P4_DIALOGUE41;;;
+;MULLER02_P6_DIALOGUE5;;;
+;MULLER02_P6_DIALOGUE51;;;
+;MULLER02_P6_DIALOGUE1;;;
+;MULLER02_P6_DIALOGUE2;;;
+;MULLER02_P6_DIALOGUE3;;;
+;MULLER01_P6_DIALOGUE31;;;
+;MULLER01_P6_DIALOGUE4;;;
+;MULLER01_P6_DIALOGUE5;;;
+;MULLER01_P8_DIALOGUE1;;;
+;MULLER01_P8_DIALOGUE2;;;
+;MULLER01_P8_DIALOGUE3;;;
+;MULLER01_P8_DIALOGUE4;;;
+;MULLER01_P10_DIALOGUE1;;;
+;MULLER01_P10_DIALOGUE2;;;
