@@ -17,6 +17,7 @@ public class Phone : MonoBehaviour
     [SerializeField] Color colorValue;
     [SerializeField] Light _light;
     bool canInteract;
+    bool canPickUp;
     Transform touches;
     string _charHolder = "";
     int charCount = 0;
@@ -27,6 +28,7 @@ public class Phone : MonoBehaviour
     {
         touches = telephone.transform.GetChild(3);
         canInteract = true;
+        canPickUp = false;
     }
     public void N1()
     {
@@ -142,11 +144,19 @@ public class Phone : MonoBehaviour
         if(charCount == 6)
         {
             canInteract = false;
-            foreach(var numbers in DataManager.Instance.phoneNumbers)
+            canPickUp = true;
+        }
+    }
+
+    public void PickUpPhone()
+    {
+        if (canPickUp)
+        {
+            foreach (var numbers in DataManager.Instance.phoneNumbers)
             {
-                if(numbers.phoneNumber == _charHolder)
+                if (numbers.phoneNumber == _charHolder)
                 {
-                    Debug.Log(numbers.dateName); 
+                    Debug.Log(numbers.dateName);
                     string date = "";
                     if (numbers.iterationDate == 0)
                     {
