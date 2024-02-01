@@ -18,7 +18,6 @@ public class Phone : MonoBehaviour
     [SerializeField] Color colorValue;
     [SerializeField] Light _light;
     [SerializeField] Transform textAsk;
-    
     bool canInteract;
     bool canPickUp;
     Transform touches;
@@ -207,7 +206,7 @@ public class Phone : MonoBehaviour
     }
     
 
-    IEnumerator WrongValue()
+IEnumerator WrongValue()
     {
         _light.color = Color.red;
         yield return new WaitForSeconds(0.5f);
@@ -215,7 +214,7 @@ public class Phone : MonoBehaviour
         
     }
 
-    public void ResetPhone()
+    private void ResetPhone()
     {
         _light.color = Color.white;
         foreach (Transform child in valuePaper)
@@ -227,13 +226,10 @@ public class Phone : MonoBehaviour
         _charHolder = "";
         charCount = 0;
         textAsk.parent.gameObject.SetActive(false);
-        
         StartCoroutine(transform.parent.parent.GetComponent<ShowPhone>().DezoomPhoneCoroutine());
         transform.parent.parent.GetComponent<ShowPhone>().OutlineAllButtons(false);
         canInteract = true;
         transform.parent.parent.GetComponent<ShowPhone>().zoomButton.gameObject.SetActive(true);
         
-        
-
     }
 }
