@@ -17,6 +17,7 @@ namespace TCG.Core.Dialogues
                //case "material": return new TextCommandTextMaterial();
                //case "fadein": return new TextCommandTextAppear();
                 case "mirage": return new TextCommandMirage();
+                case "ptsd": return new TextCommandTextPTSD();
             }
 
             return null;
