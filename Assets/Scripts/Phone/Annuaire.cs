@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,53 +6,70 @@ using UnityEngine.UI;
 
 public class Annuaire : MonoBehaviour
 {
-    bool _isOpenning = false;
-    bool _isClosing = false;
-    Vector2 _currentScale;
-    RectTransform _rect;
-    float _timer=0;
+    
+    Vector2 _originScale;
+    Vector2 _originPosition;
+    [SerializeField] Vector3 _goalPos;
+    [SerializeField] Vector3 _goalScale;
+    [SerializeField] float _time;
+    RectTransform annuaire;
+    Transform spriteAnnuaire;
+
+
     private void Awake()
     {
-        _rect = GetComponent<RectTransform>();
+        annuaire = transform.Find("AnnuaireContent").GetComponent<RectTransform>();
+        spriteAnnuaire = transform.Find("Sprite");
+        _originScale = annuaire.localScale;
+        _originPosition = annuaire.anchoredPosition;
+        annuaire.gameObject.SetActive(false);
     }
 
-    private void Update()
+    public IEnumerator OpenAnnuaireCoroutine()
     {
-        if (_isOpenning)
+        annuaire.gameObject.SetActive(true);
+        spriteAnnuaire.gameObject.SetActive(false);
+        float timer = 0;
+        while (timer < _time)
         {
-           _rect.anchorMin= Vector2.Lerp(_rect.anchorMin, new Vector2(0.5f, 0.5f), _timer/3);
-           _rect.anchorMax= Vector2.Lerp(_rect.anchorMax, new Vector2(0.5f, 0.5f), _timer/3);
-           _rect.anchoredPosition= Vector2.Lerp(_rect.anchoredPosition, new Vector2(0, 0), _timer/3);
-            _rect.localScale = Vector2.Lerp(_rect.localScale, _currentScale * 2, _timer / 3);
-            _timer += Time.deltaTime;
-        }
-        if (_isClosing)
-        {
-            _rect.anchorMin = Vector2.Lerp(_rect.anchorMin, new Vector2(0.5f, 0), _timer / 3);
-            _rect.anchorMax = Vector2.Lerp(_rect.anchorMax, new Vector2(0.5f,0), _timer / 3);
-            _rect.anchoredPosition = Vector2.Lerp(_rect.anchoredPosition, new Vector2(0, 200), _timer / 3);
-            _rect.localScale = Vector2.Lerp(_rect.localScale, _currentScale / 2, _timer / 3);
-            _timer += Time.deltaTime;
-        }
-        if (_timer > 3)
-        {
-            _isClosing = false;
-            _isOpenning = false;
-            _timer = 0;
+            float percentage = timer / _time;
+            annuaire.anchorMin = Vector2.Lerp(annuaire.anchorMin, new Vector2(0.5f, 0.5f), percentage);
+            annuaire.anchorMax = Vector2.Lerp(annuaire.anchorMax, new Vector2(0.5f, 0.5f), percentage);
+            annuaire.anchoredPosition = Vector2.Lerp(_originPosition, new Vector2(0, 0), percentage);
+            annuaire.localScale = Vector2.Lerp(_originScale, _goalScale, percentage);
+            timer += Time.deltaTime;
+            yield return null;
         }
     }
-    public void Open()
+
+    public IEnumerator CloseAnnuaireCoroutine()
     {
-        _currentScale = _rect.localScale;
-        _isOpenning = true;
-        _isClosing = false;
-        _timer = 0;
+        annuaire.gameObject.SetActive(false);
+        spriteAnnuaire.gameObject.SetActive(true);
+        Vector2 vectorPos = annuaire.anchoredPosition;
+        Vector2 scale = annuaire.localScale;
+        float timer = 0;
+        while (timer < _time)
+        {
+            float percentage = timer / _time;
+            annuaire.anchorMin = Vector2.Lerp(annuaire.anchorMin, new Vector2(0.5f, 0), percentage);
+            annuaire.anchorMax = Vector2.Lerp(annuaire.anchorMax, new Vector2(0.5f, 0), percentage);
+            annuaire.anchoredPosition = Vector2.Lerp(vectorPos, _originPosition, percentage);
+            annuaire.localScale = Vector2.Lerp(scale, _originScale, percentage);
+            timer += Time.deltaTime;
+            yield return null;
+        }
     }
-    public void Close()
+
+    public void OpenAnnuaire(bool value)
     {
-        _currentScale = _rect.localScale;
-        _isOpenning = false;
-        _isClosing = true;
-        _timer = 0;
+        if(value)
+        {
+            StartCoroutine(OpenAnnuaireCoroutine());
+        }
+        else
+        {
+            StartCoroutine(CloseAnnuaireCoroutine());
+        }
     }
 }

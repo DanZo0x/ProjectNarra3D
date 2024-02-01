@@ -108,9 +108,16 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
                 case "Dialogue":
 
-                    
-                    var text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).FR;
-                    
+
+                    var text = "";
+                    if(PlayerPrefs.GetString("Language") == "FR")
+                    {
+                        text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).FR;
+                    }
+                    else
+                    {
+                        text = DialogConfig.Instance.table.Find_KEY(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).NodeKeyText).EN;
+                    }
                     var typer = dialogueText.GetComponent<UITextTyper>();
                     var speaker = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(x => x.id == dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).KeySpeaker);
                     speakerText.font = speaker.font;
@@ -223,6 +230,22 @@ namespace Subtegral.DialogueSystem.Runtime
             newButton.GetComponentInChildren<TextMeshProUGUI>().font = font;
             newButton.transform.Find("BG").GetComponent<Image>().sprite = dateData.buttonSprite;
             buttonComponent.onClick.AddListener(() => dialogueUI.SetActive(false));
+            buttonComponent.onClick.AddListener(() => EndDialogue());
+        }
+
+        private void EndDialogue()
+        {
+            foreach(var dataNumber in DataManager.Instance.phoneNumbers)
+            {
+
+                if (dateData.name.Contains(dataNumber.dateName))
+                {
+                    dataNumber.iterationDate += 1;
+                }
+            }
+            Debug.Log(dateData.name);
+            
+            //dateData.name = 
         }
 
         private string FindNextNode(string baseNodeGUID, bool valueFromCondition)

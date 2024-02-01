@@ -2,7 +2,7 @@
 0;DEFAULT_KEY;0_DEFAULT_KEY_FR;0_DEFAULT_KEY_EN;0_DEFAULT_KEY_SP
 1;OTHER_KEY;0_OTHER_KEY_FR;0_OTHER_KEY_EN;0_OTHER_KEY_SP
 2;NOHHA01_P0_INTRO;"Bienvenu dans la maison du seigneur mon enfant 
-Quelle est la raison de votre présence ici ? ";;Hola ! Qual es la keketa de hoy
+Quelle est la raison de votre présence ici ? ";Welcome;Hola ! Qual es la keketa de hoy
 3;NOHHA01_P2_DIALOGUE1;Vous êtes dans un lieu sacré très cher, tachez de vous comporter correctement, c'est une cathédrale ici, pas un salon de thé ! Mais la démarche est admirable, ce n'est pas tous les jours que des jeunes âmes comme vous viennent par ici, il n y a que la débauche qui vous intéresse de nos jours.;;
 4;NOHHA01_P2_DIALOGUE2;Oh... pauvre créature... je suis là pour vous, ne vous en faites pas, le seigneur saura pardonner une âme aussi douce que la votre... De quoi êtes vous coupable ?;;
 5;NOHHA01_P2_DIALOGUE3;Jeune délinquant, je pourrai avoir l'âge de votre mère, on ne vous a jamais appris a respecter vos ainés ?;;

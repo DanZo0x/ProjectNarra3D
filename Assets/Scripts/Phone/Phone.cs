@@ -148,11 +148,11 @@ public class Phone : MonoBehaviour
                 {
                     Debug.Log(numbers.dateName); 
                     string date = "";
-                    if (numbers.iteration == 0)
+                    if (numbers.iterationDate == 0)
                     {
                         date = numbers.dateName + "Date1";
                     }
-                    else if (numbers.iteration == 1)
+                    else if (numbers.iterationDate == 1)
                     {
                         date = numbers.dateName + "Date2";
                     }

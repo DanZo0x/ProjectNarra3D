@@ -26,19 +26,19 @@ MonoBehaviour:
     affection: 0
     statuses:
     - emotion: 0
-      icon: {fileID: 21300000, guid: 447951969f033034fa84c6b44a8b4395, type: 3}
+      icon: {fileID: 21300000, guid: c1aedf35e8a76194a80302f45a13b6cc, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 1
-      icon: {fileID: 21300000, guid: 383a22220326c474bb1a2264318297c7, type: 3}
+      icon: {fileID: 21300000, guid: c1aedf35e8a76194a80302f45a13b6cc, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 2
-      icon: {fileID: 21300000, guid: a515def939ed3f74eb0ee61619c2dc77, type: 3}
+      icon: {fileID: 21300000, guid: c1aedf35e8a76194a80302f45a13b6cc, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 3
-      icon: {fileID: 21300000, guid: 5cdc5f77aa815794a83ce7ff6885c696, type: 3}
+      icon: {fileID: 21300000, guid: c1aedf35e8a76194a80302f45a13b6cc, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 4
-      icon: {fileID: 21300000, guid: 90f7a7bac090d3e4290a174e31386fdd, type: 3}
+      icon: {fileID: 21300000, guid: c1aedf35e8a76194a80302f45a13b6cc, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
   - id: CHAR_Florist
     label: Muller
@@ -61,12 +61,19 @@ MonoBehaviour:
     affection: 0
     statuses:
     - emotion: 0
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
-        type: 3}
+      icon: {fileID: 21300000, guid: 7546623bb3d74c84da9d2622d4f167c2, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 1
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
-        type: 3}
+      icon: {fileID: 21300000, guid: 7546623bb3d74c84da9d2622d4f167c2, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 2
+      icon: {fileID: 21300000, guid: 7546623bb3d74c84da9d2622d4f167c2, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 3
+      icon: {fileID: 21300000, guid: 7546623bb3d74c84da9d2622d4f167c2, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 4
+      icon: {fileID: 21300000, guid: 7546623bb3d74c84da9d2622d4f167c2, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
   - id: CHAR_Mummy
     label: Noharnaak
@@ -78,6 +85,14 @@ MonoBehaviour:
       icon: {fileID: 21300000, guid: 52bce9e6f0cebd2409437f64d38f3607, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
     - emotion: 1
-      icon: {fileID: 4430086814913328773, guid: c190f83d1a6c3a540a11bb0f6c81857c,
-        type: 3}
+      icon: {fileID: 21300000, guid: 52bce9e6f0cebd2409437f64d38f3607, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 2
+      icon: {fileID: 21300000, guid: 52bce9e6f0cebd2409437f64d38f3607, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 3
+      icon: {fileID: 21300000, guid: 52bce9e6f0cebd2409437f64d38f3607, type: 3}
+      audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
+    - emotion: 4
+      icon: {fileID: 21300000, guid: 52bce9e6f0cebd2409437f64d38f3607, type: 3}
       audioClip: {fileID: 8300000, guid: 0431a82b20e6ca24295d18c2e1cf7f35, type: 3}
