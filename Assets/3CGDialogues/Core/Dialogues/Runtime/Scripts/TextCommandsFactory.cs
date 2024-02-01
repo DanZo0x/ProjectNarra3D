@@ -15,7 +15,9 @@ namespace TCG.Core.Dialogues
                 case "rdmp": return new TextCommandRdmPause();
                 case "squiggle": return new TextCommandSquiggle();
                //case "material": return new TextCommandTextMaterial();
-               case "fadein": return new TextCommandTextAppear();
+               //case "fadein": return new TextCommandTextAppear();
+                case "mirage": return new TextCommandMirage();
+                case "ptsd": return new TextCommandTextPTSD();
             }
 
             return null;

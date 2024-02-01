@@ -52,6 +52,7 @@ public class ShowPhone : MonoBehaviour
         while(timer < _time)
         {
             float percentage = timer / _time;
+
             _camera.transform.SetPositionAndRotation(Vector3.Lerp(_originPosition, _goalZoomPosition, _curveZoom.Evaluate(percentage)), Quaternion.Lerp(_originRotation, _goalZoomRotation, _curveZoom.Evaluate(percentage)));
             timer += Time.deltaTime;
             yield return null;

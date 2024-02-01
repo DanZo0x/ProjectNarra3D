@@ -10,7 +10,14 @@ public class DataManager : MonoBehaviour
 
     Dictionary<string, bool> boolPropertyDict = new Dictionary<string, bool>()
     {
-        { "hasFeather", false },
+        { "GoldenBook", false },
+        { "Rose", false },
+        { "Pensée", false },
+        { "Dahlia", false },
+        { "LysIridescent", false },
+        { "Lys", false },
+        { "BrocheOrnée", false },
+        { "Marked", false }
     };
 
     public Dictionary<string, bool> BoolPropertyDict { get => boolPropertyDict; set => boolPropertyDict = value; }
@@ -18,11 +25,12 @@ public class DataManager : MonoBehaviour
     public List<DateData> dates = new List<DateData>();
 
     [Serializable]
-    public struct PhoneNumberData
+    public class PhoneNumberData
     {
         public string dateName;
         public string phoneNumber;
-        [HideInInspector] public int iteration;
+        [HideInInspector] public int iterationDate;
+
     }
 
     public List<PhoneNumberData> phoneNumbers;

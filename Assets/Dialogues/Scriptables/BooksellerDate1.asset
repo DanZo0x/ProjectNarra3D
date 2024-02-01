@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BooksellerDate1
   m_EditorClassIdentifier: 
   dialogue: {fileID: 0}
-  table: {fileID: 0}
+  table: {fileID: 4900000, guid: a4383facdce418943a750483cdbfd9f7, type: 3}
   background: {fileID: 0}
   buttonSprite: {fileID: 21300000, guid: 1a49bbed75154a04b897788efe378e38, type: 3}
