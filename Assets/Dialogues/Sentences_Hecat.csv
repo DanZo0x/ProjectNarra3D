@@ -11,6 +11,7 @@
 ;HECAT01_P3_CHOIX3;"<squiggle=2.5|3>Hum...<p=0.5>ce n'est pas trop mon style j'avoue.<p=0.5> Je suis plus dans la théorique, les livres
 qui te font te questionner sur le monde.<p=0.5> Voudrais tu essayer un genre en particulier ?<p=0.5></squiggle>";"<squiggle=2.5|3>Um...<p=0.5>it's not really my style,<p=0.25> I admit.<p=0.5> I'm more into the theoretical,<p=0.25> books that
 that make you question the world.<p=0.5> Is there a particular genre you'd like to try?<p=0.5></squiggle>";
+;HECAT01_P4_CHOIX0.5;<squiggle=2.5|3>...</squiggle>;<squiggle=2.5|3>...</squiggle>;
 ;HECAT01_P4_CHOIX1;<squiggle=2.5|3>Hum...<p=0.5>des livres comme...<p=0.75>Twilight ?<p=0.5></squiggle>;<squiggle=2.5|3>Um...<p=0.5>books like...<p=0.5>Twilight?<p=0.5></squiggle>;
 ;HECAT01_P4_CHOIX2;<squiggle=2.5|3>Eh bien.<p=0.5> Une aussi belle personne avec un esprit aussi curieux,<p=0.25> tu surement quelqu'un de spécial,<p=0.25> toi.<p=0.5></squiggle>;<squiggle=2.5|3>Well,<p=0.25> well,<p=0.25> well.<p=0.5> Such a beautiful person with such an inquisitive mind,<p=0.25> you must be something special.<p=0.5></squiggle>;
 ;HECAT01_P4_CHOIX3;<squiggle=2.5|3>…<p=0.5><bgshake=2|1>CONNARD !<p=0.5></bgshake></squiggle>;<squiggle=2.5|3>...<p=0.5><bgshake=2|1>BITCH!<p=0.5></bgshake></squiggle>;
