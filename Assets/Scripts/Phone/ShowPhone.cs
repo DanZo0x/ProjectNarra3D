@@ -48,12 +48,15 @@ public class ShowPhone : MonoBehaviour
 
     public IEnumerator ZoomPhoneCoroutine(Vector3 _goalZoomPosition, Quaternion _goalZoomRotation)
     {
+         
+        Vector3 previousPosition = _camera.transform.position;
+        Quaternion previousRotation = _camera.transform.rotation;
         float timer = 0;
         while(timer < _time)
         {
             float percentage = timer / _time;
 
-            _camera.transform.SetPositionAndRotation(Vector3.Lerp(_originPosition, _goalZoomPosition, _curveZoom.Evaluate(percentage)), Quaternion.Lerp(_originRotation, _goalZoomRotation, _curveZoom.Evaluate(percentage)));
+            _camera.transform.SetPositionAndRotation(Vector3.Lerp(previousPosition, _goalZoomPosition, _curveZoom.Evaluate(percentage)), Quaternion.Lerp(previousRotation, _goalZoomRotation, _curveZoom.Evaluate(percentage)));
             timer += Time.deltaTime;
             yield return null;
         }
