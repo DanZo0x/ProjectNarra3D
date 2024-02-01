@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cfb03ebdd1f9145922c33f58ef34f8, type: 3}
   m_Name: AngelDate2
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  table: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 0a56b49e728b61d4e97090574dd5c732, type: 2}
+  table: {fileID: 4900000, guid: 5e0df8627755de540ae98e5d9d8c875d, type: 3}
+  background: {fileID: 21300000, guid: 0f7948afb9bbc174590054e7b15f619b, type: 3}
+  buttonSprite: {fileID: 21300000, guid: fac498e19ca357a4c8529b71ce849ff5, type: 3}

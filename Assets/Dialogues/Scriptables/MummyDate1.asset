@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 153bc9ed13ecea34e87f5b3ff76ae19c, type: 2}
   table: {fileID: 4900000, guid: 26e83698ff108c54abe036c7b70712bb, type: 3}
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 6729901e10a53c2469ceb775a8e07644, type: 3}
   buttonSprite: {fileID: 21300000, guid: 4b68db18c73d36d448559fba87b4f8cb, type: 3}

@@ -14,7 +14,11 @@ public class Annuaire : MonoBehaviour
     [SerializeField] float _time;
     RectTransform annuaire;
     Transform spriteAnnuaire;
-
+    [SerializeField] List<Sprite> annuaireSprites = new List<Sprite>();
+    GameObject rightButton;
+    GameObject leftButton;
+    Image annuaireBG;
+    int index = 0;
 
     private void Awake()
     {
@@ -23,6 +27,9 @@ public class Annuaire : MonoBehaviour
         _originScale = annuaire.localScale;
         _originPosition = annuaire.anchoredPosition;
         annuaire.gameObject.SetActive(false);
+        rightButton = transform.Find("AnnuaireContent").GetChild(2).gameObject;
+        leftButton = transform.Find("AnnuaireContent").GetChild(3).gameObject;
+        annuaireBG = transform.Find("AnnuaireContent").GetChild(0).GetComponent<Image>();
     }
 
     public IEnumerator OpenAnnuaireCoroutine()
@@ -41,6 +48,8 @@ public class Annuaire : MonoBehaviour
             yield return null;
         }
     }
+
+
 
     public IEnumerator CloseAnnuaireCoroutine()
     {
@@ -70,6 +79,37 @@ public class Annuaire : MonoBehaviour
         else
         {
             StartCoroutine(CloseAnnuaireCoroutine());
+        }
+    }
+
+    public void GoToRightPage()
+    {
+        
+        leftButton.SetActive(true);
+        index++;
+        annuaireBG.sprite = annuaireSprites[index];
+        if (index == annuaireSprites.Count - 1)
+        {
+            rightButton.SetActive(false);
+        }
+        else
+        {
+            rightButton.SetActive(true);
+        }
+    }
+
+    public void GoToLeftPage()
+    {
+        rightButton.SetActive(true);
+        index--;
+        annuaireBG.sprite = annuaireSprites[index];
+        if (index == 0)
+        {
+            leftButton.SetActive(false);
+        }
+        else
+        {
+            leftButton.SetActive(true);
         }
     }
 }

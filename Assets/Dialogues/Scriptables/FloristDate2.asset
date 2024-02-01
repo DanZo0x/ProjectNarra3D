@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cfb03ebdd1f9145922c33f58ef34f8, type: 3}
   m_Name: FloristDate2
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  table: {fileID: 0}
-  background: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: b795f8619ce77414b9f8fdc959ce24a0, type: 2}
+  table: {fileID: 4900000, guid: c3508121a355b3e4d8e6b33396de656d, type: 3}
+  background: {fileID: 21300000, guid: 3c070230c0c4ac24db5239066fdfcfc6, type: 3}
   buttonSprite: {fileID: 21300000, guid: 192d5bf5a7469cb4eb3e6b5db52be9a6, type: 3}
