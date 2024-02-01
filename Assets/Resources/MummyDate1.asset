@@ -247,8 +247,6 @@ MonoBehaviour:
   - nodeType: Dialogue
     nodeGUID: d2f60d0f-3d20-4e3e-903d-e4fafe145e0b
   - nodeType: Dialogue
-    nodeGUID: 992efd78-f8c7-4462-800a-9f40c79dcec3
-  - nodeType: Dialogue
     nodeGUID: 86247709-d936-4b94-82df-b655f2054916
   - nodeType: Dialogue
     nodeGUID: b42b7d3c-f040-43aa-b227-d13cbb6a1245
@@ -328,97 +326,94 @@ MonoBehaviour:
     nodeGUID: c8b433c4-c7ac-4a59-a366-d703a86a26c3
   - nodeType: SetAffinity
     nodeGUID: 087abd87-ba7b-4a8b-8720-a6e38291e002
+  - nodeType: Dialogue
+    nodeGUID: 992efd78-f8c7-4462-800a-9f40c79dcec3
   DialogueNodeData:
   - NodeGUID: 98f1a6f0-db51-46a3-8233-5a8f8fc660d4
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P0_INTRO
     SpeakerEmotion: 0
-    Position: {x: 184.8, y: 200}
+    Position: {x: 185, y: 200}
   - NodeGUID: 2f4b57cc-f0cd-4112-ad2c-6778b9409709
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P2_DIALOGUE2
     SpeakerEmotion: 4
-    Position: {x: 782.4, y: 225.59999}
+    Position: {x: 782, y: 226}
   - NodeGUID: 878a2bcb-fb9b-428f-8305-78579dc1f244
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P2_DIALOGUE3
     SpeakerEmotion: 2
-    Position: {x: 782.4, y: 748}
+    Position: {x: 782, y: 748}
   - NodeGUID: d2f60d0f-3d20-4e3e-903d-e4fafe145e0b
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P5_DIALOGUE2
     SpeakerEmotion: 0
-    Position: {x: 2038.4, y: -85.600006}
-  - NodeGUID: 992efd78-f8c7-4462-800a-9f40c79dcec3
-    KeySpeaker: CHAR_Mummy
-    NodeKeyText: Key Text
-    SpeakerEmotion: 0
-    Position: {x: 3728, y: 39.2}
+    Position: {x: 2038, y: -86}
   - NodeGUID: 86247709-d936-4b94-82df-b655f2054916
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE3
     SpeakerEmotion: 2
-    Position: {x: 3096.8, y: 39.2}
+    Position: {x: 3097, y: 39}
   - NodeGUID: b42b7d3c-f040-43aa-b227-d13cbb6a1245
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE1
     SpeakerEmotion: 1
-    Position: {x: 3112.8, y: -574.39996}
+    Position: {x: 3113, y: -574}
   - NodeGUID: 2081424c-e5ba-4880-ad33-e694ff3dba78
     KeySpeaker: CHAR_Mummy
-    NodeKeyText: Key Text
+    NodeKeyText: NOHHA01_P8_DIALOGUE1
     SpeakerEmotion: 3
-    Position: {x: 3744, y: -574.39996}
+    Position: {x: 3744, y: -574}
   - NodeGUID: 2b03874b-e5d8-435b-8860-2f11cb09f86b
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE2
     SpeakerEmotion: 1
-    Position: {x: 3112.8, y: -284}
+    Position: {x: 3113, y: -284}
   - NodeGUID: 575c56ff-7f66-48df-965b-2021e0906dea
     KeySpeaker: CHAR_Mummy
-    NodeKeyText: Key Text
+    NodeKeyText: NOHHA01_P8_DIALOGUE2
     SpeakerEmotion: 1
     Position: {x: 3744, y: -284}
   - NodeGUID: b2451f43-4f5e-4747-acd5-8ed0ed6eef8e
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P4_DIALOGUE5
     SpeakerEmotion: 4
-    Position: {x: 1522.4, y: 273.6}
+    Position: {x: 1522, y: 274}
   - NodeGUID: 19498a57-d846-45c2-a41e-6a44a021c087
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P4_DIALOGUE6
     SpeakerEmotion: 4
-    Position: {x: 1522.4, y: 423.2}
+    Position: {x: 1522, y: 423}
   - NodeGUID: 7b01d75c-98c7-44f3-8be1-07ec95d13157
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P4_DIALOGUE3
     SpeakerEmotion: 0
-    Position: {x: 1522.4, y: -85.600006}
+    Position: {x: 1522, y: -86}
   - NodeGUID: 3060616d-c68b-4318-a6f1-f60f28fcf558
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P4_DIALOGUE2
     SpeakerEmotion: 1
-    Position: {x: 1522.4, y: -250.40001}
+    Position: {x: 1522, y: -250}
   - NodeGUID: 601d1f0f-490b-4132-a640-60a061fb28e5
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P4_DIALOGUE1
     SpeakerEmotion: 2
-    Position: {x: 1522.4, y: -420}
+    Position: {x: 1522, y: -420}
   - NodeGUID: 7a0715eb-594f-438e-b634-98cecac1d01e
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE6
     SpeakerEmotion: 2
-    Position: {x: 2772.8, y: 1118.3999}
+    Position: {x: 2773, y: 1118}
   - NodeGUID: 581d0ab2-8bc4-4b34-9655-90b95725b312
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P2_DIALOGUE1
     SpeakerEmotion: 4
-    Position: {x: 512, y: -284.8}
+    Position: {x: 512, y: -285}
   - NodeGUID: 463e64a1-824e-4d0a-837e-7995745eb32b
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P2_DIALOGUE11
     SpeakerEmotion: 4
-    Position: {x: 811.2, y: -284.8}
+    Position: {x: 811, y: -285}
   - NodeGUID: cb3a162d-c5ee-4679-8d78-f87be4eb9aa7
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P4_DIALOGUE7
@@ -428,12 +423,12 @@ MonoBehaviour:
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P5_DIALOGUE3
     SpeakerEmotion: 0
-    Position: {x: 2052.8, y: 796}
+    Position: {x: 2053, y: 796}
   - NodeGUID: 3651c2be-8ac1-4583-887b-5fbb0498b8e6
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P4_DIALOGUE4
     SpeakerEmotion: 2
-    Position: {x: 1522.4, y: 114.399994}
+    Position: {x: 1522, y: 114}
   - NodeGUID: 418d41e7-8deb-4f60-a448-9ca156e2a977
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P5_DIALOGUE1
@@ -443,48 +438,53 @@ MonoBehaviour:
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE4
     SpeakerEmotion: 0
-    Position: {x: 2772.8, y: 771.2}
+    Position: {x: 2773, y: 771}
   - NodeGUID: bd294248-111e-441c-b16f-8af8b38b14ea
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE5
     SpeakerEmotion: 4
-    Position: {x: 2772.8, y: 950.4}
+    Position: {x: 2773, y: 950}
   - NodeGUID: 8ea26e3a-1091-4acf-bb72-3a61d8a8eae7
     KeySpeaker: CHAR_Mummy
     NodeKeyText: NOHHA01_P7_DIALOGUE51
     SpeakerEmotion: 1
-    Position: {x: 3080.8, y: 950.4}
+    Position: {x: 3081, y: 950}
+  - NodeGUID: 992efd78-f8c7-4462-800a-9f40c79dcec3
+    KeySpeaker: CHAR_Mummy
+    NodeKeyText: NOHHA01_P8_DIALOGUE3
+    SpeakerEmotion: 0
+    Position: {x: 3728, y: 39}
   ConditionNodeData: []
   SetBoolNodeData:
   - NodeGUID: 26ae3ace-195e-446a-8877-7446acd495f4
     Property: "BrocheOrn\xE9e"
     Value: 1
-    Position: {x: 4044.8, y: -284}
+    Position: {x: 4045, y: -284}
   SetAffinityNodeData:
   - NodeGUID: e2681b08-5ad1-4753-a278-f6964bb0b30b
     TargetName: Noharnaak
     Value: 0
-    Position: {x: 2511.2, y: 771.2}
+    Position: {x: 2511, y: 771}
   - NodeGUID: cd7cf4b9-d6c9-428e-9894-c9b3c989c6cb
     TargetName: Noharnaak
     Value: -1
-    Position: {x: 2502.4, y: 1118.3999}
+    Position: {x: 2502, y: 1118}
   - NodeGUID: 1e393f4c-9b13-4446-9dba-5ef5cccd7d00
     TargetName: Noharnaak
     Value: -2
-    Position: {x: 1276, y: 114.399994}
+    Position: {x: 1276, y: 114}
   - NodeGUID: da5a62b7-ada4-44e2-8bc6-14ea75bcb29e
     TargetName: Noharnaak
     Value: 1
-    Position: {x: 1276, y: 273.6}
+    Position: {x: 1276, y: 274}
   - NodeGUID: cb29dcbb-4018-4b8d-a63d-e09e599354e8
     TargetName: Noharnaak
     Value: 1
-    Position: {x: 1276, y: 423.2}
+    Position: {x: 1276, y: 423}
   - NodeGUID: eb09d851-d70d-4816-9deb-8862670c4799
     TargetName: Noharnaak
     Value: 1
-    Position: {x: 1276, y: 558.4}
+    Position: {x: 1276, y: 558}
   - NodeGUID: 4a13b8d8-3437-4ede-9343-cfa8865d8d5f
     TargetName: Noharnaak
     Value: -2
@@ -492,50 +492,50 @@ MonoBehaviour:
   - NodeGUID: cda7c660-9c49-4cd1-a2c6-3e0915efbd77
     TargetName: Noharnaak
     Value: 2
-    Position: {x: 1276, y: -250.40001}
+    Position: {x: 1276, y: -250}
   - NodeGUID: b2e7e947-cfcc-4509-8e29-d62f4614b217
     TargetName: Noharnaak
     Value: 1
-    Position: {x: 2878.4, y: -516}
+    Position: {x: 2878, y: -516}
   - NodeGUID: dc7149cb-3b35-4504-bfd4-b6643acc5a15
     TargetName: Noharnaak
     Value: -1
-    Position: {x: 2878.4, y: 116}
+    Position: {x: 2878, y: 116}
   - NodeGUID: 5ae0a3ac-afd4-4c66-bd40-e68ec4b4e845
     TargetName: Noharnaak
     Value: -1
-    Position: {x: 2878.4, y: -18.4}
+    Position: {x: 2878, y: -18}
   - NodeGUID: bdd55179-01f5-4c58-bfee-90c294bf6098
     TargetName: Noharnaak
     Value: 2
-    Position: {x: 2878.4, y: -216.8}
+    Position: {x: 2878, y: -217}
   - NodeGUID: 0f4a311f-43d7-4ec1-b847-e4a961425f22
     TargetName: Noharnaak
     Value: 2
-    Position: {x: 2878.4, y: -356}
+    Position: {x: 2878, y: -356}
   - NodeGUID: cda0aa80-2cd3-40ea-a4c6-a4b9c8ec3257
     TargetName: Noharnaak
     Value: 0
-    Position: {x: 1276, y: -85.600006}
+    Position: {x: 1276, y: -86}
   - NodeGUID: 154867fa-fabf-44f3-8545-33c3b2788070
     TargetName: Noharnaak
     Value: 1
-    Position: {x: 2878.4, y: -652}
+    Position: {x: 2878, y: -652}
   - NodeGUID: 5601222d-d68b-4501-945c-6a43b8b0b1f8
     TargetName: Noharnaak
     Value: 1
-    Position: {x: 2511.2, y: 950.4}
+    Position: {x: 2511, y: 950}
   - NodeGUID: 3fd1e55d-37b2-48f8-b629-662d7501c344
     TargetName: Noharnaak
     Value: 1
-    Position: {x: 556.8, y: 225.59999}
+    Position: {x: 557, y: 226}
   - NodeGUID: c8b433c4-c7ac-4a59-a366-d703a86a26c3
     TargetName: Noharnaak
     Value: -2
-    Position: {x: 556.8, y: 748}
+    Position: {x: 557, y: 748}
   - NodeGUID: 087abd87-ba7b-4a8b-8720-a6e38291e002
     TargetName: Noharnaak
     Value: -1
-    Position: {x: 260, y: -284.8}
+    Position: {x: 260, y: -285}
   ExposedProperties: []
   CommentBlockData: []
