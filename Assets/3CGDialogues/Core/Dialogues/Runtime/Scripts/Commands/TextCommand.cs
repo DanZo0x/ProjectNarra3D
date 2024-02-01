@@ -118,7 +118,7 @@ namespace TCG.Core.Dialogues
         {
             if (_textInfo == null) return;
             for (int i = 0; i < _textInfo.meshInfo.Length; i++) {
-                Debug.Log(_textInfo.meshInfo[i].material.color.a);
+                //Debug.Log(_textInfo.meshInfo[i].material.color.a);
                 _textInfo.meshInfo[i].mesh.vertices = _textInfo.meshInfo[i].vertices;
                 Typer.TextField.UpdateGeometry(_textInfo.meshInfo[i].mesh, i);
             }

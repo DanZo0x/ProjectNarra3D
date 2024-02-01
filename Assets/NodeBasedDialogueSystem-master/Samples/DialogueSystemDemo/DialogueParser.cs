@@ -109,7 +109,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
                 case "Dialogue":
 
-
+                    
                     var text = "";
                     if(PlayerPrefs.GetString("Language") == "FR")
                     {
@@ -122,6 +122,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     var typer = dialogueText.GetComponent<UITextTyper>();
                     var speaker = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(x => x.id == dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).KeySpeaker);
                     speakerText.font = speaker.font;
+                    DataManager.Instance.MeetSomeone(speaker.label);
                     typer.TextField.font = speaker.font;
                     charaSprite.sprite = speaker.statuses[0].icon;
                     if(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion != 0)
