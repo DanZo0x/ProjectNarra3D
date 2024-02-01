@@ -12,21 +12,27 @@ using UnityEngine.Experimental.GlobalIllumination;
 
 public class Phone : MonoBehaviour
 {
-    [SerializeField] Animation telephone;
+    [SerializeField] Transform telephone;
+    Transform telephoneSpeaker;
     [SerializeField] Transform valuePaper;
     [SerializeField] Color colorValue;
     [SerializeField] Light _light;
+    [SerializeField] Transform textAsk;
     bool canInteract;
+    bool canPickUp;
     Transform touches;
     string _charHolder = "";
     int charCount = 0;
+    string date = "";
     [SerializeField] List<Sprite> spritesLetters = new List<Sprite>();
     
 
     private void Awake()
     {
         touches = telephone.transform.GetChild(3);
+        telephoneSpeaker = telephone.transform.GetChild(1);
         canInteract = true;
+        canPickUp = false;
     }
     public void N1()
     {
@@ -141,13 +147,25 @@ public class Phone : MonoBehaviour
     {
         if(charCount == 6)
         {
+            float valueScale = 1.12f;
             canInteract = false;
-            foreach(var numbers in DataManager.Instance.phoneNumbers)
+            canPickUp = true;
+            telephoneSpeaker.GetComponent<MeshRenderer>().materials[3].SetFloat("_Scale", valueScale);
+        }
+    }
+
+    public void PickUpPhone()
+    {
+        if (canPickUp)
+        {
+            
+            
+            foreach (var numbers in DataManager.Instance.phoneNumbers)
             {
-                if(numbers.phoneNumber == _charHolder)
+                if (numbers.phoneNumber == _charHolder)
                 {
-                    Debug.Log(numbers.dateName); 
-                    string date = "";
+                   
+                    Debug.Log(numbers.dateName);
                     if (numbers.iterationDate == 0)
                     {
                         date = numbers.dateName + "Date1";
@@ -156,23 +174,47 @@ public class Phone : MonoBehaviour
                     {
                         date = numbers.dateName + "Date2";
                     }
-                    DialogConfig.Instance.transform.GetComponent<DialogueParser>().NewDialogue(date);
-                    break;
+                    
+                    
+                    StartCoroutine(PickUpAnimation());
+                    textAsk.GetComponent<TextMeshProUGUI>().text = $"Allez en date avec {numbers.dateName} ?";
+                    return;
                 }
             }
             StartCoroutine(WrongValue());
         }
     }
 
-    IEnumerator WrongValue()
+
+    public IEnumerator PickUpAnimation()
     {
-        _light.color = Color.red;
-        yield return new WaitForSeconds(0.5f);
-        Reset();
+        telephoneSpeaker.GetComponent<Animator>().SetTrigger("PickUp");
+        StartCoroutine(transform.parent.parent.GetComponent<ShowPhone>().ZoomPhoneCoroutine(new Vector3(2.457f, 3.579f, 0.331f), new Quaternion(0.227508172f, -0.17129159f, 0.00806896575f, 0.95855844f)));
+        yield return new WaitForSeconds(1.5f);
+        textAsk.parent.gameObject.SetActive(true);
         
     }
 
-    private void Reset()
+    public void Accept()
+    {
+        DialogConfig.Instance.transform.GetComponent<DialogueParser>().NewDialogue(date);
+    }
+
+    public void Refuse()
+    {
+        ResetPhone();
+    }
+    
+
+IEnumerator WrongValue()
+    {
+        _light.color = Color.red;
+        yield return new WaitForSeconds(0.5f);
+        ResetPhone();
+        
+    }
+
+    private void ResetPhone()
     {
         _light.color = Color.white;
         foreach (Transform child in valuePaper)
@@ -180,11 +222,14 @@ public class Phone : MonoBehaviour
             child.GetComponent<Image>().sprite = null;
             child.GetComponent<Image>().color = Color.white;
         }
+        
         _charHolder = "";
         charCount = 0;
+        textAsk.parent.gameObject.SetActive(false);
         StartCoroutine(transform.parent.parent.GetComponent<ShowPhone>().DezoomPhoneCoroutine());
         transform.parent.parent.GetComponent<ShowPhone>().OutlineAllButtons(false);
         canInteract = true;
         transform.parent.parent.GetComponent<ShowPhone>().zoomButton.gameObject.SetActive(true);
+        
     }
 }
