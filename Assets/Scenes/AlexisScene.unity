@@ -544,17 +544,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148154722}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.903e-12}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.8721445, y: 2.2645202, z: 1.1849037}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1896598464}
+  m_Father: {fileID: 1555691252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.005004883, y: -278.03003}
-  m_SizeDelta: {x: -1016.6, y: -851.24}
+  m_AnchoredPosition: {x: 0.000579834, y: -0.000015258789}
+  m_SizeDelta: {x: -483.39, y: -135.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &193981904
 GameObject:
@@ -4879,6 +4879,11 @@ PrefabInstance:
       propertyPath: backGroundSprite
       value: 
       objectReference: {fileID: 275081820}
+    - target: {fileID: 2711285191279255931, guid: f19527b30e3923a47a2681ba2ae9d90d,
+        type: 3}
+      propertyPath: charaEmotionBubble
+      value: 
+      objectReference: {fileID: 2010530870}
     - target: {fileID: 5186004199760422640, guid: f19527b30e3923a47a2681ba2ae9d90d,
         type: 3}
       propertyPath: csvDialog
@@ -5516,7 +5521,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -0.0000087252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 148154726}
   m_Father: {fileID: 1896598464}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5988,6 +5994,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 9104507297f997444a47b5dfe9fd6fbd, type: 2}
+    - target: {fileID: 8085964703465634195, guid: 2e77feb03d0752244811f19692c59256,
+        type: 3}
+      propertyPath: m_CullingType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8085964703465634195, guid: 2e77feb03d0752244811f19692c59256,
         type: 3}
       propertyPath: m_PlayAutomatically
@@ -6637,7 +6648,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1555691252}
-  - {fileID: 148154726}
   - {fileID: 1370883068}
   m_Father: {fileID: 940182624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -17,12 +17,83 @@ public class DataManager : MonoBehaviour
         { "LysIridescent", false },
         { "Lys", false },
         { "BrocheOrnée", false },
-        { "Marked", false }
-    };
+        { "Marked", false },
 
+
+        { "AffinityMummy > 1", false},
+        { "AffinityMummy > -2", false},
+        { "AffinityMummy < -1", false},
+        {"AffinityBooksellers >= 8", false},
+
+        { "SawAngel", false},
+        { "SawMummy", false},
+        { "SawMuller", false},
+        { "SawHecat", false},
+    };
+    int peopleMet = 0;
     public Dictionary<string, bool> BoolPropertyDict { get => boolPropertyDict; set => boolPropertyDict = value; }
 
     public List<DateData> dates = new List<DateData>();
+
+
+    private void SetVariables()
+    {
+        #region Mummy
+        var mummy = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(y => y.label == "Noharnaak");
+        if (mummy.affection > 1)
+        {
+            boolPropertyDict["AffinityMummy > 1"] = true;
+            boolPropertyDict["AffinityMummy > -2"] = true;
+            boolPropertyDict["AffinityMummy < -1"] = false;
+        }
+        else if(mummy.affection > -2)
+        {
+            boolPropertyDict["AffinityMummy > 1"] = false;
+            boolPropertyDict["AffinityMummy > -2"] = true;
+            boolPropertyDict["AffinityMummy < -1"] = false;
+        }
+        else if( mummy.affection < -1)
+        {
+            boolPropertyDict["AffinityMummy > 1"] = false;
+            boolPropertyDict["AffinityMummy > -2"] = false;
+            boolPropertyDict["AffinityMummy < -1"] = true;
+        }
+        #endregion
+        #region Hecat
+        var hecat = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(y => y.label == "Hecat");
+        if (hecat.affection >= 8)
+        {
+            boolPropertyDict["AffinityBooksellers >= 8"] = true;
+            
+        }
+        else 
+        {
+            boolPropertyDict["AffinityBooksellers >= 8"] = false;
+        }
+
+        #endregion
+        if (peopleMet > 1)
+        {
+            boolPropertyDict["SawCharacters"] = true;
+        }
+
+    }
+
+    public void MeetSomeone(string label)
+    {
+        switch (label)
+        {
+            case "Hecat":
+                if(boolPropertyDict["SawHecat"] == false)
+                {
+                    peopleMet++;
+                    boolPropertyDict["SawHecat"] = true;
+                    break;
+                }
+                
+                break;
+        }
+    }
 
     [Serializable]
     public class PhoneNumberData
