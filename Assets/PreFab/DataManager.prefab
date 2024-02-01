@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4893725256258513529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4589382492274481791}
+  - component: {fileID: 3862579996920964706}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4589382492274481791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893725256258513529}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 884.0621, y: 906.9841, z: 4.1556005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3862579996920964706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893725256258513529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0381d29e4fed04190e1f5a05f4752d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dates:
+  - {fileID: 11400000, guid: 61a77bf42e88c2f4eb2838cc5e015a7f, type: 2}
+  - {fileID: 11400000, guid: eec69dfc601ba514698e8c87334a3c98, type: 2}
+  - {fileID: 11400000, guid: c27f1ad2496146a419ccf00779bc8533, type: 2}
+  - {fileID: 11400000, guid: ec2250f9f5bf1b749b9ca3ea77f91428, type: 2}
+  - {fileID: 11400000, guid: efab8b216c88ee045b913eef4c30577c, type: 2}
+  - {fileID: 11400000, guid: 04e31a8d6c8cd524aa3159214c08ce68, type: 2}
+  - {fileID: 11400000, guid: cdbed73ca46b76c42b77201cb4165581, type: 2}
+  - {fileID: 11400000, guid: 5164dd09fb7c88e419f0b525eaf266d8, type: 2}
+  phoneNumbers:
+  - dateName: Mummy
+    phoneNumber: 666444
+    iteration: 0
+  - dateName: Florist
+    phoneNumber: 123123
+    iteration: 0
+  - dateName: Angel
+    phoneNumber: 462454
+    iteration: 0
+  - dateName: Bookseller
+    phoneNumber: 345126
+    iteration: 0

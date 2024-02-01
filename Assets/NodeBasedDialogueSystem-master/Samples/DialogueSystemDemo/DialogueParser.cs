@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Subtegral.DialogueSystem.DataContainers;
 using TCG.Core.Dialogues;
-using Subtegral.DialogueSystem.Editor;
+
 
 namespace Subtegral.DialogueSystem.Runtime
 {
@@ -27,14 +27,14 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] DateData dateData;
         private void Start()
         {
-            NewDialogue();
+            
         }
 
-        public void NewDialogue(/*string dateName*/)
+        public void NewDialogue(string dateName)
         {
 
             dialogConfig = GetComponent<DialogConfig>();
-            //dateData = DataManager.Instance.FindFromName(dateName);
+            dateData = DataManager.Instance.FindFromName(dateName);
             dialogConfig.csvDialog = dateData.table;
             dialogConfig.CreateTable();
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,15 +17,16 @@ public class DataManager : MonoBehaviour
 
     public List<DateData> dates = new List<DateData>();
 
-    public enum Speaker
+    [Serializable]
+    public struct PhoneNumberData
     {
-        Hecat,
-        Muller,
-        Lilith,
-        Noharnaak
-    };
-    public Speaker speaker;
-    
+        public string dateName;
+        public string phoneNumber;
+        [HideInInspector] public int iteration;
+    }
+
+    public List<PhoneNumberData> phoneNumbers;
+
     private void Awake()
     {
         if(Instance == null)
@@ -32,6 +34,8 @@ public class DataManager : MonoBehaviour
             Instance = this;
         }
     }
+
+
 
     public DateData FindFromName(string name)
     {
