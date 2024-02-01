@@ -33,18 +33,18 @@ MonoBehaviour:
   - NodeGUID: 74f78eee-5f34-465a-8496-c65005f823d4
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: ALLEZ_LE_SEL
-    SpeakerEmotion: 1
-    Position: {x: 567.2, y: 100}
+    SpeakerEmotion: 4
+    Position: {x: 567, y: 100}
   - NodeGUID: 8b49b46a-6e2f-43c7-8e9f-f1320cf4f912
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: ALLEZ_LE_SEL
     SpeakerEmotion: 2
-    Position: {x: 567.2, y: 289.6}
+    Position: {x: 567, y: 290}
   - NodeGUID: 6fa206a3-08dd-466f-8f6f-6370d030bf0a
     KeySpeaker: CHAR_Bookseller
     NodeKeyText: BJR
     SpeakerEmotion: 0
-    Position: {x: 230.4, y: 200}
+    Position: {x: 230, y: 200}
   ConditionNodeData: []
   SetBoolNodeData: []
   SetAffinityNodeData: []

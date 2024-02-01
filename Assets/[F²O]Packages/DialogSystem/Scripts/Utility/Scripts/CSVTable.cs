@@ -41,7 +41,6 @@ public class CSVTable
 			row.FR = grid[i][2];
 			row.EN = grid[i][3];
 			row.SP = grid[i][4];
-			row.IT = grid[i][5];
 
 			rowList.Add(row);
 		}

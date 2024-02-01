@@ -58,9 +58,19 @@ public class DialogConfig : MonoBehaviour
         {
             Instance = this;
         }
-        if (csvDialog != null && !table.IsLoaded())
-            table.Load(csvDialog);
+       /* if (csvDialog != null && !table.IsLoaded())
+            table.Load(csvDialog);*/
         
+    }
+
+    public void CreateTable()
+    {
+        table.Load(csvDialog);
+    }
+
+    public void PrintButton()
+    {
+        Debug.Log("Pressed");
     }
 
     

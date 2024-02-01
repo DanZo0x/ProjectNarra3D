@@ -8,6 +8,7 @@ namespace Subtegral.DialogueSystem.DataContainers
     {
         public string BaseNodeGUID;
         public string PortName;
+        public bool isValid;
         public string TargetNodeGUID;
     }
 }

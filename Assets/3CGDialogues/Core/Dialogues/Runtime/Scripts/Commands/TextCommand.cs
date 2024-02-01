@@ -26,6 +26,7 @@ namespace TCG.Core.Dialogues
 
         private TMP_MeshInfo[] _cachedMeshInfo;
         private TMP_TextInfo _textInfo;
+        private TMP_Text _text;
 
         public void Init(IUITextTyper typer)
         {
@@ -94,11 +95,30 @@ namespace TCG.Core.Dialogues
             destinationVertices[vertexIndex + 2] += offset;
             destinationVertices[vertexIndex + 3] += offset;
         }
+        protected void setCharAlpha( int iCharId, int iAlpha)
+        {
+          
+            int iMaterialIndex = _textInfo.characterInfo[iCharId].materialReferenceIndex;
+            Color32[] rVertexColors = _textInfo.meshInfo[iMaterialIndex].colors32;
+            int iVertexIndex = _textInfo.characterInfo[iCharId].vertexIndex;
 
+            byte alpha = (byte)Mathf.Clamp(iAlpha, 0, 255);
+            rVertexColors[iVertexIndex + 0].a = alpha;
+            rVertexColors[iVertexIndex + 1].a = alpha;
+            rVertexColors[iVertexIndex + 2].a = alpha;
+            rVertexColors[iVertexIndex + 3].a = alpha;
+        }
+        /*protected void ChangeTexture(string material,int index)
+        {
+            TMP_CharacterInfo characterInfo = _textInfo.characterInfo[index];
+            Debug.Log(Resources.Load(material));
+            characterInfo.material = (Material)Resources.Load(material);
+        }*/
         protected void ApplyChangesToMesh()
         {
             if (_textInfo == null) return;
             for (int i = 0; i < _textInfo.meshInfo.Length; i++) {
+                Debug.Log(_textInfo.meshInfo[i].material.color.a);
                 _textInfo.meshInfo[i].mesh.vertices = _textInfo.meshInfo[i].vertices;
                 Typer.TextField.UpdateGeometry(_textInfo.meshInfo[i].mesh, i);
             }
@@ -108,6 +128,7 @@ namespace TCG.Core.Dialogues
         {
             _textInfo = Typer.TextField.textInfo;
             _cachedMeshInfo = _textInfo.CopyMeshInfoVertexData();
+            _text = _textInfo.textComponent;
         }
 
         private void _OnTMProChanged(Object obj)
