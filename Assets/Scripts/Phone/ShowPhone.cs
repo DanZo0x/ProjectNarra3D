@@ -18,6 +18,7 @@ public class ShowPhone : MonoBehaviour
     [SerializeField] float _time;
     [SerializeField] Transform _panelTouches;
     [SerializeField] AnimationCurve _curveZoom;
+    [SerializeField] Transform phoneUI;
     Transform telephone;
 
     [HideInInspector] public Transform zoomButton;
@@ -77,6 +78,7 @@ public class ShowPhone : MonoBehaviour
             yield return null;
         }
         phoneBaseRend.materials[1].SetFloat("_Scale", 1.05f);
+        phoneUI.GetChild(0).gameObject.SetActive(true);
     }
 
     public void OutlineAllButtons(bool value)

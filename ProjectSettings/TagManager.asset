@@ -6,8 +6,6 @@ TagManager:
   tags:
   - TransitionCanvas
   - OptionsMenu
-  - MusicSource
-  - SfxSource
   layers:
   - Default
   - TransparentFX
