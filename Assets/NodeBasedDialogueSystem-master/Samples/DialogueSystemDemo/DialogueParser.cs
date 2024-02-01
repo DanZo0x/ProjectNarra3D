@@ -20,6 +20,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private Transform buttonContainer;
         [SerializeField] private TextMeshProUGUI speakerText;
         [SerializeField] private Image charaSprite;
+        [SerializeField] private Transform charaEmotionBubble;
         private Image backGroundSprite;
         private Image buttonSprite;
         private DialogConfig dialogConfig;
@@ -122,7 +123,17 @@ namespace Subtegral.DialogueSystem.Runtime
                     var speaker = DialogConfig.Instance.speakerDatabases[0].speakerDatas.Find(x => x.id == dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).KeySpeaker);
                     speakerText.font = speaker.font;
                     typer.TextField.font = speaker.font;
-                    charaSprite.sprite = speaker.statuses[dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion].icon;
+                    charaSprite.sprite = speaker.statuses[0].icon;
+                    if(dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion != 0)
+                    {
+                        charaEmotionBubble.gameObject.SetActive(true);
+                        charaEmotionBubble.GetChild(0).GetComponent<Image>().sprite = speaker.statuses[dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion].icon;
+                    }
+                    else
+                    {
+                        charaEmotionBubble.gameObject.SetActive(false);
+                    }
+                    //charaSprite.sprite = speaker.statuses[dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).SpeakerEmotion].icon;
                     if (speaker != null)
                     {
                         speakerText.text = speaker.label;
