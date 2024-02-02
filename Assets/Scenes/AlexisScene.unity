@@ -3617,7 +3617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &846706077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4091,8 +4091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 399.05005}
-  m_SizeDelta: {x: 0, y: 798.1}
+  m_AnchoredPosition: {x: 0, y: 457.73035}
+  m_SizeDelta: {x: 0, y: 680.7394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1300113258
 MonoBehaviour:
@@ -5608,6 +5608,7 @@ MonoBehaviour:
   _menuMusic: {fileID: 0}
   _clickOnButton: {fileID: 0}
   _dialogueSfx: {fileID: 0}
+  _gameMixer: {fileID: 0}
   _musicSourceObj: {fileID: 0}
   _sfxSourceObj: {fileID: 0}
 --- !u!4 &1622702881
@@ -6270,6 +6271,7 @@ MonoBehaviour:
   _menuMusic: {fileID: 0}
   _clickOnButton: {fileID: 0}
   _dialogueSfx: {fileID: 0}
+  _gameMixer: {fileID: 0}
   _musicSourceObj: {fileID: 0}
   _sfxSourceObj: {fileID: 0}
 --- !u!4 &1718259363
