@@ -17,17 +17,333 @@ MonoBehaviour:
     PortName: Next
     isValid: 0
     TargetNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: "H\xE9 bah, \xE7a en fait des fleurs"
+    isValid: 0
+    TargetNodeGUID: 335df0b9-ccfb-435e-aa2b-dd549715e025
+  - BaseNodeGUID: 335df0b9-ccfb-435e-aa2b-dd549715e025
+    PortName: "Je m'essayais \xE0 l'humour"
+    isValid: 0
+    TargetNodeGUID: 34e91a0d-e311-436e-9730-0817ae450e5e
+  - BaseNodeGUID: 34e91a0d-e311-436e-9730-0817ae450e5e
+    PortName: "*Renverse un vase par terre pour briser le silence gla\xE7ant qui
+      r\xE8gne*"
+    isValid: 0
+    TargetNodeGUID: 4a8d1ce0-948a-449e-9c4c-2e28a2bfec15
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: Wow, vous avez bien appris votre texte
+    isValid: 0
+    TargetNodeGUID: 2072e894-d320-4988-91aa-819f57334d78
+  - BaseNodeGUID: 2072e894-d320-4988-91aa-819f57334d78
+    PortName: "Briser la glace... Comme \xE7a ? (renverser un vase par terre)"
+    isValid: 0
+    TargetNodeGUID: 4a8d1ce0-948a-449e-9c4c-2e28a2bfec15
+  - BaseNodeGUID: 2072e894-d320-4988-91aa-819f57334d78
+    PortName: N'essayez pas de briser la glace et brisez moi directement grand fou
+      !
+    isValid: 0
+    TargetNodeGUID: 853c43f6-0c73-4401-8d79-1e8ce0c5e6a9
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: "Je cherche une fleur sp\xE9ciale pour une occasion tr\xE8s sp\xE9ciale"
+    isValid: 0
+    TargetNodeGUID: 68f7fa5a-f1ad-490f-86f0-485f0f8a58dc
+  - BaseNodeGUID: 335df0b9-ccfb-435e-aa2b-dd549715e025
+    PortName: "Vous pourriez me conseiller peut \xEAtre ?"
+    isValid: 0
+    TargetNodeGUID: 68f7fa5a-f1ad-490f-86f0-485f0f8a58dc
+  - BaseNodeGUID: 68f7fa5a-f1ad-490f-86f0-485f0f8a58dc
+    PortName: "Un cadeau pour conqu\xE9rir l'amour de sa vie, son \xE2me soeur"
+    isValid: 0
+    TargetNodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+  - BaseNodeGUID: 68f7fa5a-f1ad-490f-86f0-485f0f8a58dc
+    PortName: "Quelque chose \xE0 offrir \xE0 un ami cher en honneur de notre amiti\xE9"
+    isValid: 0
+    TargetNodeGUID: 2a67bd77-5dc7-4f58-86d0-71e5c0fcdcc8
+  - BaseNodeGUID: 853c43f6-0c73-4401-8d79-1e8ce0c5e6a9
+    PortName: "Quelque chose \xE0 offrir \xE0 un ami cher en honneur de notre amiti\xE9"
+    isValid: 0
+    TargetNodeGUID: 2a67bd77-5dc7-4f58-86d0-71e5c0fcdcc8
+  - BaseNodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+    PortName: Mais qu'est ce que vous racontez ?
+    isValid: 0
+    TargetNodeGUID: d005e227-62ee-415c-8b41-df8d5fd9b45a
+  - BaseNodeGUID: 2a67bd77-5dc7-4f58-86d0-71e5c0fcdcc8
+    PortName: Heu... Je vous fais confiance ?
+    isValid: 0
+    TargetNodeGUID: c9b36df3-66a4-4d45-b824-a4f87c24d02e
+  - BaseNodeGUID: 2a67bd77-5dc7-4f58-86d0-71e5c0fcdcc8
+    PortName: Mais qu'est ce que vous racontez ?
+    isValid: 0
+    TargetNodeGUID: d005e227-62ee-415c-8b41-df8d5fd9b45a
+  - BaseNodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+    PortName: Heu... Je vous fais confiance ?
+    isValid: 0
+    TargetNodeGUID: c9b36df3-66a4-4d45-b824-a4f87c24d02e
+  - BaseNodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+    PortName: Vous n'auriez pas quelque chose de moins conventionnel ?
+    isValid: 0
+    TargetNodeGUID: a6eb4f5f-4478-405a-829f-1e702fe1639f
+  - BaseNodeGUID: 853c43f6-0c73-4401-8d79-1e8ce0c5e6a9
+    PortName: C'est toi que je veux
+    isValid: 0
+    TargetNodeGUID: 7de714e1-0995-4ef3-a2e6-bca21b95ec20
+  - BaseNodeGUID: 2072e894-d320-4988-91aa-819f57334d78
+    PortName: On peut dire que vous savez y faire, je suis totalement sous le charme
+    isValid: 0
+    TargetNodeGUID: ffed34a6-15fa-4080-beff-f2c4d9d790b8
+  - BaseNodeGUID: ffed34a6-15fa-4080-beff-f2c4d9d790b8
+    PortName: Quelque chose qui ferait une belle preuve d'amour
+    isValid: 0
+    TargetNodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+  - BaseNodeGUID: 853c43f6-0c73-4401-8d79-1e8ce0c5e6a9
+    PortName: "Un cadeau pour conqu\xE9rir l'amour de sa vie, son \xE2me soeur"
+    isValid: 0
+    TargetNodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+  - BaseNodeGUID: ffed34a6-15fa-4080-beff-f2c4d9d790b8
+    PortName: "Un cadeau m\xE9morable pour quelqu'un d'exceptionnel"
+    isValid: 0
+    TargetNodeGUID: a6eb4f5f-4478-405a-829f-1e702fe1639f
+  - BaseNodeGUID: c9b36df3-66a4-4d45-b824-a4f87c24d02e
+    PortName: Heu... la rose rouge fera l'affaire
+    isValid: 0
+    TargetNodeGUID: 1b2523cb-04dc-43e8-8722-2b96b1075c3f
+  - BaseNodeGUID: 1b2523cb-04dc-43e8-8722-2b96b1075c3f
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 144edae3-9591-4b15-82e1-73cf8a5cc956
+  - BaseNodeGUID: d005e227-62ee-415c-8b41-df8d5fd9b45a
+    PortName: Heu... la rose rouge fera l'affaire
+    isValid: 0
+    TargetNodeGUID: 1b2523cb-04dc-43e8-8722-2b96b1075c3f
+  - BaseNodeGUID: c9b36df3-66a4-4d45-b824-a4f87c24d02e
+    PortName: "Noblesse et gr\xE2ce, c'est exactement ce qu'il me faut, va pour une
+      pens\xE9e"
+    isValid: 0
+    TargetNodeGUID: 58d62828-782e-4544-99a1-a42e7c8f06c5
+  - BaseNodeGUID: d005e227-62ee-415c-8b41-df8d5fd9b45a
+    PortName: "Noblesse et gr\xE2ce, c'est exactement ce qu'il me faut, va pour une
+      pens\xE9e"
+    isValid: 0
+    TargetNodeGUID: 58d62828-782e-4544-99a1-a42e7c8f06c5
+  - BaseNodeGUID: 58d62828-782e-4544-99a1-a42e7c8f06c5
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 6f45fe41-e9b9-4ad2-bf0e-011d4fabf16d
+  - BaseNodeGUID: d005e227-62ee-415c-8b41-df8d5fd9b45a
+    PortName: "S\xE9duction et fougue, la d\xE9finition m\xEAme de ce que je cherche"
+    isValid: 0
+    TargetNodeGUID: bfae7ce3-a5bc-45d4-a2d1-2390458b57f0
+  - BaseNodeGUID: a6eb4f5f-4478-405a-829f-1e702fe1639f
+    PortName: "Noblesse et gr\xE2ce, c'est exactement ce qu'il me faut, va pour une
+      pens\xE9e"
+    isValid: 0
+    TargetNodeGUID: 58d62828-782e-4544-99a1-a42e7c8f06c5
+  - BaseNodeGUID: c9b36df3-66a4-4d45-b824-a4f87c24d02e
+    PortName: "S\xE9duction et fougue, la d\xE9finition m\xEAme de ce que je cherche"
+    isValid: 0
+    TargetNodeGUID: bfae7ce3-a5bc-45d4-a2d1-2390458b57f0
+  - BaseNodeGUID: a6eb4f5f-4478-405a-829f-1e702fe1639f
+    PortName: "S\xE9duction et fougue, la d\xE9finition m\xEAme de ce que je cherche"
+    isValid: 0
+    TargetNodeGUID: bfae7ce3-a5bc-45d4-a2d1-2390458b57f0
+  - BaseNodeGUID: bfae7ce3-a5bc-45d4-a2d1-2390458b57f0
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 35fc87dd-2764-4cec-a442-d79c284b9715
+  - BaseNodeGUID: a6eb4f5f-4478-405a-829f-1e702fe1639f
+    PortName: Si c'est votre fleur favorite, c'est bien que c'est la meilleure
+    isValid: 0
+    TargetNodeGUID: 526221b8-afe1-4a1b-a662-fc406f375bf4
+  - BaseNodeGUID: 526221b8-afe1-4a1b-a662-fc406f375bf4
+    PortName: 'La plus belle fleur ? je l''ai juste en face de moi :smirk:'
+    isValid: 0
+    TargetNodeGUID: 2bb891e0-6c54-4559-8cba-0b107330e17a
+  - BaseNodeGUID: 526221b8-afe1-4a1b-a662-fc406f375bf4
+    PortName: Pourquoi ne pas m'emballer moi directement ?
+    isValid: 0
+    TargetNodeGUID: bb8546dd-c22c-470a-973d-7f51a5a6301a
+  - BaseNodeGUID: 2bb891e0-6c54-4559-8cba-0b107330e17a
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: ff167ac0-bc5a-40df-901b-37bae2279420
+  - BaseNodeGUID: bb8546dd-c22c-470a-973d-7f51a5a6301a
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 532ad0b1-da95-4b64-834b-de8b426cb691
   NodeData:
   - nodeType: Dialogue
     nodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+  - nodeType: Dialogue
+    nodeGUID: 34e91a0d-e311-436e-9730-0817ae450e5e
+  - nodeType: Dialogue
+    nodeGUID: 4a8d1ce0-948a-449e-9c4c-2e28a2bfec15
+  - nodeType: Dialogue
+    nodeGUID: 335df0b9-ccfb-435e-aa2b-dd549715e025
+  - nodeType: Dialogue
+    nodeGUID: 68f7fa5a-f1ad-490f-86f0-485f0f8a58dc
+  - nodeType: Dialogue
+    nodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+  - nodeType: Dialogue
+    nodeGUID: 2a67bd77-5dc7-4f58-86d0-71e5c0fcdcc8
+  - nodeType: Dialogue
+    nodeGUID: d005e227-62ee-415c-8b41-df8d5fd9b45a
+  - nodeType: Dialogue
+    nodeGUID: a6eb4f5f-4478-405a-829f-1e702fe1639f
+  - nodeType: Dialogue
+    nodeGUID: 2072e894-d320-4988-91aa-819f57334d78
+  - nodeType: Dialogue
+    nodeGUID: ffed34a6-15fa-4080-beff-f2c4d9d790b8
+  - nodeType: Dialogue
+    nodeGUID: 853c43f6-0c73-4401-8d79-1e8ce0c5e6a9
+  - nodeType: Dialogue
+    nodeGUID: 7de714e1-0995-4ef3-a2e6-bca21b95ec20
+  - nodeType: Dialogue
+    nodeGUID: 144edae3-9591-4b15-82e1-73cf8a5cc956
+  - nodeType: SetBool
+    nodeGUID: 1b2523cb-04dc-43e8-8722-2b96b1075c3f
+  - nodeType: Dialogue
+    nodeGUID: c9b36df3-66a4-4d45-b824-a4f87c24d02e
+  - nodeType: SetBool
+    nodeGUID: 58d62828-782e-4544-99a1-a42e7c8f06c5
+  - nodeType: Dialogue
+    nodeGUID: 6f45fe41-e9b9-4ad2-bf0e-011d4fabf16d
+  - nodeType: SetBool
+    nodeGUID: bfae7ce3-a5bc-45d4-a2d1-2390458b57f0
+  - nodeType: Dialogue
+    nodeGUID: 35fc87dd-2764-4cec-a442-d79c284b9715
+  - nodeType: Dialogue
+    nodeGUID: 526221b8-afe1-4a1b-a662-fc406f375bf4
+  - nodeType: SetBool
+    nodeGUID: 2bb891e0-6c54-4559-8cba-0b107330e17a
+  - nodeType: SetBool
+    nodeGUID: bb8546dd-c22c-470a-973d-7f51a5a6301a
+  - nodeType: Dialogue
+    nodeGUID: ff167ac0-bc5a-40df-901b-37bae2279420
+  - nodeType: Dialogue
+    nodeGUID: 532ad0b1-da95-4b64-834b-de8b426cb691
   DialogueNodeData:
   - NodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
     KeySpeaker: CHAR_Florist
-    NodeKeyText: Key Text
+    NodeKeyText: MULLER01_P0_INTRO
     SpeakerEmotion: 0
     Position: {x: 227.2, y: 200}
+  - NodeGUID: 34e91a0d-e311-436e-9730-0817ae450e5e
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P4_DIALOGUE1
+    SpeakerEmotion: 0
+    Position: {x: 925.6, y: -186.40001}
+  - NodeGUID: 4a8d1ce0-948a-449e-9c4c-2e28a2bfec15
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P6_DIALOGUE1
+    SpeakerEmotion: 2
+    Position: {x: 1316.8, y: -43.199997}
+  - NodeGUID: 335df0b9-ccfb-435e-aa2b-dd549715e025
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P2_DIALOGUE1
+    SpeakerEmotion: 0
+    Position: {x: 556, y: -28.8}
+  - NodeGUID: 68f7fa5a-f1ad-490f-86f0-485f0f8a58dc
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P2_DIALOGUE3
+    SpeakerEmotion: 0
+    Position: {x: 577.6, y: 1045.6}
+  - NodeGUID: ef486963-2613-4135-b1b3-333d766a032f
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P6_DIALOGUE5
+    SpeakerEmotion: 0
+    Position: {x: 1169.6, y: 1022.39996}
+  - NodeGUID: 2a67bd77-5dc7-4f58-86d0-71e5c0fcdcc8
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P4_DIALOGUE4
+    SpeakerEmotion: 0
+    Position: {x: 1205.6, y: 737.60004}
+  - NodeGUID: d005e227-62ee-415c-8b41-df8d5fd9b45a
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P6_DIALOGUE4
+    SpeakerEmotion: 0
+    Position: {x: 1880, y: 1052}
+  - NodeGUID: a6eb4f5f-4478-405a-829f-1e702fe1639f
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P6_DIALOGUE5
+    SpeakerEmotion: 0
+    Position: {x: 1892, y: 1288}
+  - NodeGUID: 2072e894-d320-4988-91aa-819f57334d78
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P2_DIALOGUE2
+    SpeakerEmotion: 0
+    Position: {x: 587.2, y: 230.4}
+  - NodeGUID: ffed34a6-15fa-4080-beff-f2c4d9d790b8
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P4_DIALOGUE3
+    SpeakerEmotion: 0
+    Position: {x: 1164.8, y: 219.2}
+  - NodeGUID: 853c43f6-0c73-4401-8d79-1e8ce0c5e6a9
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P4_DIALOGUE2
+    SpeakerEmotion: 0
+    Position: {x: 904.8, y: 464}
+  - NodeGUID: 7de714e1-0995-4ef3-a2e6-bca21b95ec20
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P6_DIALOGUE2
+    SpeakerEmotion: 0
+    Position: {x: 1223.2, y: 513.60004}
+  - NodeGUID: 144edae3-9591-4b15-82e1-73cf8a5cc956
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P8_DIALOGUE1
+    SpeakerEmotion: 0
+    Position: {x: 2857.6, y: 741.60004}
+  - NodeGUID: c9b36df3-66a4-4d45-b824-a4f87c24d02e
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P6_DIALOGUE3
+    SpeakerEmotion: 0
+    Position: {x: 1916.8, y: 796.8}
+  - NodeGUID: 6f45fe41-e9b9-4ad2-bf0e-011d4fabf16d
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P8_DIALOGUE2
+    SpeakerEmotion: 0
+    Position: {x: 2820.8, y: 986.4}
+  - NodeGUID: 35fc87dd-2764-4cec-a442-d79c284b9715
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P8_DIALOGUE3
+    SpeakerEmotion: 0
+    Position: {x: 2830.4, y: 1173.6}
+  - NodeGUID: 526221b8-afe1-4a1b-a662-fc406f375bf4
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P8_DIALOGUE4
+    SpeakerEmotion: 0
+    Position: {x: 2424, y: 1460.7999}
+  - NodeGUID: ff167ac0-bc5a-40df-901b-37bae2279420
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P10_DIALOGUE1
+    SpeakerEmotion: 0
+    Position: {x: 3059.2, y: 1369.6}
+  - NodeGUID: 532ad0b1-da95-4b64-834b-de8b426cb691
+    KeySpeaker: CHAR_Florist
+    NodeKeyText: MULLER01_P10_DIALOGUE2
+    SpeakerEmotion: 0
+    Position: {x: 3051.2, y: 1581.6}
   ConditionNodeData: []
-  SetBoolNodeData: []
+  SetBoolNodeData:
+  - NodeGUID: 1b2523cb-04dc-43e8-8722-2b96b1075c3f
+    Property: Rose
+    Value: 1
+    Position: {x: 2512.8, y: 784.8}
+  - NodeGUID: 58d62828-782e-4544-99a1-a42e7c8f06c5
+    Property: "Pens\xE9e"
+    Value: 1
+    Position: {x: 2501.6, y: 966.4}
+  - NodeGUID: bfae7ce3-a5bc-45d4-a2d1-2390458b57f0
+    Property: Dahlia
+    Value: 1
+    Position: {x: 2530.4, y: 1180}
+  - NodeGUID: 2bb891e0-6c54-4559-8cba-0b107330e17a
+    Property: LysIridescent
+    Value: 1
+    Position: {x: 2786.4, y: 1374.3999}
+  - NodeGUID: bb8546dd-c22c-470a-973d-7f51a5a6301a
+    Property: Lys
+    Value: 1
+    Position: {x: 2805.6, y: 1574.3999}
   SetAffinityNodeData: []
   ExposedProperties: []
   CommentBlockData: []

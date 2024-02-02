@@ -22,7 +22,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private Image charaSprite;
         [SerializeField] private Transform charaEmotionBubble;
         [SerializeField] private Phone resetScript;
-        private Image backGroundSprite;
+        [SerializeField] private Image backGroundSprite;
         private Image buttonSprite;
         private DialogConfig dialogConfig;
         List<ExposedProperty> propertyList = new List<ExposedProperty>();
@@ -42,7 +42,11 @@ namespace Subtegral.DialogueSystem.Runtime
 
             dialogue = dateData.dialogue;
 
-           //backGroundSprite.sprite = dateData.background;
+            if(dateData.background != null)
+            {
+                backGroundSprite.sprite = dateData.background;
+            }
+           
             
 
             dialogueUI.SetActive(true);

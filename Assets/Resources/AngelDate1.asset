@@ -17,17 +17,306 @@ MonoBehaviour:
     PortName: Next
     isValid: 0
     TargetNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: Excusez moi madame, j'ai du me tromper.
+    isValid: 0
+    TargetNodeGUID: a150f7cd-e3df-4a97-99fa-a4a58055bead
+  - BaseNodeGUID: a150f7cd-e3df-4a97-99fa-a4a58055bead
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: fce97cdf-5aa0-497d-9cb7-4f7796688c7a
+  - BaseNodeGUID: fce97cdf-5aa0-497d-9cb7-4f7796688c7a
+    PortName: Je ne voulais pas vous importunez, veuillez m'excuser.
+    isValid: 0
+    TargetNodeGUID: f51f978d-8a0d-4b5a-96ac-7d97dbef302d
+  - BaseNodeGUID: fce97cdf-5aa0-497d-9cb7-4f7796688c7a
+    PortName: "Je ne pensais pas mal, vos courbes m'ont surement fait tourner la
+      t\xEAte."
+    isValid: 0
+    TargetNodeGUID: 1b2ef54d-286b-4e68-b513-265685322ca7
+  - BaseNodeGUID: f51f978d-8a0d-4b5a-96ac-7d97dbef302d
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 20bfbe49-6dd6-499e-a5c5-6dbc255f3fe6
+  - BaseNodeGUID: 20bfbe49-6dd6-499e-a5c5-6dbc255f3fe6
+    PortName: '*fuir*'
+    isValid: 0
+    TargetNodeGUID: daf3e279-6477-4690-9848-03e3fbbc67eb
+  - BaseNodeGUID: 20bfbe49-6dd6-499e-a5c5-6dbc255f3fe6
+    PortName: Osez, si vous vous en croyez capable.
+    isValid: 0
+    TargetNodeGUID: e7f29e08-d910-4457-85af-ac189f123f68
+  - BaseNodeGUID: daf3e279-6477-4690-9848-03e3fbbc67eb
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 32992268-d0a6-44f1-8794-e75454d947d6
+  - BaseNodeGUID: 32992268-d0a6-44f1-8794-e75454d947d6
+    PortName: '*fuir*'
+    isValid: 0
+    TargetNodeGUID: 09ad1f26-50fa-4d3e-8716-5ea002cc6c4e
+  - BaseNodeGUID: 32992268-d0a6-44f1-8794-e75454d947d6
+    PortName: '*rester*'
+    isValid: 0
+    TargetNodeGUID: 9521a18f-0c15-409f-9891-ae2be1a3fdff
+  - BaseNodeGUID: 9521a18f-0c15-409f-9891-ae2be1a3fdff
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: b5826c4e-42c2-4dbb-93bd-e429437dc44f
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: "Je cherche \xE0 me faire \xE9duquer comme il se doit."
+    isValid: 0
+    TargetNodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+  - BaseNodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+    PortName: "Mademoiselle, je ne m'attendais \xE0 tomber sur une cr\xE9ature aussi
+      parfaite dans un tel lieu."
+    isValid: 0
+    TargetNodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+  - BaseNodeGUID: 1b2ef54d-286b-4e68-b513-265685322ca7
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+  - BaseNodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+    PortName: "Je suis pr\xEAt \xE0 braver tout les danger pour esp\xE9rer cajoler
+      votre corps."
+    isValid: 0
+    TargetNodeGUID: a12d9ca4-2ba0-4f61-93da-07cf8e62e7cc
+  - BaseNodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+    PortName: "Oui, j'ai regard\xE9 l'int\xE9grale de 50 nuances de Gray."
+    isValid: 0
+    TargetNodeGUID: a2b3695f-13b4-4f55-9681-a20728c214ef
+  - BaseNodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+    PortName: "Houl\xE0, \xE7a me semble risqu\xE9 quand m\xEAme. Je pr\xE9f\xE8re
+      prendre mon temps."
+    isValid: 0
+    TargetNodeGUID: 2adfbd30-f5e4-458b-8135-995b83a56c82
+  - BaseNodeGUID: a12d9ca4-2ba0-4f61-93da-07cf8e62e7cc
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: bb65a206-2b79-458c-9f0f-da8638e50471
+  - BaseNodeGUID: a2b3695f-13b4-4f55-9681-a20728c214ef
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 713a55f6-a179-4d82-89ab-3ca911321add
+  - BaseNodeGUID: 2adfbd30-f5e4-458b-8135-995b83a56c82
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 7c710432-b914-42a1-a8db-6dcf6664ac3f
+  - BaseNodeGUID: 7c710432-b914-42a1-a8db-6dcf6664ac3f
+    PortName: Je pense que je vais partir..." *pars*
+    isValid: 0
+    TargetNodeGUID: a0b94a5a-996d-41af-a14d-dad15e7373f2
+  - BaseNodeGUID: bb65a206-2b79-458c-9f0f-da8638e50471
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+  - BaseNodeGUID: 713a55f6-a179-4d82-89ab-3ca911321add
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+  - BaseNodeGUID: 7c710432-b914-42a1-a8db-6dcf6664ac3f
+    PortName: Huuuummmmm...oh et merde. Faite de moi votre chose, reine Lilith.
+    isValid: 0
+    TargetNodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+  - BaseNodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+    PortName: "Je veux que mon cerveau fonde, faite de mon esprit votre esclave \xE9ternel."
+    isValid: 0
+    TargetNodeGUID: 78a4bc72-4785-4d12-bb7c-9615269e0154
+  - BaseNodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+    PortName: "Faites moi ressentir la vrai douleur, je veux que ma peau soir marqu\xE9
+      au fer rouge."
+    isValid: 0
+    TargetNodeGUID: 34f69c24-074b-4a50-8363-af2cd1cbafb8
+  - BaseNodeGUID: 34f69c24-074b-4a50-8363-af2cd1cbafb8
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: 7467685f-2974-4db1-8f0f-96ba6a40b2a8
+  - BaseNodeGUID: 78a4bc72-4785-4d12-bb7c-9615269e0154
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: fe4d7117-ecb0-4783-bb0c-a6b848d6b728
+  - BaseNodeGUID: 7467685f-2974-4db1-8f0f-96ba6a40b2a8
+    PortName: Next
+    isValid: 0
+    TargetNodeGUID: fe4d7117-ecb0-4783-bb0c-a6b848d6b728
+  - BaseNodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+    PortName: "Plongez moi dans l'acide, faite moi bouillir vivant, arrachez moi
+      la langue et pi\xE9tinez moi \xE0 mort, je vous en conjure !"
+    isValid: 0
+    TargetNodeGUID: 894b0b1d-de28-4e57-bd08-1e9352722289
   NodeData:
   - nodeType: Dialogue
     nodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
+  - nodeType: SetAffinity
+    nodeGUID: a150f7cd-e3df-4a97-99fa-a4a58055bead
+  - nodeType: Dialogue
+    nodeGUID: fce97cdf-5aa0-497d-9cb7-4f7796688c7a
+  - nodeType: SetAffinity
+    nodeGUID: f51f978d-8a0d-4b5a-96ac-7d97dbef302d
+  - nodeType: SetAffinity
+    nodeGUID: 1b2ef54d-286b-4e68-b513-265685322ca7
+  - nodeType: Dialogue
+    nodeGUID: b5826c4e-42c2-4dbb-93bd-e429437dc44f
+  - nodeType: Dialogue
+    nodeGUID: 32992268-d0a6-44f1-8794-e75454d947d6
+  - nodeType: SetAffinity
+    nodeGUID: 09ad1f26-50fa-4d3e-8716-5ea002cc6c4e
+  - nodeType: SetAffinity
+    nodeGUID: 9521a18f-0c15-409f-9891-ae2be1a3fdff
+  - nodeType: SetAffinity
+    nodeGUID: daf3e279-6477-4690-9848-03e3fbbc67eb
+  - nodeType: Dialogue
+    nodeGUID: 20bfbe49-6dd6-499e-a5c5-6dbc255f3fe6
+  - nodeType: SetAffinity
+    nodeGUID: e7f29e08-d910-4457-85af-ac189f123f68
+  - nodeType: Dialogue
+    nodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+  - nodeType: SetAffinity
+    nodeGUID: 2adfbd30-f5e4-458b-8135-995b83a56c82
+  - nodeType: SetAffinity
+    nodeGUID: a2b3695f-13b4-4f55-9681-a20728c214ef
+  - nodeType: SetAffinity
+    nodeGUID: a12d9ca4-2ba0-4f61-93da-07cf8e62e7cc
+  - nodeType: Dialogue
+    nodeGUID: 7c710432-b914-42a1-a8db-6dcf6664ac3f
+  - nodeType: Dialogue
+    nodeGUID: 713a55f6-a179-4d82-89ab-3ca911321add
+  - nodeType: Dialogue
+    nodeGUID: bb65a206-2b79-458c-9f0f-da8638e50471
+  - nodeType: SetAffinity
+    nodeGUID: a0b94a5a-996d-41af-a14d-dad15e7373f2
+  - nodeType: Dialogue
+    nodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+  - nodeType: Dialogue
+    nodeGUID: 78a4bc72-4785-4d12-bb7c-9615269e0154
+  - nodeType: Dialogue
+    nodeGUID: 34f69c24-074b-4a50-8363-af2cd1cbafb8
+  - nodeType: SetBool
+    nodeGUID: 7467685f-2974-4db1-8f0f-96ba6a40b2a8
+  - nodeType: Dialogue
+    nodeGUID: fe4d7117-ecb0-4783-bb0c-a6b848d6b728
+  - nodeType: Dialogue
+    nodeGUID: 894b0b1d-de28-4e57-bd08-1e9352722289
   DialogueNodeData:
   - NodeGUID: 1594ae09-9397-49b1-8de9-0633f7ca1cc8
     KeySpeaker: CHAR_Angel
-    NodeKeyText: Key Text
-    SpeakerEmotion: 0
+    NodeKeyText: LILITH01_P0_INTRO
+    SpeakerEmotion: 4
     Position: {x: 227.2, y: 200}
+  - NodeGUID: fce97cdf-5aa0-497d-9cb7-4f7796688c7a
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P1_CHOIX1
+    SpeakerEmotion: 2
+    Position: {x: 946.4, y: -153.6}
+  - NodeGUID: b5826c4e-42c2-4dbb-93bd-e429437dc44f
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P4_CHOIX1
+    SpeakerEmotion: 0
+    Position: {x: 2796.8, y: -397.59998}
+  - NodeGUID: 32992268-d0a6-44f1-8794-e75454d947d6
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P3_CHOIX1
+    SpeakerEmotion: 0
+    Position: {x: 2187.2, y: -434.4}
+  - NodeGUID: 20bfbe49-6dd6-499e-a5c5-6dbc255f3fe6
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P2_CHOIX1
+    SpeakerEmotion: 2
+    Position: {x: 1572.8, y: -428.8}
+  - NodeGUID: 79f43537-32c1-4a77-b50e-b78bb243bdfa
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P1_CHOIX2
+    SpeakerEmotion: 1
+    Position: {x: 1662.4, y: 168}
+  - NodeGUID: 7c710432-b914-42a1-a8db-6dcf6664ac3f
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P2_CHOIX4
+    SpeakerEmotion: 0
+    Position: {x: 2336.8, y: 352}
+  - NodeGUID: 713a55f6-a179-4d82-89ab-3ca911321add
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P2_CHOIX3
+    SpeakerEmotion: 1
+    Position: {x: 2688.8, y: 176.8}
+  - NodeGUID: bb65a206-2b79-458c-9f0f-da8638e50471
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P2_CHOIX2
+    SpeakerEmotion: 3
+    Position: {x: 2661.6, y: 20.8}
+  - NodeGUID: 7999c326-4cdf-4111-92e3-fb364bddde77
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P3_CHOIX2
+    SpeakerEmotion: 1
+    Position: {x: 3115.2, y: 229.59999}
+  - NodeGUID: 78a4bc72-4785-4d12-bb7c-9615269e0154
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P4_CHOIX2
+    SpeakerEmotion: 1
+    Position: {x: 3520.8, y: 111.2}
+  - NodeGUID: 34f69c24-074b-4a50-8363-af2cd1cbafb8
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P4_CHOIX3
+    SpeakerEmotion: 1
+    Position: {x: 3466.4, y: 251.2}
+  - NodeGUID: fe4d7117-ecb0-4783-bb0c-a6b848d6b728
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P5
+    SpeakerEmotion: 0
+    Position: {x: 3982.4, y: 142.4}
+  - NodeGUID: 894b0b1d-de28-4e57-bd08-1e9352722289
+    KeySpeaker: CHAR_Angel
+    NodeKeyText: LILITH01_P4_CHOIX4
+    SpeakerEmotion: 4
+    Position: {x: 3576.8, y: 576}
   ConditionNodeData: []
-  SetBoolNodeData: []
-  SetAffinityNodeData: []
+  SetBoolNodeData:
+  - NodeGUID: 7467685f-2974-4db1-8f0f-96ba6a40b2a8
+    Property: Marked
+    Value: 1
+    Position: {x: 3744.8, y: 253.59999}
+  SetAffinityNodeData:
+  - NodeGUID: a150f7cd-e3df-4a97-99fa-a4a58055bead
+    TargetName: Lilith
+    Value: -2
+    Position: {x: 624, y: 72.8}
+  - NodeGUID: f51f978d-8a0d-4b5a-96ac-7d97dbef302d
+    TargetName: Lilith
+    Value: -3
+    Position: {x: 1293.6, y: -331.19998}
+  - NodeGUID: 1b2ef54d-286b-4e68-b513-265685322ca7
+    TargetName: Lilith
+    Value: 1
+    Position: {x: 1303.2, y: -194.40001}
+  - NodeGUID: 09ad1f26-50fa-4d3e-8716-5ea002cc6c4e
+    TargetName: Lilith
+    Value: -2
+    Position: {x: 2506.4, y: -495.19998}
+  - NodeGUID: 9521a18f-0c15-409f-9891-ae2be1a3fdff
+    TargetName: Lilith
+    Value: 2
+    Position: {x: 2513.6, y: -372.8}
+  - NodeGUID: daf3e279-6477-4690-9848-03e3fbbc67eb
+    TargetName: Lilith
+    Value: -3
+    Position: {x: 1920, y: -492}
+  - NodeGUID: e7f29e08-d910-4457-85af-ac189f123f68
+    TargetName: Lilith
+    Value: 1
+    Position: {x: 1907.2, y: -328}
+  - NodeGUID: 2adfbd30-f5e4-458b-8135-995b83a56c82
+    TargetName: Lilith
+    Value: -2
+    Position: {x: 2014.4, y: 334.40002}
+  - NodeGUID: a2b3695f-13b4-4f55-9681-a20728c214ef
+    TargetName: Lilith
+    Value: 0
+    Position: {x: 2004, y: 192}
+  - NodeGUID: a12d9ca4-2ba0-4f61-93da-07cf8e62e7cc
+    TargetName: Lilith
+    Value: 2
+    Position: {x: 1997.6, y: 39.2}
+  - NodeGUID: a0b94a5a-996d-41af-a14d-dad15e7373f2
+    TargetName: Lilith
+    Value: -2
+    Position: {x: 2664, y: 503.2}
   ExposedProperties: []
   CommentBlockData: []

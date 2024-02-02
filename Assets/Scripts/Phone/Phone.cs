@@ -173,13 +173,19 @@ public class Phone : MonoBehaviour
                     }
                     else if (numbers.iterationDate == 1)
                     {
+                        if(numbers.dateName == "Florist")
+                        {
+                            StartCoroutine(WrongValue());
+                            return;
+                        }
+
                         date = numbers.dateName + "Date2";
                     }
-                    
-                    
+
                     StartCoroutine(PickUpAnimation());
                     textAsk.GetComponent<TextMeshProUGUI>().text = $"Allez en date avec {numbers.dateName} ?";
                     return;
+
                 }
             }
             StartCoroutine(WrongValue());
