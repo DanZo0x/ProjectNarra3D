@@ -155,8 +155,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 169576461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 9.3, y: -1.5}
   m_SizeDelta: {x: 8, y: 15}
   m_Pivot: {x: 1, y: 0.5}
@@ -2136,7 +2136,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2646,9 +2646,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 15347435}
   m_Direction: 0
   m_MinValue: 0.00001
-  m_MaxValue: 10
+  m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 10
+  m_Value: 5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2667,6 +2667,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1213258953}
         m_TargetAssemblyTypeName: SaveSystem, Assembly-CSharp
         m_MethodName: SaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1088931693}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2962,7 +2974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1030940104
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3306,9 +3318,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicSource: {fileID: 793832159}
   _sfxSource: {fileID: 767304092}
-  _menuMusic: {fileID: 0}
-  _clickOnButton: {fileID: 0}
+  _menuMusic: {fileID: 8300000, guid: e4eba406737670a4881d140b11254eb0, type: 3}
+  _clickOnButton: {fileID: 8300000, guid: 8370f4a12d7a0c44e91a0a69b3a0d96b, type: 3}
   _dialogueSfx: {fileID: 0}
+  _gameMixer: {fileID: 24100000, guid: a5584a866afdabd44b7056139b4df773, type: 2}
   _musicSourceObj: {fileID: 793832157}
   _sfxSourceObj: {fileID: 767304090}
 --- !u!1 &1179308516

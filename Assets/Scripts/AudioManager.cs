@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -16,9 +17,12 @@ public class AudioManager : MonoBehaviour
 
     [Space]
     [Header("Audio References")]
+    [SerializeField] private AudioMixer _gameMixer;
     public static AudioManager _instance;
     public GameObject _musicSourceObj;
     public GameObject _sfxSourceObj;
+
+    private float _musicVolume;
 
     private void Awake()
     {
@@ -39,11 +43,18 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        
+        _musicSource.clip = _menuMusic;
+        _musicSource.Play();
     }
 
     public void PlaySFX(AudioClip _clip)
     {
         _sfxSource.PlayOneShot(_clip);
+    }
+
+    public void SetVolume()
+    {
+        _musicVolume = SaveSystem.instance._volumeSlider.value;
+        _gameMixer.SetFloat("MasterVolume", Mathf.Log10(_musicVolume) * 20);
     }
 }
